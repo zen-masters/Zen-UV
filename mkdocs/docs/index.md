@@ -1,4 +1,5 @@
-# ![Zen UV Logo](img/zen-uv-icon-128.png) Zen UV for Blender
+![Zen UV Logo](img/zen-uv-icon-128.png)
+# Zen UV for Blender
 
 ## Introduction
 Zen UV это... Тут основыные функции и преимущества. Тут же обзорное видео.
@@ -139,6 +140,6 @@ Display sharp edges.
 ### Show Seams Edges
 Display UV Seams.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzOTgzOTEzLDY4ODU0NDgyMywtMTAxOT
-k0MDIzOF19
+eyJoaXN0b3J5IjpbLTE1MDYxMjUwNzUsNjg4NTQ0ODIzLC0xMD
+E5OTQwMjM4XX0=
 -->
