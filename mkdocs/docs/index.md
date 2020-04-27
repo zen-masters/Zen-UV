@@ -1,6 +1,9 @@
 ![Zen UV Logo](img/zen-uv-icon-128.png)
 # Zen UV for Blender
 
+!!! warning
+This is warning.
+
 ## Introduction
 Zen UV это... Тут основыные функции и преимущества. Тут же обзорное видео.
 
@@ -15,7 +18,8 @@ Zen UV это... Тут основыные функции и преимущес�
 ### Zen UV Pie Menu
 Call Zen UV Pie menu.
 
-> **Notes:** You can setup custom hotkey: *RMB* on the button > Change Shortcut.
+!!! note
+You can setup custom hotkey: *RMB* on the button > Change Shortcut.
 
 ### Zen UV Popup Menu
 Call Zen UV Popup menu.

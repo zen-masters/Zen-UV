@@ -3,3 +3,5 @@ site_name: Zen UV
 #     - Home: index.md
 #     - About: about.md
 theme: readthedocs
+markdown_extensions:
+    - admonition
