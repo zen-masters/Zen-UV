@@ -1,6 +1,6 @@
 
 # Zen UV
-Zen UV Blender Addon## Introduction
+## Introduction
 Zen UV это... Тут основыные функции и преимущества. Тут же обзорное видео.
 
 ## Installation
@@ -139,6 +139,6 @@ Display sharp edges.
 ### Show Seams Edges
 Display UV Seams.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNzUxNTU4Myw5OTU1NDk0NDEsLTk5OD
-cwMDU3MV19
+eyJoaXN0b3J5IjpbLTE2NDE4OTg5NzksLTgwNzUxNTU4Myw5OT
+U1NDk0NDEsLTk5ODcwMDU3MV19
 -->
