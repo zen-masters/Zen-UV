@@ -1,4 +1,5 @@
 # Zen UV
+![Zen UV Logo](img/zen-uv-logo-128.png)
 ## Introduction
 Zen UV это... Тут основыные функции и преимущества. Тут же обзорное видео.
 
@@ -137,3 +138,6 @@ Display sharp edges.
 
 ### Show Seams Edges
 Display UV Seams.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEwMTk5NDAyMzhdfQ==
+-->
