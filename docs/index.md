@@ -74,14 +74,19 @@ Show Pinned Islands (Toggle).
 
 ### Checker Texture (Toggle)
 Add Checker Texture to the mesh (Toggle).
+
 ### Smooth Mode (Toggle)
 Toggle between Auto Smooth 180° (with sharp edges) and regular smooth modes.
+
 ## Pie Menu
+
 ### Zen Unwrap
 - *Default* — **Zen Unwrap.** Unwrap by marked seams. Also, you can select edges/faces and do Zen Unwrap. All selected edges/faces will be marked as Seams and unwrapped after.
+
 ### Auto Seams
 - *Default* — **Auto Seams.**
 - *ALT* — **Set Seams by UV boundaries.**
+
 ### Mark Seams
 - *Default* — **Mark Seams.**
 - *CTRL* — **Pin UV Island.**
@@ -95,6 +100,7 @@ Toggle between Auto Smooth 180° (with sharp edges) and regular smooth modes.
 > **Note:** Choose at least one polygon/edge of the Island/Islands.
 
 - *ALT* — **Clear All Seams.**
+
 ### Select UV Island
 - *Default* — **Select UV Island.**
 
@@ -117,17 +123,22 @@ Toggle between Auto Smooth 180° (with sharp edges) and regular smooth modes.
 - *CTRL* — **Show Pinned Islands (Toggle).** 
 
 ## Preferences
+
 ### Auto Seams With Unwrap
 Automatically assign Seams for Zen Unwrap.
+
 ### Auto Sharp Edges
 Automatically assign sharp edges after Zen Unwrap.
+
 ### Auto Pin Qudrified
 Automatically Pin Island after Quadrify Island operation.
+
 ### Show Sharp Edges
 Display sharp edges.
+
 ### Show Seams Edges
 Display UV Seams.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NTIyMDA4NSw5OTU1NDk0NDEsLTk5OD
+eyJoaXN0b3J5IjpbLTgwNzUxNTU4Myw5OTU1NDk0NDEsLTk5OD
 cwMDU3MV19
 -->
