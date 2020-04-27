@@ -1,29 +1,28 @@
-# Zen UV
 ![Zen UV Logo](img/zen-uv-logo-128.png)
-## Introduction
+# Introduction
 Zen UV это... Тут основыные функции и преимущества. Тут же обзорное видео.
 
-## Installation
+# Installation
 Тут про установку.
 
-## How to use
+# How to use
 Тут про три способа (пай, панель, поп-ап).
 
-## Controls
+# Controls
 
-### Zen UV Pie Menu
+## Zen UV Pie Menu
 Call Zen UV Pie menu.
 
 > **Notes:** You can setup custom hotkey: *RMB* on the button > Change Shortcut.
 
-### Zen UV Popup Menu
+## Zen UV Popup Menu
 Call Zen UV Popup menu.
 
 > **Notes:** You can setup custom hotkey: *RMB* on the button > Change Shortcut.
 
-## Operators
+# Operators
 
-### Zen Unwrap
+## Zen Unwrap
 Unwrap by marked seams. Also, you can select edges/faces and do Zen Unwrap. All selected edges/faces will be marked as Seams and unwrapped after.
 
 ### Auto Seams
@@ -139,5 +138,5 @@ Display sharp edges.
 ### Show Seams Edges
 Display UV Seams.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTk5NDAyMzhdfQ==
+eyJoaXN0b3J5IjpbLTE2OTkxMDg4OSwtMTAxOTk0MDIzOF19
 -->
