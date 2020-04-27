@@ -1,9 +1,6 @@
 ![Zen UV Logo](img/zen-uv-icon-128.png)
 # Zen UV for Blender
 
-!!! warning
-This is warning.
-
 ## Introduction
 Zen UV это... Тут основыные функции и преимущества. Тут же обзорное видео.
 
@@ -19,12 +16,13 @@ Zen UV это... Тут основыные функции и преимущес�
 Call Zen UV Pie menu.
 
 !!! note
-You can setup custom hotkey: *RMB* on the button > Change Shortcut.
+	You can setup custom hotkey: *RMB* on the button > Change Shortcut.
 
 ### Zen UV Popup Menu
 Call Zen UV Popup menu.
 
-> **Notes:** You can setup custom hotkey: *RMB* on the button > Change Shortcut.
+!!! note
+	You can setup custom hotkey: *RMB* on the button > Change Shortcut.
 
 ## Operators
 
@@ -49,12 +47,14 @@ Remove all the Seams from the mesh.
 ### Select UV Island
 Select UV Island. 
 
-> **Note:** Choose at least one polygon/edge of the Island/Islands.
+!!! note
+	Choose at least one polygon/edge of the Island/Islands.
 
 ### Isolate Island (Toggle)
 Isolate UV Island (Toggle). 
 
-> **Note:** Choose at least one polygon/edge of the Island/Islands.
+!!! note
+	Choose at least one polygon/edge of the Island/Islands.
 
 ### Quadrify Island
 Straighten rectangular shaped UV Islands.
@@ -62,17 +62,20 @@ Straighten rectangular shaped UV Islands.
 ### Select Overlapped Islands
 Select Overlapped Islands.
 
-> **Note:** Works in Blender 2.81 and above.
+!!! warning
+	Works in Blender 2.81 and above.
 
 ### Pin UV Island
 Pin UV Island. 
 
-> **Note:** Choose at least one polygon/edge of the Island/Islands.
+!!! note
+	Choose at least one polygon/edge of the Island/Islands.
 
 ### Unpin UV Island
 Unpin UV Island. 
 
-> **Note:** Choose at least one polygon/edge of the Island/Islands.
+!!! note
+	Choose at least one polygon/edge of the Island/Islands.
 
 ### Show Pinned Islands (Toggle)
 Show Pinned Islands (Toggle).
@@ -96,29 +99,36 @@ Toggle between Auto Smooth 180° (with sharp edges) and regular smooth modes.
 - *Default* — **Mark Seams.**
 - *CTRL* — **Pin UV Island.**
 
-> **Note:** Choose at least one polygon/edge of the Island/Islands.
+!!! note
+	Choose at least one polygon/edge of the Island/Islands.
 
 ### Unmark Seams
 - *Default* — **Unmark Seams.**
 - *CTRL* — **Unpin UV Island.**
 
-> **Note:** Choose at least one polygon/edge of the Island/Islands.
+!!! note
+	Choose at least one polygon/edge of the Island/Islands.
 
 - *ALT* — **Clear All Seams.**
 
 ### Select UV Island
 - *Default* — **Select UV Island.**
 
-> **Note:** Choose at least one polygon/edge of the Island/Islands.
+!!! note
+	Choose at least one polygon/edge of the Island/Islands.
 
 - *ALT* — **Select Overlapped Islands.**
 
-> **Note:** Works in Blender 2.81 and above.
+!!! warning
+	Works in Blender 2.81 and above.
 
 ### Isolate Island (Toggle)
 - *Default* — **Isolate Island (Toggle).**
 
-> **Note:** Choose at least one polygon/edge of the Island/Islands.
+  
+
+  !!! note
+  Choose at least one polygon/edge of the Island/Islands.
 
 ### Quadrify Island
 - *Default* — **Quadrify Island.** Straighten rectangular shaped UV Islands.
@@ -143,7 +153,3 @@ Display sharp edges.
 
 ### Show Seams Edges
 Display UV Seams.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDYxMjUwNzUsNjg4NTQ0ODIzLC0xMD
-E5OTQwMjM4XX0=
--->

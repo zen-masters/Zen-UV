@@ -4,4 +4,4 @@ site_name: Zen UV
 #     - About: about.md
 theme: readthedocs
 markdown_extensions:
-    - admonition
+  - admonition
