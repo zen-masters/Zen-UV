@@ -9,7 +9,9 @@ Zen UV это... Тут основыные функции и преимущес�
 ## Controls
 ### Zen UV Pie Menu
 Call Zen UV Pie menu.
+
 > **Notes:** You can setup custom hotkey: *RMB* on the button > Change Shortcut.
+
 ### Zen UV Popup Menu
 Call Zen UV Popup menu.
 > **Notes:** You can setup custom hotkey: *RMB* on the button > Change Shortcut.
@@ -89,5 +91,5 @@ Display sharp edges.
 ### Show Seams Edges
 Display UV Seams.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5ODcwMDU3MV19
+eyJoaXN0b3J5IjpbOTk1NTQ5NDQxLC05OTg3MDA1NzFdfQ==
 -->
