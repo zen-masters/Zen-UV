@@ -2,6 +2,8 @@ site_name: Zen UV
 # nav:
 #     - Home: index.md
 #     - About: about.md
+docs_dir: mkdocs
+site_dir: docs
 theme: readthedocs
 markdown_extensions:
   - admonition
