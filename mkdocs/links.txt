@@ -6,3 +6,6 @@ https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/demo.html#admonitions
 
 Typographics
 https://python-markdown.github.io/extensions/smarty/
+
+Video
+https://about.gitlab.com/handbook/engineering/ux/technical-writing/markdown-guide/#videos
