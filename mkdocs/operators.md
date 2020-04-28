@@ -12,8 +12,8 @@ Mark selected edges or face boundaries as Seams.
 ## Unmark Seams ![Unmark Seams](img/icons/unmark-seams@2x.png)
 Unmark selected edges or face boundaries as Seams.
 
-## Set Seams by UV Boundaries
-Setup UV Seams by existing UV boundaries.
+## Set Seams by UV Borders
+Setup UV Seams by existing UV Borders.
 
 ## Clear All Seams
 Remove all the Seams from the mesh.

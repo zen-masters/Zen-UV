@@ -5,7 +5,7 @@
 
 ## Auto Seams
 - *Default* — **Auto Seams.**
-- *ALT* — **Set Seams by UV boundaries.**
+- *ALT* — **Set Seams by UV Borders.**
 
 ## Mark Seams ![Mark Seams](img/icons/mark-seams@2x.png)
 - *Default* — **Mark Seams.**
