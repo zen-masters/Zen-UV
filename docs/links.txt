@@ -1,8 +1,0 @@
-MkDocs
-https://www.mkdocs.org/user-guide/configuration/
-
-Admonitions
-https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/demo.html#admonitions
-
-Typographics
-https://python-markdown.github.io/extensions/smarty/
