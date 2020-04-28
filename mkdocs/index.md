@@ -1,155 +1,20 @@
 ![Zen UV Logo](img/zen-uv-icon-128.png)
 # Zen UV for Blender
+Zen UV это... Главные слова почему стоит купить.
+Основыные функции и преимущества.
 
-## Introduction
-Zen UV это... Тут основыные функции и преимущества. Тут же обзорное видео.
+[![Zen UV Introduction](https://img.youtube.com/vi/ook2eFfH724/0.jpg)](https://www.youtube.com/watch?v=ook2eFfH724)
 
-## Installation
-Тут про установку.
+Тут же обзорное видео. Знаю как сделать превью на всю ширину.
 
-## How to use
-Тут про три способа (пай, панель, поп-ап).
+![Zen UV Pie Menu](img/screen/img-001.png)
 
-## Controls
+Картинка временная для примера.
 
-### Zen UV Pie Menu
-Call Zen UV Pie menu.
+Про три способа работы --- пай, панель, поп-ап.
+По сути большинству должно хватить информации с этой страницы.
+Для остальных --- разделы.
 
-!!! note
-	You can setup custom hotkey: *RMB* on the button > Change Shortcut.
-
-### Zen UV Popup Menu
-Call Zen UV Popup menu.
-
-!!! note
-	You can setup custom hotkey: *RMB* on the button > Change Shortcut.
-
-## Operators
-
-### Zen Unwrap
-Unwrap by marked seams. Also, you can select edges/faces and do Zen Unwrap. All selected edges/faces will be marked as Seams and unwrapped after.
-
-### Auto Seams
-Setup Auto Seams.
-
-### Mark Seams
-Mark selected edges or face boundaries as Seams.
-
-### Unmark Seams
-Unmark selected edges or face boundaries as Seams.
-
-### Set Seams by UV Boundaries
-Setup UV Seams by existing UV boundaries.
-
-### Clear All Seams
-Remove all the Seams from the mesh.
-
-### Select UV Island
-Select UV Island. 
-
-!!! note
-	Choose at least one polygon/edge of the Island/Islands.
-
-### Isolate Island (Toggle)
-Isolate UV Island (Toggle). 
-
-!!! note
-	Choose at least one polygon/edge of the Island/Islands.
-
-### Quadrify Island
-Straighten rectangular shaped UV Islands.
-
-### Select Overlapped Islands
-Select Overlapped Islands.
-
-!!! warning
-	Works in Blender 2.81 and above.
-
-### Pin UV Island
-Pin UV Island. 
-
-!!! note
-	Choose at least one polygon/edge of the Island/Islands.
-
-### Unpin UV Island
-Unpin UV Island. 
-
-!!! note
-	Choose at least one polygon/edge of the Island/Islands.
-
-### Show Pinned Islands (Toggle)
-Show Pinned Islands (Toggle).
-
-### Checker Texture (Toggle)
-Add Checker Texture to the mesh (Toggle).
-
-### Smooth Mode (Toggle)
-Toggle between Auto Smooth 180° (with sharp edges) and regular smooth modes.
-
-## Pie Menu
-
-### Zen Unwrap
-- *Default* — **Zen Unwrap.** Unwrap by marked seams. Also, you can select edges/faces and do Zen Unwrap. All selected edges/faces will be marked as Seams and unwrapped after.
-
-### Auto Seams
-- *Default* — **Auto Seams.**
-- *ALT* — **Set Seams by UV boundaries.**
-
-### Mark Seams
-- *Default* — **Mark Seams.**
-- *CTRL* — **Pin UV Island.**
-
-!!! note
-	Choose at least one polygon/edge of the Island/Islands.
-
-### Unmark Seams
-- *Default* — **Unmark Seams.**
-- *CTRL* — **Unpin UV Island.**
-
-!!! note
-	Choose at least one polygon/edge of the Island/Islands.
-
-- *ALT* — **Clear All Seams.**
-
-### Select UV Island
-- *Default* — **Select UV Island.**
-
-!!! note
-	Choose at least one polygon/edge of the Island/Islands.
-
-- *ALT* — **Select Overlapped Islands.**
-
-!!! warning
-	Works in Blender 2.81 and above.
-
-### Isolate Island (Toggle)
-- *Default* — **Isolate Island (Toggle).**
-
-  
-
-  !!! note
-  Choose at least one polygon/edge of the Island/Islands.
-
-### Quadrify Island
-- *Default* — **Quadrify Island.** Straighten rectangular shaped UV Islands.
-
-### Checker Texture (Toggle)
-- *Default* — **Checker Texture (Toggle).**
-- *CTRL* — **Show Pinned Islands (Toggle).** 
-
-## Preferences
-
-### Auto Seams With Unwrap
-Automatically assign Seams for Zen Unwrap.
-
-### Auto Sharp Edges
-Automatically assign sharp edges after Zen Unwrap.
-
-### Auto Pin Qudrified
-Automatically Pin Island after Quadrify Island operation.
-
-### Show Sharp Edges
-Display sharp edges.
-
-### Show Seams Edges
-Display UV Seams.
+- [Installation](installation)
+- [Operators](operators)
+- and others...
