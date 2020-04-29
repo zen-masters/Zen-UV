@@ -1,0 +1,17 @@
+site_name: Zen UV
+site_description: Zen UV for Blender Documentation
+nav:
+    - Introduction: index.md
+    - Installation: installation.md
+    - Operators: operators.md
+    - Pie Menu: pie-menu.md
+    - Controls: controls.md
+    - Preferences: preferences.md
+    - Changelog: changelog.md
+
+docs_dir: mkdocs
+site_dir: docs
+theme: readthedocs
+markdown_extensions:
+    - smarty
+    - admonition
