@@ -25,6 +25,7 @@ Select UV Island.
     Choose at least one polygon/edge of the Island/Islands.
 
 ## Isolate Island (Toggle)
+![test](img/temp/Isolate.gif)
 Isolate UV Island (Toggle). 
 
 !!! note
