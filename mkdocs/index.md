@@ -11,6 +11,8 @@
 **Zen UV** is not just a set of tools, it is a ready solution for fast creating UV’s in Blender. It represents an intuitive system created by professionals and refined in real projects.
 
 **Enjoy this experience with us!**
+
+![Gumroad](img/icons/services/gumroad-16.png.png) [**Gumroad**](https://gumroad.com/l/ZenUV) | ![Discord](img/icons/services/discord-16.png.png) [**Discord**](https://discord.gg/wGpFeME)
 <!-- blank line -->
 ----
 <!-- blank line -->
