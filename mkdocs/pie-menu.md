@@ -5,23 +5,23 @@
 
 ## Auto Seams
 - *Default* — **Auto Seams.**
-- *ALT* — **Set Seams by UV Borders.**
+- `ALT` — **Set Seams by UV Borders.**
 
 ## Mark Seams ![Mark Seams](img/icons/mark-seams@2x.png)
 - *Default* — **Mark Seams.**
-- *CTRL* — **Pin UV Island.**
+- `CTRL` — **Pin UV Island.**
 
 !!! note
     Choose at least one polygon/edge of the Island/Islands.
 
 ## Unmark Seams ![Unmark Seams](img/icons/unmark-seams@2x.png)
 - *Default* — **Unmark Seams.**
-- *CTRL* — **Unpin UV Island.**
+- `CTRL` — **Unpin UV Island.**
 
 !!! note
     Choose at least one polygon/edge of the Island/Islands.
 
-- *ALT* — **Clear All Seams.**
+- `ALT` — **Clear All Seams.**
 
 ## Select UV Island
 - *Default* — **Select UV Island.**
@@ -29,7 +29,7 @@
 !!! note
     Choose at least one polygon/edge of the Island/Islands.
 
-- *ALT* — **Select Overlapped Islands.**
+- `ALT` — **Select Overlapped Islands.**
 
 !!! warning
     Works in Blender 2.81 and above.
@@ -45,4 +45,4 @@
 
 ## Checker Texture (Toggle)
 - *Default* — **Checker Texture (Toggle).**
-- *CTRL* — **Show Pinned Islands (Toggle).**
+- `CTRL` — **Show Pinned Islands (Toggle).**

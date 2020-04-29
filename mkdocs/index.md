@@ -33,5 +33,5 @@
 - Quick support on the [**Discord channel**](https://discord.gg/wGpFeME).
 
 ## Default Shortcut
-- Zen UV Pie Menu ![Zen UV Pie Menu](img/icons/zen-uv@2x.png) --- **Alt + U**
-- Zen UV Popup Menu --- **Shift + U**
+- Zen UV Pie Menu ![Zen UV Pie Menu](img/icons/zen-uv@2x.png) --- `Alt + U`
+- Zen UV Popup Menu --- `Shift + U`

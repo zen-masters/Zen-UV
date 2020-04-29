@@ -4,10 +4,10 @@
 Call Zen UV Pie menu.
 
 !!! tip
-    You can setup custom hotkey: *RMB* on the button > Change Shortcut.
+    You can setup custom hotkey: `RMB` on the button > Change Shortcut.
 
 ## Zen UV Popup Menu
 Call Zen UV Popup menu.
 
 !!! tip
-    You can setup custom hotkey: *RMB* on the button > Change Shortcut.
+    You can setup custom hotkey: `RMB` on the button > Change Shortcut.
