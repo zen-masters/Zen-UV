@@ -25,7 +25,6 @@ Select UV Island.
     Choose at least one polygon/edge of the Island/Islands.
 
 ## Isolate Island (Toggle)
-![test](img/temp/Isolate.gif)
 Isolate UV Island (Toggle). 
 
 !!! note
@@ -33,6 +32,8 @@ Isolate UV Island (Toggle).
 
 ## Quadrify Island
 Straighten rectangular shaped UV Islands.
+
+*The addon is using the [quadrification algorithm](https://github.com/Radivarig/UvSquares) by Radivarig.*
 
 ## Select Overlapped Islands
 Select Overlapped Islands.
