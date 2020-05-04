@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Гайд по MkDocs - Zen UV for Blender</title>
+  <title>Troubleshooting - Zen UV for Blender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "\u0413\u0430\u0439\u0434 \u043f\u043e MkDocs";
-    var mkdocs_page_input_path = "mkdocs-guide.md";
+    var mkdocs_page_name = "Troubleshooting";
+    var mkdocs_page_input_path = "troubleshooting.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -71,8 +71,12 @@
                     <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
                     </li>
                 </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Troubleshooting</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#i-dont-find-zen-uv-panel-in-the-n-panel">I don't find Zen UV panel in the N-panel.</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
       </div>
@@ -96,7 +100,7 @@
     
       
     
-    <li>Гайд по MkDocs</li>
+    <li>Troubleshooting</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -107,37 +111,25 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="mkdocs">Гайд по MkDocs</h1>
-<ol>
-<li>Поставить на комп Python если не стоит ещё.</li>
-<li>Через его консоль поставить mkdocs.
-   <code>pip install mkdocs</code></li>
-<li>Всё управление идёт через консоль.</li>
-<li>Новый проект (проект создаётся там, где запущена консоль).
-     <code>mkdocs new my-project
-     cd my-project</code></li>
-<li>Запуск живого превью (будет доступно по адресу http://127.0.0.1:8000/)
-     <code>mkdocs serve</code></li>
-<li>Билдинг проекта в статичный сайт:
-     <code>mkdocs build</code></li>
-<li>Вся работа с текстом идёт в файлах .md. Синтаксис markdown.</li>
-<li>В файле mkdocs.yml все настройки проекта и его структура.</li>
-<li>Я изменил дефолтные настройки на свои чтобы сайт билдился в папку docs которая используется в github pages. А рабочие файлы лежат в папке mkdocs.</li>
-<li>После того как я отдам репозиторий, работа по изменению доков будет выглядеть так:</li>
-<li>Правки вносятся в файлы в папке mkdocs.</li>
-<li>Картинки добавляются в папку mkdocs/img.</li>
-<li>Робот у себя запускает билд сайта (см. выше).</li>
-<li>Робот делает пуш в мастер гита.</li>
-<li>Какое-то время это могу делать я.</li>
-</ol>
-<h2 id="mkdocs_1">Дока по MkDocs</h2>
-<p>https://www.mkdocs.org/user-guide/configuration/</p>
-<h2 id="_1">Дока по Маркдаун</h2>
-<p>https://wordpress.com/support/markdown-quick-reference/</p>
+                <h1 id="troubleshooting">Troubleshooting</h1>
+<h2 id="i-dont-find-zen-uv-panel-in-the-n-panel">I don&rsquo;t find Zen UV panel in the N-panel.</h2>
+<p>The Zen UV panel is only present in <strong>Edit Mode.</strong>
+<!-- blank line --></p>
+<hr />
+<p><!-- blank line -->
+If you have any question, please let us know:
+<img alt="Discord" src="../img/icons/services/discord-16.png.png" /> <a href="https://discord.gg/wGpFeME"><strong>Discord</strong></a></p>
               
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../preferences/" class="btn btn-neutral" title="Preferences"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -160,6 +152,8 @@
   <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
+      
+        <span><a href="../preferences/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
     </span>

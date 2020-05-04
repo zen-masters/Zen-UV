@@ -13,6 +13,7 @@
 **Enjoy this experience with us!**
 
 ![Gumroad](img/icons/services/gumroad-16.png.png) [**Gumroad**](https://gumroad.com/l/ZenUV) | ![Discord](img/icons/services/discord-16.png.png) [**Discord**](https://discord.gg/wGpFeME)
+
 <!-- blank line -->
 ----
 <!-- blank line -->

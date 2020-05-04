@@ -7,6 +7,7 @@ nav:
     - Pie Menu: pie-menu.md
     - Controls: controls.md
     - Preferences: preferences.md
+    - Troubleshooting: troubleshooting.md
     # - Changelog: changelog.md
 docs_dir: mkdocs
 site_dir: docs
