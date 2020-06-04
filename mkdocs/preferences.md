@@ -1,16 +1,22 @@
 # Preferences
 
-## Auto Seams With Unwrap
-Automatically assign Seams for Zen Unwrap.
+## Auto Fit UV View
+Automatically Fit and Zoom UV viewport.
 
-## Auto Sharp Edges
-Automatically assign sharp edges after Zen Unwrap.
-
-## Auto Pin Qudrified
-Automatically Pin Island after Quadrify Island operation.
+## Show Seams
+Display UV Seams.
 
 ## Show Sharp Edges
-Display sharp edges.
+Display Sharp edges. 
+It can be overlapped by Seams/Bevel Weights/Crease Edges display. 
 
-## Show Seams Edges
-Display UV Seams.
+## Show Bevel Weights
+Display weights created for the Bevel modifier.
+It can be overlapped by Seams display.
+
+## Show Crease Edges
+Display crease edges created for the Subdivision modifier.
+It can be overlapped by Seams/Bevel Weights display. 
+
+## Reset Preferences
+Reset Zen UV preferences to Default state.

@@ -8,7 +8,7 @@
 <br>
 <!-- blank line -->
 
-**Zen UV** is not just a set of tools, it is a ready solution for fast creating UV’s in Blender. It represents an intuitive system created by professionals and refined in real projects.
+**Zen UV** is not just a set of tools, it is ready to use pipeline for fast creating UV’s in Blender. It represents an intuitive system created by professionals and refined in real projects.
 
 **Enjoy this experience with us!**
 
@@ -19,17 +19,16 @@
 <!-- blank line -->
 ## Cool Features
 
-- Smart Unwrap system. Just select edges/faces and do [**Zen Unwrap**](operators/#zen-unwrap). All selected edges and face borders will be marked as Seams and unwrapped after.
-- Marking Seams automatically by angle, existing UV borders and manually.
-- Intuitive UI system with multifunctional [**Pie**](pie-menu), Panel and Popup menus.  
-- [**Isolate Island**](operators/#isolate-island-toggle) mode for working with separate geometry parts. 
-- Step by step UV’s editing with Pin Islands system.
-- Checking the current state of UV’s by using [**Checker Texture Toggle**](operators/#checker-texture-toggle).
-- [**Select Overlapped Islands**](operators/#select-overlapped-islands) operator for displaying problem areas.
-- Simplifying UV’s preparation for gamedev models.
-    * Grid alignment system for UV Islands.
-    * Auto Sharp Edges by UV borders.
-    * Toggle between different Smooth modes.
+
+- [**Smart Zen Unwrap Operator**](operators/#zen-unwrap) to Unwrap your model by Marked edges and Pack UV Islands after. Just select edges/faces and do Zen Unwrap. All selected edges/faces will be Marked as Seams and/or Sharp edges, Unwrapped, and Packed after. 
+- [**Powerful Marking System**](operators/#mark) that helps you to mark Seams and/or Sharp automatically by angle, by existing UV Borders/Sharp Edges and manually!
+- [**Quadrify Islands Operator**](operators/#quadrify-islands) to straighten rectangular-shaped UV Islands. 
+- [**Different Pack Engines.**](operators/#pack-islands) Yes, you can use UVPackmaster 2 with Zen UV.
+- [**Isolate Island Mode**](operators/#isolate-islands-toggle) for working with separate geometry parts.
+- Step by step UV’s editing with [**Pin Islands System.**](operators/#pin-uv-island)
+- [**Select Overlapped Islands Operator**](operators/#select-overlapped-islands) for displaying problem areas.
+- Checking the current state of UV’s by using [**Checker Texture Toggle.**](operators/#checker-texture-toggle)
+- Intuitive UI with multifunctional [**Pie,**](pie-menu) Panel, and Popup menus.
 - Flexible [**Preferences**](preferences) system will help you to adjust Zen UV for your needs.
 - Quick support on the [**Discord channel**](https://discord.gg/wGpFeME).
 

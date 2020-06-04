@@ -59,24 +59,60 @@
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Operators</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#zen-unwrap">Zen Unwrap</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#auto-mark-with-zen-unwrap">Auto Mark with Zen Unwrap</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#auto-seams">Auto Seams</a>
+    <li class="toctree-l3"><a class="reference internal" href="#selected-only">Selected Only</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#mark-seams">Mark Seams</a>
+    <li class="toctree-l3"><a class="reference internal" href="#islands-offset">Islands Offset</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#unmark-seams">Unmark Seams</a>
+        </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#set-seams-by-uv-borders">Set Seams by UV Borders</a>
+    <li class="toctree-l2"><a class="reference internal" href="#auto-mark">Auto Mark</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#clear-all-seams">Clear All Seams</a>
+    <li class="toctree-l2"><a class="reference internal" href="#mark">Mark</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#unmark">Unmark</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#unmark-all">Unmark All</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#mark-seams">Mark Seams</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mark-sharp-edges">Mark Sharp Edges</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mark-seams-by-uv-borders">Mark Seams by UV Borders</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mark-seams-by-sharp-edges">Mark Seams by Sharp Edges</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mark-sharp-edges-by-seams">Mark Sharp Edges by Seams</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#quadrify-islands">Quadrify Islands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#auto-pin-quadrified">Auto Pin Quadrified</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pack-after-quadrify">Pack After Quadrify</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pack-islands">Pack Islands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#margin">Margin</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#average-islands-scale">Average Islands Scale</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pack-engine">Pack Engine</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#select-uv-island">Select UV Island</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#isolate-island-toggle">Isolate Island (Toggle)</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#quadrify-island">Quadrify Island</a>
+    <li class="toctree-l2"><a class="reference internal" href="#isolate-islands-toggle">Isolate Islands (Toggle)</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#select-overlapped-islands">Select Overlapped Islands</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-edge-loop">Select Edge Loop</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#pin-uv-island">Pin UV Island</a>
     </li>
@@ -141,50 +177,96 @@
               
                 <h1 id="operators">Operators</h1>
 <h2 id="zen-unwrap">Zen Unwrap <img alt="Zen Unwrap" src="../img/icons/zen-unwrap%402x.png" /></h2>
-<p>Unwrap by marked seams. Also, you can select edges/faces and do Zen Unwrap. All selected edges/faces will be marked as Seams and unwrapped after.</p>
-<h2 id="auto-seams">Auto Seams</h2>
-<p>Setup Auto Seams.</p>
-<h2 id="mark-seams">Mark Seams <img alt="Mark Seams" src="../img/icons/mark-seams%402x.png" /></h2>
-<p>Mark selected edges or face boundaries as Seams.</p>
-<h2 id="unmark-seams">Unmark Seams <img alt="Unmark Seams" src="../img/icons/unmark-seams%402x.png" /></h2>
-<p>Unmark selected edges or face boundaries as Seams.</p>
-<h2 id="set-seams-by-uv-borders">Set Seams by UV Borders</h2>
-<p>Setup UV Seams by existing UV Borders.</p>
-<h2 id="clear-all-seams">Clear All Seams</h2>
-<p>Remove all the Seams from the mesh.</p>
-<h2 id="select-uv-island">Select UV Island</h2>
-<p>Select UV Island. </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Choose at least one polygon/edge of the Island/Islands.</p>
+<p>Unwrap by Marked edges and Pack after. Also, you can select edges/faces and do Zen Unwrap. All selected edges/faces will be Marked as Seams and/or Sharp edges and unwrapped after.</p>
+<div class="admonition preferences">
+<p class="admonition-title">Preferences</p>
+<h4 id="auto-mark-with-zen-unwrap">Auto Mark with Zen Unwrap</h4>
+<ul>
+<li>Automatically Mark edges by angle for Zen Unwrap.</li>
+</ul>
+<h4 id="selected-only">Selected Only</h4>
+<ul>
+<li>Separate workflow where only Selected Faces will be Unwrapped and Packed. It includes warnings and Unwrapping options if nothing is selected.</li>
+</ul>
+<h4 id="islands-offset">Islands Offset</h4>
+<ul>
+<li>Offset Islands after Zen Unwrap. (Experimental).</li>
+</ul>
 </div>
-<h2 id="isolate-island-toggle">Isolate Island (Toggle)</h2>
-<p>Isolate UV Island (Toggle). </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Choose at least one polygon/edge of the Island/Islands.</p>
+<h2 id="auto-mark">Auto Mark</h2>
+<p>Automatically Mark edges as Seams and/or Sharp edges.</p>
+<h2 id="mark">Mark <img alt="Mark" src="../img/icons/mark-seams%402x.png" /></h2>
+<p>Mark selected edges or face borders as Seams and/or Sharp edges.</p>
+<h2 id="unmark">Unmark <img alt="Unmark" src="../img/icons/unmark-seams%402x.png" /></h2>
+<p>Unmark selected edges or face borders as Seams and/or Sharp edges.</p>
+<h2 id="unmark-all">Unmark All</h2>
+<p>Remove all the Seams and/or Sharp edges from the mesh.</p>
+<div class="admonition preferences">
+<p class="admonition-title">Preferences</p>
+<h4 id="mark-seams">Mark Seams</h4>
+<ul>
+<li>Automatically assign Seams.</li>
+</ul>
+<h4 id="mark-sharp-edges">Mark Sharp Edges</h4>
+<ul>
+<li>Automatically assign Sharp edges.</li>
+</ul>
 </div>
-<h2 id="quadrify-island">Quadrify Island</h2>
+<h2 id="mark-seams-by-uv-borders">Mark Seams by UV Borders</h2>
+<p>Mark Seams by existing UV Borders.</p>
+<h2 id="mark-seams-by-sharp-edges">Mark Seams by Sharp Edges</h2>
+<p>Mark Seams by existing Sharp edges.</p>
+<h2 id="mark-sharp-edges-by-seams">Mark Sharp Edges by Seams</h2>
+<p>Mark Sharp edges by existing Seams.</p>
+<h2 id="quadrify-islands">Quadrify Islands</h2>
 <p>Straighten rectangular shaped UV Islands.</p>
 <p><em>The addon is using the <a href="https://github.com/Radivarig/UvSquares">quadrification algorithm</a> by Radivarig.</em></p>
+<div class="admonition preferences">
+<p class="admonition-title">Preferences</p>
+<h4 id="auto-pin-quadrified">Auto Pin Quadrified</h4>
+<ul>
+<li>Automatically Pin Islands after Quadrify Islands operation.</li>
+</ul>
+<h4 id="pack-after-quadrify">Pack After Quadrify</h4>
+<ul>
+<li>Automatically Pack Islands after Quadrify Islands operation.</li>
+</ul>
+</div>
+<h2 id="pack-islands">Pack Islands</h2>
+<p>Pack all Islands.</p>
+<div class="admonition preferences">
+<p class="admonition-title">Preferences</p>
+<h4 id="margin">Margin</h4>
+<ul>
+<li>Set space between Islands for Pack Islands operation.</li>
+</ul>
+<h4 id="average-islands-scale">Average Islands Scale</h4>
+<ul>
+<li>Average Islands scale before Pack Islands operation.</li>
+</ul>
+<h4 id="pack-engine">Pack Engine</h4>
+<ul>
+<li>Select Pack Engine for Pack Islands operation.</li>
+</ul>
+<p><em>The add-on is using the Blender Pack algorithm or <a href="https://gumroad.com/l/uvpackmaster2">UVPackmaster 2 Engine</a> by glukoz.</em></p>
+</div>
+<h2 id="select-uv-island">Select UV Island</h2>
+<p>Select UV Island. </p>
+<p><em>Select at least one edge/face of the Island(s)..</em></p>
+<h2 id="isolate-islands-toggle">Isolate Islands (Toggle)</h2>
+<p>Isolate UV Islands (Toggle). </p>
+<p><em>Select at least one edge/face of the Island(s)..</em></p>
 <h2 id="select-overlapped-islands">Select Overlapped Islands</h2>
 <p>Select Overlapped Islands.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Works in Blender 2.81 and above.</p>
-</div>
+<p><em>Works in Blender 2.81 and above.</em></p>
+<h2 id="select-edge-loop">Select Edge Loop</h2>
+<p>Select edge loops with Seams respect.</p>
 <h2 id="pin-uv-island">Pin UV Island</h2>
 <p>Pin UV Island. </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Choose at least one polygon/edge of the Island/Islands.</p>
-</div>
+<p><em>Select at least one edge/face of the Island(s)..</em></p>
 <h2 id="unpin-uv-island">Unpin UV Island</h2>
 <p>Unpin UV Island. </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Choose at least one polygon/edge of the Island/Islands.</p>
-</div>
+<p><em>Select at least one edge/face of the Island(s)..</em></p>
 <h2 id="show-pinned-islands-toggle">Show Pinned Islands (Toggle)</h2>
 <p>Show Pinned Islands (Toggle).</p>
 <h2 id="checker-texture-toggle">Checker Texture (Toggle)</h2>

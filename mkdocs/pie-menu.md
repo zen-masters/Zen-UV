@@ -1,48 +1,38 @@
 # Pie Menu
 
 ## Zen Unwrap ![Zen Unwrap](img/icons/zen-unwrap@2x.png)
-- *Default* — **Zen Unwrap.** Unwrap by marked seams. Also, you can select edges/faces and do Zen Unwrap. All selected edges/faces will be marked as Seams and unwrapped after.
+- *Default* --- **Zen Unwrap.** Unwrap by Marked edges and Pack after. Also, you can select edges/faces and do Zen Unwrap. All selected edges/faces will be Marked as Seams and/or Sharp edges and unwrapped after.
+- `ALT` --- Pack UV Islands
 
-## Auto Seams
-- *Default* — **Auto Seams.**
-- `ALT` — **Set Seams by UV Borders.**
+## Auto Mark
+- *Default* --- **Auto Mark.**
 
-## Mark Seams ![Mark Seams](img/icons/mark-seams@2x.png)
-- *Default* — **Mark Seams.**
-- `CTRL` — **Pin UV Island.**
+## Mark ![Mark Seams](img/icons/mark-seams@2x.png)
+- *Default* --- **Mark.**
+- `CTRL` --- **Pin UV Island.**
 
-!!! note
-    Choose at least one polygon/edge of the Island/Islands.
-
-## Unmark Seams ![Unmark Seams](img/icons/unmark-seams@2x.png)
-- *Default* — **Unmark Seams.**
-- `CTRL` — **Unpin UV Island.**
-
-!!! note
-    Choose at least one polygon/edge of the Island/Islands.
-
-- `ALT` — **Clear All Seams.**
+## Unmark ![Unmark Seams](img/icons/unmark-seams@2x.png)
+- *Default* --- **Unmark.**
+- `CTRL` --- **Unpin UV Island.**
+- `ALT` --- **Unmark All.**
 
 ## Select UV Island
-- *Default* — **Select UV Island.**
+- *Default* --- **Select UV Island.**
 
-!!! note
-    Choose at least one polygon/edge of the Island/Islands.
+*Select at least one edge/face of the Island(s)..*
 
-- `ALT` — **Select Overlapped Islands.**
+- `ALT` --- **Select Overlapped Islands.**
 
-!!! warning
-    Works in Blender 2.81 and above.
+*Works in Blender 2.81 and above.*
 
 ## Isolate Island (Toggle)
-- *Default* — **Isolate Island (Toggle).**
+- *Default* --- **Isolate Island (Toggle).**
 
-!!! note
-    Choose at least one polygon/edge of the Island/Islands.
+*Select at least one edge/face of the Island(s)..*
 
 ## Quadrify Island
-- *Default* — **Quadrify Island.** Straighten rectangular shaped UV Islands.
+- *Default* --- **Quadrify Islands.** Straighten rectangular shaped UV Islands.
 
 ## Checker Texture (Toggle)
-- *Default* — **Checker Texture (Toggle).**
-- `CTRL` — **Show Pinned Islands (Toggle).**
+- *Default* --- **Checker Texture (Toggle).**
+- `CTRL` --- **Show Pinned Islands (Toggle).**
