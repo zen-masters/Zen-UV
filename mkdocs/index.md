@@ -12,7 +12,7 @@
 
 **Enjoy this experience with us!**
 
-![Gumroad](img/icons/services/gumroad-16.png.png) [**Gumroad**](https://gumroad.com/l/ZenUV) | ![Discord](img/icons/services/discord-16.png.png) [**Discord**](https://discord.gg/wGpFeME)
+![Gumroad](img/icons/services/gumroad-16.png) [**Gumroad**](https://gumroad.com/l/ZenUV) | ![BlenderMarket](img/icons/services/blendermarket-16.png) [**BlenderMarket**](https://www.blendermarket.com/products/zen-uv) | ![Discord](img/icons/services/discord-16.png) [**Discord**](https://discord.gg/wGpFeME)
 
 <!-- blank line -->
 ----
