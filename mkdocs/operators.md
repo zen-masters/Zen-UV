@@ -68,8 +68,8 @@ Pack all Islands.
 
     *The add-on is using the Blender Pack algorithm or [UVPackmaster 2 Engine](https://gumroad.com/l/uvpackmaster2) by glukoz.*
 
-## Select UV Island
-Select UV Island. 
+## Select Islands
+Select UV Islands. 
 
 *Select at least one edge/face of the Island(s)..*
 
