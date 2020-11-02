@@ -1,7 +1,7 @@
 # Troubleshooting
 
-## — I don't find Zen UV panel in the N-panel.
-— The Zen UV panel is only present in **Edit Mode.**
+## I don't find Zen UV panel in the N-panel.
+The Zen UV panel is only present in **Edit Mode.**
 <!-- blank line -->
 ----
 <!-- blank line -->

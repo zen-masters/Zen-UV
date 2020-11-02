@@ -1,38 +1,43 @@
 # Pie Menu
 
+![Pie Menu](img/screen/pie.png)
+
 ## Zen Unwrap ![Zen Unwrap](img/icons/zen-unwrap@2x.png)
-- *Default* --- **Zen Unwrap.** Unwrap by Marked edges and Pack after. Also, you can select edges/faces and do Zen Unwrap. All selected edges/faces will be Marked as Seams and/or Sharp edges and unwrapped after.
-- `ALT` --- Pack UV Islands
 
-## Auto Mark
-- *Default* --- **Auto Mark.**
+- *Default* — **Zen Unwrap.** Mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after.
+- `ALT` — Pack all Islands.
 
-## Mark ![Mark Seams](img/icons/mark-seams@2x.png)
-- *Default* --- **Mark.**
-- `CTRL` --- **Pin UV Island.**
+## Mark by Angle
 
-## Unmark ![Unmark Seams](img/icons/unmark-seams@2x.png)
-- *Default* --- **Unmark.**
-- `CTRL` --- **Unpin UV Island.**
-- `ALT` --- **Unmark All.**
+- *Default* — Setup Auto Seams.
+- `ALT` — Setup Seams by UV borders.
 
-## Select UV Island
-- *Default* --- **Select UV Island.**
+## Mark Seams/Sharp edges ![Mark Seams](img/icons/mark-seams@2x.png)
 
-*Select at least one edge/face of the Island(s)..*
+- *Default* — Mark selected edges or face borders as Seams and/or Sharp edges.
+- `CTRL` — Tag selected Islands as Finished
 
-- `ALT` --- **Select Overlapped Islands.**
+## Unmark Seams/Sharp edges ![Unmark Seams](img/icons/unmark-seams@2x.png)
 
-*Works in Blender 2.81 and above.*
+- *Default* — Unmark selected edges or face borders as Seams and/or Sharp edges.
+- `CTRL` — Tag selected Islands as Unfinished.
+- `ALT` — Remove all the Seams and/or Sharp edges from the mesh
 
-## Isolate Island (Toggle)
-- *Default* --- **Isolate Island (Toggle).**
+## Select Islands
 
-*Select at least one edge/face of the Island(s)..*
+- *Default* — Select Islands by selected edge/face of the Islands
+- `ALT` — Select Overlapped Islands.
+- `CTRL` — Select Flipped Islands.
 
-## Quadrify Island
-- *Default* --- **Quadrify Islands.** Straighten rectangular shaped UV Islands.
+## Isolate Islands (Toggle)
 
-## Checker Texture (Toggle)
-- *Default* --- **Checker Texture (Toggle).**
-- `CTRL` --- **Show Pinned Islands (Toggle).**
+- *Default* — Isolate Islands (Toggle) by selected edge/face of the Islands.
+
+## Quadrify Islands ![Quadrify Islands](img/icons/quadrify_32.png)
+
+- *Default* — Straighten rectangular shaped Islands.
+
+## Checker Texture (Toggle) ![Checker Texture](img/icons/checker_32.png)
+
+- *Default* — Add Checker Texture to the mesh (Toggle).
+- `CTRL` — Display Finished Islands (Toggle).

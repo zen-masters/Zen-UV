@@ -17,19 +17,30 @@
 <!-- blank line -->
 ----
 <!-- blank line -->
-## Cool Features
+## Main (Cool) Features
 
-
-- [**Smart Zen Unwrap Operator**](operators/#zen-unwrap) to Unwrap your model by Marked edges and Pack UV Islands after. Just select edges/faces and do Zen Unwrap. All selected edges/faces will be Marked as Seams and/or Sharp edges, Unwrapped, and Packed after. 
-- [**Powerful Marking System**](operators/#mark) that helps you to mark Seams and/or Sharp automatically by angle, by existing UV Borders/Sharp Edges and manually!
-- [**Quadrify Islands Operator**](operators/#quadrify-islands) to straighten rectangular-shaped UV Islands. 
-- [**Different Pack Engines.**](operators/#pack-islands) Yes, you can use UVPackmaster 2 with Zen UV.
-- [**Isolate Island Mode**](operators/#isolate-islands-toggle) for working with separate geometry parts.
-- Step by step UV’s editing with [**Pin Islands System.**](operators/#pin-uv-island)
-- [**Select Overlapped Islands Operator**](operators/#select-overlapped-islands) for displaying problem areas.
-- Checking the current state of UV’s by using [**Checker Texture Toggle.**](operators/#checker-texture-toggle)
-- Intuitive UI with multifunctional [**Pie,**](pie-menu) Panel, and Popup menus.
-- Flexible [**Preferences**](preferences) system will help you to adjust Zen UV for your needs.
+- **Smart Zen Unwrap Operator** to mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after. **Unwrap your model easily with Zen Unwrap!**
+<br><br>
+- Powerful **Marking System** that helps you to mark Seams and/or Sharp automatically by angle, by existing UV Borders/Sharp Edges, and manually.
+<br><br>
+- **New Finished System.** It helps to control and manage the state of unwrapping UV Islands (Finished/Unfinished) by tags and visually. **Nothing will be left not unwrapped!**
+<br><br>
+- **Quadrify Islands Operator** to straighten rectangular-shaped UV Islands.
+<br><br>
+- Different Pack Engines. **Yes, you can use UVPackmaster 2 with Zen UV!**
+<br><br>
+- Isolate Island (Toggle) for comfortable step by step work with separate geometry parts.
+<br><br>
+- **Checker System** is a node-based system that contains Checker Textures designed specifically for Zen UV. Custom textures can be added easily by the user at the node level. **Check UV's state on the model without ruining existing materials!**
+<br><br>
+- Flexible Preferences system will help you to adjust Zen UV for your needs.
+<br><br>
+- Smooth by Sharp (Toggle)**. Set hard/soft edges for perfect normal map bakes in one click!**
+<br><br>
+- UV Maps Properties Tab to have quick access to UV Maps management.
+<br><br>
+- Intuitive UI with multifunctional Main, Pie and Popup menus. **You will like it!**
+<br><br>
 - Quick support on the [**Discord channel**](https://discord.gg/wGpFeME).
 
 ## Default Shortcut
