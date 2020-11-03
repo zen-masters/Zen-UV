@@ -55,26 +55,22 @@
                     <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
                     </li>
                 </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../operators/">Operators</a>
-                    </li>
-                </ul>
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Pie Menu</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#zen-unwrap">Zen Unwrap</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#auto-mark">Auto Mark</a>
+    <li class="toctree-l2"><a class="reference internal" href="#mark-by-angle">Mark by Angle</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#mark">Mark</a>
+    <li class="toctree-l2"><a class="reference internal" href="#mark-seamssharp-edges">Mark Seams/Sharp edges</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#unmark">Unmark</a>
+    <li class="toctree-l2"><a class="reference internal" href="#unmark-seamssharp-edges">Unmark Seams/Sharp edges</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#select-uv-island">Select UV Island</a>
+    <li class="toctree-l2"><a class="reference internal" href="#select-islands">Select Islands</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#isolate-island-toggle">Isolate Island (Toggle)</a>
+    <li class="toctree-l2"><a class="reference internal" href="#isolate-islands-toggle">Isolate Islands (Toggle)</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#quadrify-island">Quadrify Island</a>
+    <li class="toctree-l2"><a class="reference internal" href="#quadrify-islands">Quadrify Islands</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#checker-texture-toggle">Checker Texture (Toggle)</a>
     </li>
@@ -82,7 +78,23 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../controls/">Controls</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../uv-maps/">UV Maps</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../unwrap/">Unwrap</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../select/">Select</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../pack/">Pack</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../checker/">Checker Map</a>
                     </li>
                 </ul>
                 <ul>
@@ -90,7 +102,15 @@
                     </li>
                 </ul>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                    </li>
+                </ul>
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
                     </li>
                 </ul>
       </div>
@@ -126,48 +146,46 @@
             <div class="section">
               
                 <h1 id="pie-menu">Pie Menu</h1>
+<p><img alt="Pie Menu" src="../img/screen/pie.png" /></p>
 <h2 id="zen-unwrap">Zen Unwrap <img alt="Zen Unwrap" src="../img/icons/zen-unwrap%402x.png" /></h2>
 <ul>
-<li><em>Default</em> &mdash; <strong>Zen Unwrap.</strong> Unwrap by Marked edges and Pack after. Also, you can select edges/faces and do Zen Unwrap. All selected edges/faces will be Marked as Seams and/or Sharp edges and unwrapped after.</li>
-<li><code>ALT</code> &mdash; Pack UV Islands</li>
+<li><em>Default</em> — <strong>Zen Unwrap.</strong> Mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after.</li>
+<li><code>ALT</code> — Pack all Islands.</li>
 </ul>
-<h2 id="auto-mark">Auto Mark</h2>
+<h2 id="mark-by-angle">Mark by Angle</h2>
 <ul>
-<li><em>Default</em> &mdash; <strong>Auto Mark.</strong></li>
+<li><em>Default</em> — Setup Auto Seams.</li>
+<li><code>ALT</code> — Setup Seams by UV borders.</li>
 </ul>
-<h2 id="mark">Mark <img alt="Mark Seams" src="../img/icons/mark-seams%402x.png" /></h2>
+<h2 id="mark-seamssharp-edges">Mark Seams/Sharp edges <img alt="Mark Seams" src="../img/icons/mark-seams%402x.png" /></h2>
 <ul>
-<li><em>Default</em> &mdash; <strong>Mark.</strong></li>
-<li><code>CTRL</code> &mdash; <strong>Pin UV Island.</strong></li>
+<li><em>Default</em> — Mark selected edges or face borders as Seams and/or Sharp edges.</li>
+<li><code>CTRL</code> — Tag selected Islands as Finished</li>
 </ul>
-<h2 id="unmark">Unmark <img alt="Unmark Seams" src="../img/icons/unmark-seams%402x.png" /></h2>
+<h2 id="unmark-seamssharp-edges">Unmark Seams/Sharp edges <img alt="Unmark Seams" src="../img/icons/unmark-seams%402x.png" /></h2>
 <ul>
-<li><em>Default</em> &mdash; <strong>Unmark.</strong></li>
-<li><code>CTRL</code> &mdash; <strong>Unpin UV Island.</strong></li>
-<li><code>ALT</code> &mdash; <strong>Unmark All.</strong></li>
+<li><em>Default</em> — Unmark selected edges or face borders as Seams and/or Sharp edges.</li>
+<li><code>CTRL</code> — Tag selected Islands as Unfinished.</li>
+<li><code>ALT</code> — Remove all the Seams and/or Sharp edges from the mesh</li>
 </ul>
-<h2 id="select-uv-island">Select UV Island</h2>
+<h2 id="select-islands">Select Islands</h2>
 <ul>
-<li><em>Default</em> &mdash; <strong>Select UV Island.</strong></li>
+<li><em>Default</em> — Select Islands by selected edge/face of the Islands</li>
+<li><code>ALT</code> — Select Overlapped Islands.</li>
+<li><code>CTRL</code> — Select Flipped Islands.</li>
 </ul>
-<p><em>Select at least one edge/face of the Island(s)..</em></p>
+<h2 id="isolate-islands-toggle">Isolate Islands (Toggle)</h2>
 <ul>
-<li><code>ALT</code> &mdash; <strong>Select Overlapped Islands.</strong></li>
+<li><em>Default</em> — Isolate Islands (Toggle) by selected edge/face of the Islands.</li>
 </ul>
-<p><em>Works in Blender 2.81 and above.</em></p>
-<h2 id="isolate-island-toggle">Isolate Island (Toggle)</h2>
+<h2 id="quadrify-islands">Quadrify Islands <img alt="Quadrify Islands" src="../img/icons/quadrify_32.png" /></h2>
 <ul>
-<li><em>Default</em> &mdash; <strong>Isolate Island (Toggle).</strong></li>
+<li><em>Default</em> — Straighten rectangular shaped Islands.</li>
 </ul>
-<p><em>Select at least one edge/face of the Island(s)..</em></p>
-<h2 id="quadrify-island">Quadrify Island</h2>
+<h2 id="checker-texture-toggle">Checker Texture (Toggle) <img alt="Checker Texture" src="../img/icons/checker_32.png" /></h2>
 <ul>
-<li><em>Default</em> &mdash; <strong>Quadrify Islands.</strong> Straighten rectangular shaped UV Islands.</li>
-</ul>
-<h2 id="checker-texture-toggle">Checker Texture (Toggle)</h2>
-<ul>
-<li><em>Default</em> &mdash; <strong>Checker Texture (Toggle).</strong></li>
-<li><code>CTRL</code> &mdash; <strong>Show Pinned Islands (Toggle).</strong></li>
+<li><em>Default</em> — Add Checker Texture to the mesh (Toggle).</li>
+<li><code>CTRL</code> — Display Finished Islands (Toggle).</li>
 </ul>
               
             </div>
@@ -176,10 +194,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../controls/" class="btn btn-neutral float-right" title="Controls">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../uv-maps/" class="btn btn-neutral float-right" title="UV Maps">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../operators/" class="btn btn-neutral" title="Operators"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../installation/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -205,10 +223,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../operators/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../installation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../controls/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../uv-maps/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

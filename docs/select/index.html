@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Controls - Zen UV for Blender</title>
+  <title>Select - Zen UV for Blender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Controls";
-    var mkdocs_page_input_path = "controls.md";
+    var mkdocs_page_name = "Select";
+    var mkdocs_page_input_path = "select.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -67,8 +67,24 @@
                     <li class="toctree-l1"><a class="reference internal" href="../unwrap/">Unwrap</a>
                     </li>
                 </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../select/">Select</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Select</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#select-islands">Select Islands</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#isolate-islands-toggle">Isolate Islands (Toggle)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-overlapped-islands">Select Overlapped Islands</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-flipped-islands">Select Flipped Islands</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-seams-edges">Select Seams Edges</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-sharp-edges">Select Sharp Edges</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-interseams-loop">Select Interseams Loop</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
                 <ul>
@@ -116,7 +132,7 @@
     
       
     
-    <li>Controls</li>
+    <li>Select</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -127,23 +143,34 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="controls">Controls</h1>
-<h2 id="zen-uv-pie-menu">Zen UV Pie Menu <img alt="Zen UV Pie Menu" src="../img/icons/zen-uv%402x.png" /></h2>
-<p>Call Zen UV Pie menu.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can setup custom hotkey: <code>RMB</code> on the button &gt; Change Shortcut.</p>
-</div>
-<h2 id="zen-uv-popup-menu">Zen UV Popup Menu</h2>
-<p>Call Zen UV Popup menu.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can setup custom hotkey: <code>RMB</code> on the button &gt; Change Shortcut.</p>
-</div>
+                <h1 id="select">Select</h1>
+<h2 id="select-islands">Select Islands</h2>
+<p>Select Islands by selected edge/face of the Islands.</p>
+<h2 id="isolate-islands-toggle">Isolate Islands (Toggle)</h2>
+<p>Isolate Islands (Toggle).</p>
+<h2 id="select-overlapped-islands">Select Overlapped Islands</h2>
+<p>Select Overlapped Islands.</p>
+<h2 id="select-flipped-islands">Select Flipped Islands</h2>
+<p>Select Flipped Islands.</p>
+<h2 id="select-seams-edges">Select Seams Edges</h2>
+<p>Select Edges Marked as Seams.</p>
+<h2 id="select-sharp-edges">Select Sharp Edges</h2>
+<p>Select Edges Marked as Sharp.</p>
+<h2 id="select-interseams-loop">Select Interseams Loop</h2>
+<p>Select Edge Loop with Seams respect.</p>
               
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../pack/" class="btn btn-neutral float-right" title="Pack">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../unwrap/" class="btn btn-neutral" title="Unwrap"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -167,6 +194,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
+        <span><a href="../unwrap/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../pack/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

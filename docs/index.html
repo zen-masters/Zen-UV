@@ -50,7 +50,7 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href=".">Introduction</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#cool-features">Cool Features</a>
+    <li class="toctree-l2"><a class="reference internal" href="#main-cool-features">Main (Cool) Features</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#default-shortcut">Default Shortcut</a>
     </li>
@@ -62,15 +62,27 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="operators/">Operators</a>
-                    </li>
-                </ul>
-                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="pie-menu/">Pie Menu</a>
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="controls/">Controls</a>
+                    <li class="toctree-l1"><a class="reference internal" href="uv-maps/">UV Maps</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="unwrap/">Unwrap</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="select/">Select</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="pack/">Pack</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="checker/">Checker Map</a>
                     </li>
                 </ul>
                 <ul>
@@ -78,7 +90,15 @@
                     </li>
                 </ul>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="help/">Help</a>
+                    </li>
+                </ul>
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="changelog/">Changelog</a>
                     </li>
                 </ul>
       </div>
@@ -113,11 +133,11 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="zen-uv-for-blender">Zen UV for Blender</h1>
+                <h1 id="zen-uv-for-blender-19">Zen UV for Blender 1.9</h1>
 <p><!-- <a href="https://www.youtube.com/watch?v=ook2eFfH724">klzzwxh:0000</a> -->
 <!-- blank line -->
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
-<iframe src="https://www.youtube.com/embed/yZ-rRiE-8us" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+<iframe src="https://www.youtube.com/embed/w8o4TVW_VuM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
 </div>
 <!-- blank line -->
 <br>
@@ -130,18 +150,30 @@
 <hr />
 <!-- blank line -->
 
-<h2 id="cool-features">Cool Features</h2>
+<h2 id="main-cool-features">Main (Cool) Features</h2>
 <ul>
-<li><a href="operators/#zen-unwrap"><strong>Smart Zen Unwrap Operator</strong></a> to Unwrap your model by Marked edges and Pack UV Islands after. Just select edges/faces and do Zen Unwrap. All selected edges/faces will be Marked as Seams and/or Sharp edges, Unwrapped, and Packed after. </li>
-<li><a href="operators/#mark"><strong>Powerful Marking System</strong></a> that helps you to mark Seams and/or Sharp automatically by angle, by existing UV Borders/Sharp Edges and manually!</li>
-<li><a href="operators/#quadrify-islands"><strong>Quadrify Islands Operator</strong></a> to straighten rectangular-shaped UV Islands. </li>
-<li><a href="operators/#pack-islands"><strong>Different Pack Engines.</strong></a> Yes, you can use UVPackmaster 2 with Zen UV.</li>
-<li><a href="operators/#isolate-islands-toggle"><strong>Isolate Island Mode</strong></a> for working with separate geometry parts.</li>
-<li>Step by step UV’s editing with <a href="operators/#pin-uv-island"><strong>Pin Islands System.</strong></a></li>
-<li><a href="operators/#select-overlapped-islands"><strong>Select Overlapped Islands Operator</strong></a> for displaying problem areas.</li>
-<li>Checking the current state of UV’s by using <a href="operators/#checker-texture-toggle"><strong>Checker Texture Toggle.</strong></a></li>
-<li>Intuitive UI with multifunctional <a href="pie-menu"><strong>Pie,</strong></a> Panel, and Popup menus.</li>
-<li>Flexible <a href="preferences"><strong>Preferences</strong></a> system will help you to adjust Zen UV for your needs.</li>
+<li><strong>Smart Zen Unwrap Operator</strong> to mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after. <strong>Unwrap your model easily with Zen Unwrap!</strong>
+<br><br></li>
+<li>Powerful <strong>Marking System</strong> that helps you to mark Seams and/or Sharp automatically by angle, by existing UV Borders/Sharp Edges, and manually.
+<br><br></li>
+<li><strong>New Finished System.</strong> It helps to control and manage the state of unwrapping UV Islands (Finished/Unfinished) by tags and visually. <strong>Nothing will be left not unwrapped!</strong>
+<br><br></li>
+<li><strong>Quadrify Islands Operator</strong> to straighten rectangular-shaped UV Islands.
+<br><br></li>
+<li>Different Pack Engines. <strong>Yes, you can use UVPackmaster 2 with Zen UV!</strong>
+<br><br></li>
+<li>Isolate Island (Toggle) for comfortable step by step work with separate geometry parts.
+<br><br></li>
+<li><strong>Checker System</strong> is a node-based system that contains Checker Textures designed specifically for Zen UV. Custom textures can be added easily by the user at the node level. <strong>Check UV&rsquo;s state on the model without ruining existing materials!</strong>
+<br><br></li>
+<li>Flexible Preferences system will help you to adjust Zen UV for your needs.
+<br><br></li>
+<li>Smooth by Sharp (Toggle)<strong>. Set hard/soft edges for perfect normal map bakes in one click!</strong>
+<br><br></li>
+<li>UV Maps Properties Tab to have quick access to UV Maps management.
+<br><br></li>
+<li>Intuitive UI with multifunctional Main, Pie and Popup menus. <strong>You will like it!</strong>
+<br><br></li>
 <li>Quick support on the <a href="https://discord.gg/wGpFeME"><strong>Discord channel</strong></a>.</li>
 </ul>
 <h2 id="default-shortcut">Default Shortcut</h2>
@@ -202,5 +234,5 @@
 
 <!--
 MkDocs version : 1.1
-Build Date UTC : 2020-06-18 14:08:17
+Build Date UTC : 2020-11-03 17:16:16
 -->

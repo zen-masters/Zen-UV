@@ -56,15 +56,27 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../operators/">Operators</a>
-                    </li>
-                </ul>
-                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../pie-menu/">Pie Menu</a>
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../controls/">Controls</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../uv-maps/">UV Maps</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../unwrap/">Unwrap</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../select/">Select</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../pack/">Pack</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../checker/">Checker Map</a>
                     </li>
                 </ul>
                 <ul>
@@ -72,7 +84,59 @@
                     </li>
                 </ul>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                    </li>
+                </ul>
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Changelog</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#19">1.9</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#general">General</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ui">UI</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#main-menu">Main Menu</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pie-menu">Pie Menu:</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pop-up-menu">Pop Up Menu:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#operators">Operators</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#uv-maps">UV Maps</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#unwrap">Unwrap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#select">Select</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pack">Pack</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#checker-map">Checker Map</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#preferences">Preferences</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#help">Help</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#18">1.8</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#17">1.7</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#165">1.65</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#164">1.64</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
       </div>
@@ -107,27 +171,137 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="_1"></h1>
+                <h1 id="changelog">Changelog</h1>
+<h2 id="19">1.9</h2>
+<h3 id="general">General</h3>
+<ul>
+<li><strong>Zen UV now works with multiple objects!</strong></li>
+<li>Added <strong>Finished System.</strong> It helps to control and manage the state of unwrapping UV Islands (Finished/Unfinished) by tags and visually. Nothing will be left not unwrapped!</li>
+<li>Updated <strong>Checker System.</strong> Now it is based on nodes and contains textures designed specifically for Zen UV. Custom textures can be added easily by the user at the node level.</li>
+<li>Added <strong>UV Maps Properties Tab</strong> to have quick access to UV Maps management.</li>
+<li>Updated <strong>Quadrify</strong> operator. Now it is based on the native <strong>Follow Active Quad</strong> operator and sets the base polygon size based on the average size of current islands.</li>
+<li><strong>Redesigned UI</strong> to support current and all new updates.</li>
+</ul>
+<h3 id="ui">UI</h3>
+<h4 id="main-menu"><strong>Main Menu</strong></h4>
+<ul>
+<li>The interface has been completely redesigned and operators have been classified and divided into the following groups:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">Operator</th>
+<th align="left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>UV Maps</strong></td>
+<td align="left"> Selecting and managing UV maps.</td>
+</tr>
+<tr>
+<td align="left"><strong>Unwrap</strong></td>
+<td align="left"> Marking and unwrapping operations.</td>
+</tr>
+<tr>
+<td align="left"><strong>Select</strong></td>
+<td align="left"> Edges/Islands selection operations.</td>
+</tr>
+<tr>
+<td align="left"><strong>Pack</strong></td>
+<td align="left"> Pack operations.</td>
+</tr>
+<tr>
+<td align="left"><strong>Checker Map</strong></td>
+<td align="left">Display control of Checker textures.</td>
+</tr>
+<tr>
+<td align="left"><strong>Preferences</strong></td>
+<td align="left">Hotkeys and other general settings.</td>
+</tr>
+<tr>
+<td align="left"><strong>Help</strong></td>
+<td align="left">Documentation and support section.</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+- Operators options were hidden under the <strong>Settings icons</strong> to optimize space.</p>
+<h4 id="pie-menu"><strong>Pie Menu:</strong></h4>
+<ul>
+<li>Alternative <strong>CTRL</strong> operators <strong>Pin/Unpin Islands</strong> were replaced by <strong>Tag Finished/Unfinished</strong> from the new powerful <strong>Finished System</strong>. (Sector 4 and Sector 6).</li>
+<li>Added new alternative <strong>CTRL</strong> operator <strong>Select Flipped Islands</strong> to <strong>Select Islands</strong> (Sector 7).</li>
+<li>Added icons for <strong>Quadrify Islands</strong> and <strong>Checker Texture (Toggle)</strong> operators.</li>
+</ul>
+<h4 id="pop-up-menu"><strong>Pop Up Menu:</strong></h4>
+<ul>
+<li>All operator options were removed from the Pop Up menu, you can adjust them only in the Main menu. The order of operators is consistent with the Main menu.</li>
+</ul>
+<h3 id="operators">Operators</h3>
+<h4 id="uv-maps"><strong>UV Maps</strong></h4>
+<ul>
+<li>Added <strong>UV Maps Properties Tab</strong> to have quick access to UV Maps management.</li>
+</ul>
+<h4 id="unwrap"><strong>Unwrap</strong></h4>
+<ul>
+<li>Added <strong>Tag Unwrapped</strong> option for <strong>Zen Unwrap</strong> operator.</li>
+<li>Added <strong>Sort Unwrapped</strong> option for <strong>Zen Unwrap</strong> operator.</li>
+<li>Added <strong>Auto UV Sync</strong> option for <strong>Zen Unwrap</strong> operator.</li>
+<li>Added <strong>Unwrap Method</strong> option for choosing Unwrap algorithm.</li>
+<li><strong>Zen Unwrap</strong> now is using the packing algorithm selected in <strong>Pack Engine</strong>.</li>
+<li>Added a warning for the <strong>Marking System</strong> when both <strong>Mark Seams</strong> and <strong>Mark Sharp Edges</strong> options are off.</li>
+<li>Fixed <strong>Smooth by Sharp (Toggle)*<em> operator<strong>.</strong> Now its use </em></strong>*does not require re-switching.</li>
+<li>Added <strong>Finished System</strong>. It has absorbed <strong>Pin System</strong> and was made to control and manage the state of unwrapping UV Islands (Finished/Unfinished) by tags and visually. Tags can be assigned manually or automatically after unwrapping. Islands can be sorted and pinned by state in UV Editor. You can check the state of Islands in the viewport by using <strong>Display Finished (Toggle)</strong> operator. Nothing will be left not unwrapped!</li>
+<li>Updated <strong>Quadrify</strong> operator. Now it is based on the native <strong>Follow Active Quad</strong> operator and sets the base polygon size based on the average size of current islands.</li>
+</ul>
+<h4 id="select"><strong>Select</strong></h4>
+<ul>
+<li>Updated <strong>Isolate Islands (Toggle)</strong> operator. Isolation mode now is working for any selection mode — Vertex/Edge/Polygon. It no longer requires you to select at least one Vertex/Edge/Polygon in order to return back.</li>
+<li>Added <strong>Select Flipped Islands</strong> operator.</li>
+<li>Added <strong>Select Sharp Edges</strong> operator.</li>
+<li>Added <strong>Select Seam Edges</strong> operator.</li>
+<li><strong>Select Edge Loop*<em> operator </em></strong><em>name </em><strong><em>was changed to </em>*Select Interseam Loop</strong>.</li>
+</ul>
+<h4 id="pack"><strong>Pack</strong></h4>
+<ul>
+<li>Added <strong>Rotate Islands</strong> option for <strong>Pack Islands</strong> operator.</li>
+</ul>
+<h4 id="checker-map"><strong>Checker Map</strong></h4>
+<ul>
+<li>Updated <strong>Checker System</strong>. Now it has 2 types of texture checker - color and monochrome. Each type has 4 sizes. Custom textures can be added easily by the user at the node level.. The <strong>Reset Checker</strong> operator will return the <strong>Checker System</strong> to its initial state.</li>
+<li>Added <strong>Show Image In UV Editor</strong> option. It allows you to turn off the display of texture in the UV Editor.</li>
+<li>Added <strong>Remove Checker Nodes</strong> operator. It removes all checker nodes from the scene to not interfere with the export.</li>
+</ul>
+<h4 id="preferences"><strong>Preferences</strong></h4>
+<ul>
+<li><strong>Reset Preferences</strong> now returns Auto Mark operator angle settings to their default values.</li>
+</ul>
+<h4 id="help"><strong>Help</strong></h4>
+<ul>
+<li>Added information about the current Zen UV version number at the end of the section.</li>
+</ul>
 <h2 id="18">1.8</h2>
-<p>-Added Selected Only option to Zen Unwrap. It’s the separate workflow where only Selected Faces will be Unwrapped and Packed. It includes warnings and Unwrapping options if nothing is selected.
--Added Islands Offset option to Zen Unwrap. It’s available after activating Selected Only. Adds the ability to move inactive islands in the UV viewport to the left when working with Zen Unwrap operator.
--Auto Seams changed to Auto Mark. Zen UV now marks both Sharp Edges and Seam Edges. What exactly to mark can be configured in the panel using Mark Seams and Mark Sharp Edges checkboxes. In fact, this means that with Zen UV you can not only map, but also use it exclusively for the Sharp Edges marking.
--Auto Mark now has the possibility to change the angle. Works in interactive mode.
--Added Mark Seams by Sharp Edges option.
--Added Mark Sharp Edges by Seams option.
--Added Pack After Quadrify option which automatically Pack Islands after Quadrify Islands operation.
--Added Pack Islands option. Also can be found in the Pie menu as alternative command in sector 9 (Zen Unwrap).
--Added Margin option which allows to set space between Islands for Pack Islands operation.
--Added Average Islands Scale option which averages Islands scale before Pack Islands operation.
--Added the possibility to choose Pack Engine.
--Added option to use UVPackmaster 2 Pack Engine if it’s installed on the system.
--Added Select Edge Loop option which allows to select edge loops with Seams respect.
--Added Auto Fit UV View option which automatically Fit and Zoom UV viewport.
--Added Show Bevel Weight and Show Crease Edges options due to the probability of overlapping displayable edge types.
--Added Reset Preferences button to reset all the settings to default state.
--The addon preferences moved from the scene properties to the addon properties. This allows to remember settings between sessions.
--Fully reworked Main and Popup menus, structure and design.
--Fixed the loading icons bug that occurs on some systems.</p>
+<ul>
+<li>Added Selected Only option to Zen Unwrap. It’s the separate workflow where only Selected Faces will be Unwrapped and Packed. It includes warnings and Unwrapping options if nothing is selected.</li>
+<li>Added Islands Offset option to Zen Unwrap. It’s available after activating Selected Only. Adds the ability to move inactive islands in the UV viewport to the left when working with Zen Unwrap operator.</li>
+<li>Auto Seams changed to Auto Mark. Zen UV now marks both Sharp Edges and Seam Edges. What exactly to mark can be configured in the panel using Mark Seams and Mark Sharp Edges checkboxes. In fact, this means that with Zen UV you can not only map, but also use it exclusively for the Sharp Edges marking.</li>
+<li>Auto Mark now has the possibility to change the angle. Works in interactive mode.</li>
+<li>Added Mark Seams by Sharp Edges option.</li>
+<li>Added Mark Sharp Edges by Seams option.</li>
+<li>Added Pack After Quadrify option which automatically Pack Islands after Quadrify Islands operation.</li>
+<li>Added Pack Islands option. Also can be found in the Pie menu as alternative command in sector 9 (Zen Unwrap).</li>
+<li>Added Margin option which allows to set space between Islands for Pack Islands operation.</li>
+<li>Added Average Islands Scale option which averages Islands scale before Pack Islands operation.</li>
+<li>Added the possibility to choose Pack Engine.</li>
+<li>Added option to use UVPackmaster 2 Pack Engine if it’s installed on the system.</li>
+<li>Added Select Edge Loop option which allows to select edge loops with Seams respect.</li>
+<li>Added Auto Fit UV View option which automatically Fit and Zoom UV viewport.</li>
+<li>Added Show Bevel Weight and Show Crease Edges options due to the probability of overlapping displayable edge types.</li>
+<li>Added Reset Preferences button to reset all the settings to default state.</li>
+<li>The addon preferences moved from the scene properties to the addon properties. This allows to remember settings between sessions.</li>
+<li>Fully reworked Main and Popup menus, structure and design.</li>
+<li>Fixed the loading icons bug that occurs on some systems.</li>
+</ul>
 <h2 id="17">1.7</h2>
 <ul>
 <li>Bugfix</li>
@@ -145,6 +319,13 @@
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../troubleshooting/" class="btn btn-neutral" title="Troubleshooting"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -167,6 +348,8 @@
   <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
+      
+        <span><a href="../troubleshooting/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
     </span>

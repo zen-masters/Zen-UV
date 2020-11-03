@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Unwrap - Zen UV for Blender</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Unwrap";
+    var mkdocs_page_input_path = "unwrap.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Zen UV for Blender</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../pie-menu/">Pie Menu</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../uv-maps/">UV Maps</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Unwrap</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#zen-unwrap">Zen Unwrap</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#mark-unwrapped">Mark Unwrapped</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#unwrap-selected-only">Unwrap Selected Only</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tag-unwrapped">Tag Unwrapped</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sort-unwrapped">Sort Unwrapped</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#auto-uv-sync">Auto UV Sync</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pack-unwrapped">Pack Unwrapped</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#unwrap-method">Unwrap Method</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mark-by-angle">Mark by Angle</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mark">Mark</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#unmark">Unmark</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#unmark-all">Unmark All</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mark-seams-by-uv-borders">Mark Seams by UV Borders</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mark-seams-by-sharp-edges">Mark Seams by Sharp Edges</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mark-sharp-edges-by-seams">Mark Sharp Edges by Seams</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#smooth-by-sharp-toggle">Smooth by Sharp (Toggle)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sort-islands-by-tags">Sort Islands by Tags</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pin-finished">Pin Finished</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#auto-sort-islands">Auto Sort Islands</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#finished-color">Finished Color</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#unfinished-color">Unfinished Color</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tag-finished">Tag Finished</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tag-unfinished">Tag Unfinished</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-finished">Select Finished</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#display-finished-toggle">Display Finished (Toggle)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#quadrify-islands">Quadrify Islands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pin-quadrified">Pin Quadrified</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pack-quadrified">Pack Quadrified</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mark-not-quadrified">Mark Not-Quadrified</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../select/">Select</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../pack/">Pack</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../checker/">Checker Map</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Zen UV for Blender</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Unwrap</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="unwrap">Unwrap</h1>
+<h2 id="zen-unwrap">Zen Unwrap <img alt="Zen Unwrap" src="../img/icons/zen-unwrap%402x.png" /></h2>
+<p>Mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after</p>
+<div class="admonition preferences">
+<p class="admonition-title">Preferences</p>
+<h4 id="mark-unwrapped">Mark Unwrapped</h4>
+<p>Mark edges or face borders as Seams and/or Sharp edges after Zen Unwrap operation</p>
+<h4 id="unwrap-selected-only">Unwrap Selected Only</h4>
+<p>Separate workflow where only Selected Faces will be Unwrapped. It includes warnings and Unwrapping options if nothing is selected.</p>
+<h4 id="tag-unwrapped">Tag Unwrapped</h4>
+<p>Tag Unwrapped Islands as Finished after Zen Unwrap operation.</p>
+<h4 id="sort-unwrapped">Sort Unwrapped</h4>
+<p>Sort Islands by Tags after Zen Unwrap operation. Finished Islands move to the right side from Main UV Tile, Unfinished — to the left.</p>
+<h4 id="auto-uv-sync">Auto UV Sync</h4>
+<p>Automatically Activate UV Sync Selection Mode in UV Editor for Zen Unwrap operation.</p>
+<h4 id="pack-unwrapped">Pack Unwrapped</h4>
+<p>Execute Pack after Zen Unwrap operation.</p>
+<h4 id="unwrap-method">Unwrap Method</h4>
+<ul>
+<li>Conformal</li>
+<li>Angle Based</li>
+</ul>
+</div>
+<h2 id="mark-by-angle">Mark by Angle</h2>
+<p>Mark edges as Seams and/or Sharp edges by Angle.</p>
+<h2 id="mark">Mark <img alt="Mark Seams" src="../img/icons/mark-seams%402x.png" /></h2>
+<p>Mark selected edges or face borders as Seams and/or Sharp edges.</p>
+<h2 id="unmark">Unmark <img alt="Unmark Seams" src="../img/icons/unmark-seams%402x.png" /></h2>
+<p>Unmark selected edges or face borders as Seams and/or Sharp edges.</p>
+<h2 id="unmark-all">Unmark All</h2>
+<p>Remove all the Seams and/or Sharp edges from the mesh.</p>
+<h2 id="mark-seams-by-uv-borders">Mark Seams by UV Borders</h2>
+<p>Mark Seams by existing UV Borders.</p>
+<h2 id="mark-seams-by-sharp-edges">Mark Seams by Sharp Edges</h2>
+<p>Mark Seams by existing Sharp edges.</p>
+<h2 id="mark-sharp-edges-by-seams">Mark Sharp Edges by Seams</h2>
+<p>Mark Sharp edges by existing Seams.</p>
+<h2 id="smooth-by-sharp-toggle">Smooth by Sharp (Toggle)</h2>
+<p>Toggle between Auto Smooth 180° </p>
+<h2 id="sort-islands-by-tags">Sort Islands by Tags</h2>
+<p>Sort Islands by Tags. Finished Islands move to the right side from Main UV Tile, Unfinished — to the left.</p>
+<div class="admonition preferences">
+<p class="admonition-title">Preferences</p>
+<h4 id="pin-finished">Pin Finished</h4>
+<p>Pin Islands after Tag Finished operation.</p>
+<h4 id="auto-sort-islands">Auto Sort Islands</h4>
+<p>Automatically Sort Islands by Tags. Finished Islands move to the right side from Main UV Tile, Unfinished — to the left</p>
+<h4 id="finished-color">Finished Color</h4>
+<p>Finished Islands viewport display color.</p>
+<h4 id="unfinished-color">Unfinished Color</h4>
+<p>Unfinished Islands viewport display color.</p>
+</div>
+<h2 id="tag-finished">Tag Finished</h2>
+<p>Tag Islands as Finished.</p>
+<h2 id="tag-unfinished">Tag Unfinished</h2>
+<p>Tag Islands as Unfinished.</p>
+<h2 id="select-finished">Select Finished</h2>
+<p>Select Islands tagged as Finished.</p>
+<h2 id="display-finished-toggle">Display Finished (Toggle)</h2>
+<p>Display Finished/Unfinished Islands in viewport</p>
+<h2 id="quadrify-islands">Quadrify Islands <img alt="Quadrify Islands" src="../img/icons/quadrify_32.png" /></h2>
+<p>Straighten rectangular shaped Islands</p>
+<div class="admonition preferences">
+<p class="admonition-title">Preferences</p>
+<h4 id="pin-quadrified">Pin Quadrified</h4>
+<p>Pin Islands after Quadrify Islands operation.</p>
+<h4 id="pack-quadrified">Pack Quadrified</h4>
+<p>Pin Islands after Quadrify Islands operation.</p>
+<h4 id="mark-not-quadrified">Mark Not-Quadrified</h4>
+<p>Mark face boundaries of Not-Quadrified parts as Seams after Quadrify Islands operation.</p>
+</div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../select/" class="btn btn-neutral float-right" title="Select">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../uv-maps/" class="btn btn-neutral" title="UV Maps"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../uv-maps/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../select/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
