@@ -1,4 +1,4 @@
-# Zen UV for Blender
+# Zen UV for Blender 1.9
 <!-- [![Zen UV Introduction](img/cover--eng.png)](https://www.youtube.com/watch?v=ook2eFfH724) -->
 <!-- blank line -->
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
