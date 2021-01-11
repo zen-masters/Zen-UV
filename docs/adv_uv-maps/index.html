@@ -19,7 +19,7 @@
   <script>
     // Current page data
     var mkdocs_page_name = "UV Maps";
-    var mkdocs_page_input_path = "uv-maps.md";
+    var mkdocs_page_input_path = "adv_uv-maps.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -62,6 +62,16 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">UV Maps</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#clean-uv-maps">Clean UV Maps</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rename-uv-maps">Rename UV Maps</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#duplicate-active-uv-map">Duplicate active UV Map</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#remove-active-uv-map">Remove active UV Map</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sync-uv-maps-ids">Sync UV Maps IDs</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -129,9 +139,43 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="uv-maps">UV Maps</h1>
-<p>UV Maps section crated to have quick access to Object Data Properties — UV Maps.</p>
+                <h1 id="advanced-uv-maps">Advanced UV Maps</h1>
+<p>Advanced UV Maps section created to have quick access to Object Data Properties — UV Maps.</p>
 <p>It allows to select the active, add, remove, and rename UV Maps from the list.</p>
+<p>If more than one object is selected, you can synchronously work with UV maps of the selected objects.</p>
+<h2 id="clean-uv-maps">Clean UV Maps</h2>
+<p>Remove all inactive UV Maps.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Hold &lsquo;Alt&rsquo; to apply on all selected objects.</p>
+</div>
+<h2 id="rename-uv-maps">Rename UV Maps</h2>
+<p>Rename all UV Maps using UVChannel_* pattern.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Hold &lsquo;Alt&rsquo; to apply on all selected objects.</p>
+</div>
+<h2 id="duplicate-active-uv-map">Duplicate active UV Map <img alt="Add Button" src="../img/icons/adv_uv_add.png" /></h2>
+<p>Duplicate active UV Map.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Hold &lsquo;Alt&rsquo; to apply on all selected objects.</p>
+</div>
+<h2 id="remove-active-uv-map">Remove active UV Map <img alt="Remove Button" src="../img/icons/adv_uv_remove.png" /></h2>
+<p>Remove active UV Map.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Hold &lsquo;Alt&rsquo; to apply on all selected objects.</p>
+</div>
+<h2 id="sync-uv-maps-ids">Sync UV Maps IDs <img alt="Sync Button" src="../img/icons/adv_uv_sync.png" /></h2>
+<p>Set the same active UV Map index for all selected objects.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Hold &lsquo;Alt&rsquo; to apply on all selected objects.</p>
+</div>
+<p>In automatic synchronization mode:</p>
+<p><img alt="True Sync Button" src="../img/icons/adv_uv_sync_true.png" /> If the background of the button is blue, the UVs are synchronized.</p>
+<p><img alt="False Sync Button" src="../img/icons/adv_uv_sync_false.png" /> If the background of the button is purple, the UVs are out of sync.</p>
               
             </div>
           </div>

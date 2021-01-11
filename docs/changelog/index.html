@@ -60,7 +60,7 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../uv-maps/">UV Maps</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">UV Maps</a>
                     </li>
                 </ul>
                 <ul>
@@ -94,9 +94,27 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Changelog</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#19">1.9</a>
+    <li class="toctree-l2"><a class="reference internal" href="#192">1.92</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#general">General</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#operators">Operators</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#advanced-uv-maps">Advanced UV Maps</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#unwrap">Unwrap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pack">Pack</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#checker-map">Checker Map</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#19">1.9</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#general_1">General</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#ui">UI</a>
         <ul>
@@ -108,17 +126,17 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#operators">Operators</a>
+    <li class="toctree-l3"><a class="reference internal" href="#operators_1">Operators</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#uv-maps">UV Maps</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#unwrap">Unwrap</a>
+    <li class="toctree-l4"><a class="reference internal" href="#unwrap_1">Unwrap</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#select">Select</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#pack">Pack</a>
+    <li class="toctree-l4"><a class="reference internal" href="#pack_1">Pack</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#checker-map">Checker Map</a>
+    <li class="toctree-l4"><a class="reference internal" href="#checker-map_1">Checker Map</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#preferences">Preferences</a>
     </li>
@@ -172,8 +190,36 @@
             <div class="section">
               
                 <h1 id="changelog">Changelog</h1>
-<h2 id="19">1.9</h2>
+<h2 id="192">1.92</h2>
 <h3 id="general">General</h3>
+<ul>
+<li><strong>Zen UV now works</strong> not only in Edit Mode but also <strong>in Object mode</strong>. The following functions are available in Object Mode: Advanced UV Maps, UV Coverage, Checker Map, Texel Density Checker.</li>
+<li><strong>Added Texel Density category.</strong> Get, Set, and Check Texel Density of UV Islands.</li>
+<li>Updated <strong>Checker Map category</strong>. Add your own textures, filter existing textures by resolution, square and rectangular formats.</li>
+<li>Updated <strong>UV Maps category</strong>. Now you can work on UV Maps of the selected objects in sync.</li>
+</ul>
+<h3 id="operators">Operators</h3>
+<h4 id="advanced-uv-maps"><strong>Advanced UV Maps</strong></h4>
+<ul>
+<li>Added <strong>Sync UV Maps operator.</strong> Now you can duplicate, remove, clean and rename UV Maps of the selected objects in sync.</li>
+<li>Added <strong>Rename UV Map</strong> operator with pattern UV_Channel_* to keep the right order of UV Maps during export.</li>
+</ul>
+<h4 id="unwrap"><strong>Unwrap</strong></h4>
+<ul>
+<li>Fixed <strong>Zen Unwrap</strong> operator. Now it ignores Islands tagged as Finished.</li>
+<li>Updated <strong>Quadrify Islands</strong> operator. Islands with the same geometry get the same unfolding.</li>
+</ul>
+<h4 id="pack"><strong>Pack</strong></h4>
+<ul>
+<li>Added <strong>UV Coverage</strong> operator. It helps to determine the percentage of UV Map coverage.</li>
+</ul>
+<h4 id="checker-map"><strong>Checker Map</strong></h4>
+<ul>
+<li>Added <strong>Filters</strong> to filter existing textures by resolution, square and rectangular formats.</li>
+<li>Added the possibility to add custom Checker textures and texture libraries.</li>
+</ul>
+<h2 id="19">1.9</h2>
+<h3 id="general_1">General</h3>
 <ul>
 <li><strong>Zen UV now works with multiple objects!</strong></li>
 <li>Added <strong>Finished System.</strong> It helps to control and manage the state of unwrapping UV Islands (Finished/Unfinished) by tags and visually. Nothing will be left not unwrapped!</li>
@@ -237,12 +283,12 @@
 <ul>
 <li>All operator options were removed from the Pop Up menu, you can adjust them only in the Main menu. The order of operators is consistent with the Main menu.</li>
 </ul>
-<h3 id="operators">Operators</h3>
+<h3 id="operators_1">Operators</h3>
 <h4 id="uv-maps"><strong>UV Maps</strong></h4>
 <ul>
 <li>Added <strong>UV Maps Properties Tab</strong> to have quick access to UV Maps management.</li>
 </ul>
-<h4 id="unwrap"><strong>Unwrap</strong></h4>
+<h4 id="unwrap_1"><strong>Unwrap</strong></h4>
 <ul>
 <li>Added <strong>Tag Unwrapped</strong> option for <strong>Zen Unwrap</strong> operator.</li>
 <li>Added <strong>Sort Unwrapped</strong> option for <strong>Zen Unwrap</strong> operator.</li>
@@ -262,11 +308,11 @@
 <li>Added <strong>Select Seam Edges</strong> operator.</li>
 <li><strong>Select Edge Loop</strong> operator <strong><em>*name </em></strong><em>was changed to </em><em>Select Interseam Loop</em>*.</li>
 </ul>
-<h4 id="pack"><strong>Pack</strong></h4>
+<h4 id="pack_1"><strong>Pack</strong></h4>
 <ul>
 <li>Added <strong>Rotate Islands</strong> option for <strong>Pack Islands</strong> operator.</li>
 </ul>
-<h4 id="checker-map"><strong>Checker Map</strong></h4>
+<h4 id="checker-map_1"><strong>Checker Map</strong></h4>
 <ul>
 <li>Updated <strong>Checker System</strong>. Now it has 2 types of texture checker - color and monochrome. Each type has 4 sizes. Custom textures can be added easily by the user at the node level.. The <strong>Reset Checker</strong> operator will return the <strong>Checker System</strong> to its initial state.</li>
 <li>Added <strong>Show Image In UV Editor</strong> option. It allows you to turn off the display of texture in the UV Editor.</li>
