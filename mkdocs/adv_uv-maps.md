@@ -38,6 +38,6 @@ Set the same active UV Map index for all selected objects.
 
 In automatic synchronization mode:
 
-If the background of the button is blue, the UVs are synchronized.
+   ![True Sync Button](img/icons/adv_uv_sync_true.png) If the background of the button is blue, the UVs are synchronized.
 
-If the background of the button is purple, the UVs are out of sync.
+   ![False Sync Button](img/icons/adv_uv_sync_false.png) If the background of the button is purple, the UVs are out of sync.
