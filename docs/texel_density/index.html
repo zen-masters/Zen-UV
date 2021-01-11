@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Operators - Zen UV for Blender</title>
+  <title>Texel Density - Zen UV for Blender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Operators";
-    var mkdocs_page_input_path = "operators.md";
+    var mkdocs_page_name = "Texel Density";
+    var mkdocs_page_input_path = "texel_density.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -79,8 +79,46 @@
                     <li class="toctree-l1"><a class="reference internal" href="../checker/">Checker Map</a>
                     </li>
                 </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../texel_density/">Texel Density</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Texel Density</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#texel-density_1">Texel Density</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#units">Units</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#texture-size">Texture Size</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#get-td">Get TD</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#set-td">Set TD</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#set-td-mode">Set TD Mode</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overall-mode">Overall Mode</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#island-mode">Island Mode</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#td-checker">TD Checker</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#td-checker_1">TD Checker</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#less">Less</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#equal">Equal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#over">Over</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#show-td">Show TD</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hide-td">Hide TD</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
                 <ul>
@@ -120,7 +158,7 @@
     
       
     
-    <li>Operators</li>
+    <li>Texel Density</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -131,108 +169,59 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="operators">Operators</h1>
-<h2 id="zen-unwrap">Zen Unwrap <img alt="Zen Unwrap" src="../img/icons/zen-unwrap%402x.png" /></h2>
-<p>Unwrap by Marked edges and Pack after. Also, you can select edges/faces and do Zen Unwrap. All selected edges/faces will be Marked as Seams and/or Sharp edges and unwrapped after.</p>
+                <h1 id="texel-density">Texel Density</h1>
+<h2 id="texel-density_1">Texel Density</h2>
+<p>Shows Texel Density value.</p>
 <div class="admonition preferences">
 <p class="admonition-title">Preferences</p>
-<h4 id="auto-mark-with-zen-unwrap">Auto Mark with Zen Unwrap</h4>
-<ul>
-<li>Automatically Mark edges by angle for Zen Unwrap.</li>
-</ul>
-<h4 id="selected-only">Selected Only</h4>
-<ul>
-<li>Separate workflow where only Selected Faces will be Unwrapped and Packed. It includes warnings and Unwrapping options if nothing is selected.</li>
-</ul>
-<h4 id="islands-offset">Islands Offset</h4>
-<ul>
-<li>Offset Islands after Zen Unwrap. (Experimental).</li>
-</ul>
+<h4 id="units">Units</h4>
+<p>Texel density calculation units.</p>
+<h4 id="texture-size">Texture Size</h4>
+<p>Image Size for Texel Density computation.</p>
 </div>
-<h2 id="auto-mark">Auto Mark</h2>
-<p>Automatically Mark edges as Seams and/or Sharp edges.</p>
-<h2 id="mark">Mark <img alt="Mark" src="../img/icons/mark-seams%402x.png" /></h2>
-<p>Mark selected edges or face borders as Seams and/or Sharp edges.</p>
-<h2 id="unmark">Unmark <img alt="Unmark" src="../img/icons/unmark-seams%402x.png" /></h2>
-<p>Unmark selected edges or face borders as Seams and/or Sharp edges.</p>
-<h2 id="unmark-all">Unmark All</h2>
-<p>Remove all the Seams and/or Sharp edges from the mesh.</p>
+<h2 id="get-td">Get TD</h2>
+<p>Get Texel Density from selected Islands.</p>
+<h2 id="set-td">Set TD</h2>
+<p>Set Texel Density to selected Islands.</p>
+<h2 id="set-td-mode">Set TD Mode</h2>
+<p>Mode for setting Texel Density.</p>
+<div class="admonition options">
+<p class="admonition-title">Options</p>
+<h4 id="overall-mode">Overall Mode</h4>
+<p>Set Texel Density for all selected Islands together.</p>
+<h4 id="island-mode">Island Mode</h4>
+<p>Set Texel Density individually for every selected Island.</p>
+</div>
+<h2 id="td-checker">TD Checker</h2>
+<p>Texel Density value used for Show TD operation.</p>
 <div class="admonition preferences">
 <p class="admonition-title">Preferences</p>
-<h4 id="mark-seams">Mark Seams</h4>
-<ul>
-<li>Automatically assign Seams.</li>
-</ul>
-<h4 id="mark-sharp-edges">Mark Sharp Edges</h4>
-<ul>
-<li>Automatically assign Sharp edges.</li>
-</ul>
+<h4 id="td-checker_1">TD Checker</h4>
+<p>Texel Density value used for Show TD operation.</p>
+<h4 id="less">Less</h4>
+<p>Viewport display color to represent Texel Density less than TD Checker value.</p>
+<h4 id="equal">Equal</h4>
+<p>Viewport display color to represent Texel Density equal to TD Checker value.</p>
+<h4 id="over">Over</h4>
+<p>Viewport display color to represent Texel Density over than TD Checker value.</p>
 </div>
-<h2 id="mark-seams-by-uv-borders">Mark Seams by UV Borders</h2>
-<p>Mark Seams by existing UV Borders.</p>
-<h2 id="mark-seams-by-sharp-edges">Mark Seams by Sharp Edges</h2>
-<p>Mark Seams by existing Sharp edges.</p>
-<h2 id="mark-sharp-edges-by-seams">Mark Sharp Edges by Seams</h2>
-<p>Mark Sharp edges by existing Seams.</p>
-<h2 id="quadrify-islands">Quadrify Islands</h2>
-<p>Straighten rectangular shaped UV Islands.</p>
-<p><em>The addon is using the <a href="https://github.com/Radivarig/UvSquares">quadrification algorithm</a> by Radivarig.</em></p>
-<div class="admonition preferences">
-<p class="admonition-title">Preferences</p>
-<h4 id="auto-pin-quadrified">Auto Pin Quadrified</h4>
-<ul>
-<li>Automatically Pin Islands after Quadrify Islands operation.</li>
-</ul>
-<h4 id="pack-after-quadrify">Pack After Quadrify</h4>
-<ul>
-<li>Automatically Pack Islands after Quadrify Islands operation.</li>
-</ul>
-</div>
-<h2 id="pack-islands">Pack Islands</h2>
-<p>Pack all Islands.</p>
-<div class="admonition preferences">
-<p class="admonition-title">Preferences</p>
-<h4 id="margin">Margin</h4>
-<ul>
-<li>Set space between Islands for Pack Islands operation.</li>
-</ul>
-<h4 id="average-islands-scale">Average Islands Scale</h4>
-<ul>
-<li>Average Islands scale before Pack Islands operation.</li>
-</ul>
-<h4 id="pack-engine">Pack Engine</h4>
-<ul>
-<li>Select Pack Engine for Pack Islands operation.</li>
-</ul>
-<p><em>The add-on is using the Blender Pack algorithm or <a href="https://gumroad.com/l/uvpackmaster2">UVPackmaster 2 Engine</a> by glukoz.</em></p>
-</div>
-<h2 id="select-islands">Select Islands</h2>
-<p>Select UV Islands. </p>
-<p><em>Select at least one edge/face of the Island(s)..</em></p>
-<h2 id="isolate-islands-toggle">Isolate Islands (Toggle)</h2>
-<p>Isolate UV Islands (Toggle). </p>
-<p><em>Select at least one edge/face of the Island(s)..</em></p>
-<h2 id="select-overlapped-islands">Select Overlapped Islands</h2>
-<p>Select Overlapped Islands.</p>
-<p><em>Works in Blender 2.81 and above.</em></p>
-<h2 id="select-edge-loop">Select Edge Loop</h2>
-<p>Select edge loops with Seams respect.</p>
-<h2 id="pin-uv-island">Pin UV Island</h2>
-<p>Pin UV Island. </p>
-<p><em>Select at least one edge/face of the Island(s)..</em></p>
-<h2 id="unpin-uv-island">Unpin UV Island</h2>
-<p>Unpin UV Island. </p>
-<p><em>Select at least one edge/face of the Island(s)..</em></p>
-<h2 id="show-pinned-islands-toggle">Show Pinned Islands (Toggle)</h2>
-<p>Show Pinned Islands (Toggle).</p>
-<h2 id="checker-texture-toggle">Checker Texture (Toggle)</h2>
-<p>Add Checker Texture to the mesh (Toggle).</p>
-<h2 id="smooth-mode-toggle">Smooth Mode (Toggle)</h2>
-<p>Toggle between Auto Smooth 180° (with sharp edges) and regular smooth modes.</p>
+<h2 id="show-td">Show TD</h2>
+<p>Display Texel Density in Viewport by chosen TD Checker value and colors.</p>
+<h2 id="hide-td">Hide TD</h2>
+<p>Disable displaying Texel Density in Viewport by chosen TD Checker value and colors.</p>
               
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../preferences/" class="btn btn-neutral float-right" title="Preferences">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../checker/" class="btn btn-neutral" title="Checker Map"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -256,6 +245,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
+        <span><a href="../checker/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../preferences/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
