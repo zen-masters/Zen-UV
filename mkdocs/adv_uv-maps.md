@@ -32,9 +32,7 @@ Remove active UV Map.
 
 ## Sync UV Maps IDs ![Sync Button](img/icons/adv_uv_sync.png)
 Set the same active UV Map index for all selected objects.
-
-!!! tip
-    Hold 'Alt' to apply on all selected objects.
+Alt + Click - activates automatic synchronization mode.
 
 In automatic synchronization mode:
 

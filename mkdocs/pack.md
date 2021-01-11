@@ -24,3 +24,7 @@ Pack all Islands.
 ## Margin
 
 Select Pack Engine for Pack Islands operation.
+
+## UV Coverage
+
+Calculate UV Coverage of selected objects for active UV map.
