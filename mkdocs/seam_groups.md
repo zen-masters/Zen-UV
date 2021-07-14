@@ -1,6 +1,6 @@
 # Seam Groups
 
-![Preferences](img/screen/seam_groups/MainPanel.png)
+![SeamGroups](img/screen/seam_groups/MainPanel.png)
 
 ## "+"
 Add a new Seam Group to the list.

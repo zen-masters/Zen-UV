@@ -13,6 +13,7 @@ nav:
     - Checker Map: checker.md
     # - Controls: controls.md
     - Texel Density: texel_density.md
+    - Transform: transform.md
     - Preferences: preferences.md
     - Help: help.md
     - Troubleshooting: troubleshooting.md
