@@ -1,10 +1,11 @@
 # Texel Density
-
+!!! Panel
+    ![Texel Density](img/screen/texel_density/texel_density.png)
 ## Texel Density
 Shows Texel Density value.
 
 !!! Preferences
-
+    ![Texel Density](img/screen/texel_density/texel_density_options.png)
     #### Units
 
     Texel density calculation units.
@@ -36,6 +37,7 @@ Mode for setting Texel Density.
 Texel Density value used for Show TD operation.
 
 !!! Preferences
+    ![Texel Density Checker](img/screen/texel_density/texel_density_checker_options.png)
 
     #### TD Checker
 

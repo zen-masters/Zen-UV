@@ -1,10 +1,13 @@
 # Pack
+!!! Panel
+    ![Pack](img/screen/pack/pack.png)
 
 ## Pack Islands
 
 Pack all Islands.
 
 !!! Preferences
+    ![Pack Options](img/screen/pack/pack_options.png)
 
     #### Average Islands Scale
 
@@ -13,6 +16,9 @@ Pack all Islands.
     #### Rotate Islands
 
     Allow the packer to rotate Islands.
+
+    #### Margin in px
+    Display margin in pixels for Pack Islands operation
 
     #### Pack Engine
 
@@ -23,7 +29,7 @@ Pack all Islands.
 
 ## Margin
 
-Select Pack Engine for Pack Islands operation.
+Set space between Islands for Pack Islands operation.
 
 ## UV Coverage
 

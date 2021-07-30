@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="../css/theme.css" />
   <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
   
   <script>
     // Current page data
@@ -25,9 +25,8 @@
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
   <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
-  
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -41,7 +40,7 @@
         <a href=".." class="icon icon-home"> Zen UV for Blender</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -61,6 +60,10 @@
                 </ul>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">Advanced UV Maps</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../seam_groups/">Seam Groups</a>
                     </li>
                 </ul>
                 <ul class="current">
@@ -98,6 +101,10 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#mark-sharp-edges-by-seams">Mark Sharp Edges by Seams</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mirror-seams">Mirror Seams</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mark-seams-by-open-edges">Mark Seams by Open Edges</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#smooth-by-sharp-toggle">Smooth by Sharp (Toggle)</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#sort-islands-by-tags">Sort Islands by Tags</a>
@@ -128,6 +135,8 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#mark-not-quadrified">Mark Not-Quadrified</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#by-selected-edges">By selected Edges</a>
+    </li>
         </ul>
     </li>
     </ul>
@@ -147,6 +156,14 @@
                 </ul>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../texel_density/">Texel Density</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../transform/">Transform</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../stack/">Stack</a>
                     </li>
                 </ul>
                 <ul>
@@ -194,10 +211,15 @@
   
   <hr/>
 </div>
+
           <div role="main">
             <div class="section">
               
                 <h1 id="unwrap">Unwrap</h1>
+<div class="admonition panel">
+<p class="admonition-title">Panel</p>
+<p><img alt="Unwrap" src="../img/screen/unwrap/unwrapMainPanel.png" /></p>
+</div>
 <h2 id="zen-unwrap">Zen Unwrap <img alt="Zen Unwrap" src="../img/icons/zen-unwrap%402x.png" /></h2>
 <p>Mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after</p>
 <div class="admonition preferences">
@@ -220,6 +242,7 @@
 <li>Angle Based</li>
 </ul>
 </div>
+<hr />
 <h2 id="mark-by-angle">Mark by Angle</h2>
 <p>Mark edges as Seams and/or Sharp edges by Angle.</p>
 <h2 id="mark">Mark <img alt="Mark Seams" src="../img/icons/mark-seams%402x.png" /></h2>
@@ -228,16 +251,24 @@
 <p>Unmark selected edges or face borders as Seams and/or Sharp edges.</p>
 <h2 id="unmark-all">Unmark All</h2>
 <p>Remove all the Seams and/or Sharp edges from the mesh.</p>
+<hr />
 <h2 id="mark-seams-by-uv-borders">Mark Seams by UV Borders</h2>
 <p>Mark Seams by existing UV Borders.</p>
 <h2 id="mark-seams-by-sharp-edges">Mark Seams by Sharp Edges</h2>
 <p>Mark Seams by existing Sharp edges.</p>
 <h2 id="mark-sharp-edges-by-seams">Mark Sharp Edges by Seams</h2>
 <p>Mark Sharp edges by existing Seams.</p>
+<h2 id="mirror-seams">Mirror Seams</h2>
+<p>Mirror Seams by axes.</p>
+<h2 id="mark-seams-by-open-edges">Mark Seams by Open Edges</h2>
+<p>Mark Seams by Open Edges. Way that looks in the viewport.</p>
+<hr />
 <h2 id="smooth-by-sharp-toggle">Smooth by Sharp (Toggle)</h2>
-<p>Toggle between Auto Smooth 180° </p>
+<p>Toggle between Auto Smooth 180° (with sharp edges) and regular smooth modes.</p>
+<hr />
 <h2 id="sort-islands-by-tags">Sort Islands by Tags</h2>
 <p>Sort Islands by Tags. Finished Islands move to the right side from Main UV Tile, Unfinished — to the left.</p>
+<p><img alt="Unwrap" src="../img/screen/unwrap/finished_options.png" /></p>
 <div class="admonition preferences">
 <p class="admonition-title">Preferences</p>
 <h4 id="pin-finished">Pin Finished</h4>
@@ -257,7 +288,9 @@
 <p>Select Islands tagged as Finished.</p>
 <h2 id="display-finished-toggle">Display Finished (Toggle)</h2>
 <p>Display Finished/Unfinished Islands in viewport</p>
+<hr />
 <h2 id="quadrify-islands">Quadrify Islands <img alt="Quadrify Islands" src="../img/icons/quadrify_32.png" /></h2>
+<p><img alt="Unwrap" src="../img/screen/unwrap/quadrify_options.png" /></p>
 <p>Straighten rectangular shaped Islands</p>
 <div class="admonition preferences">
 <p class="admonition-title">Preferences</p>
@@ -267,6 +300,8 @@
 <p>Pin Islands after Quadrify Islands operation.</p>
 <h4 id="mark-not-quadrified">Mark Not-Quadrified</h4>
 <p>Mark face boundaries of Not-Quadrified parts as Seams after Quadrify Islands operation.</p>
+<h4 id="by-selected-edges">By selected Edges</h4>
+<p>Selected Edges will be used and marked as Seams during Quadrify Islands operation. Works only in edge selection mode.</p>
 </div>
               
             </div>
@@ -278,7 +313,7 @@
         <a href="../select/" class="btn btn-neutral float-right" title="Select">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../adv_uv-maps/" class="btn btn-neutral" title="Advanced UV Maps"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../seam_groups/" class="btn btn-neutral" title="Seam Groups"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -301,17 +336,18 @@
   </div>
 
   <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../adv_uv-maps/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../select/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../seam_groups/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../select/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
 </div>
     <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
     <script src="../js/theme.js" defer></script>
       <script src="../search/main.js" defer></script>
     <script defer>

@@ -32,7 +32,13 @@
 - Fixed a bug in TD Checker operator when working with multi-user mesh.
   
 ---
-## Version 2.1
+## Version 2.1 (Stacks)
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe src="https://www.youtube.com/embed/Yj2SecY-c1Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<br><br>
+
 ### General
 
 - Added **Stack** category. **Stack** and **Unstack** islands automatically and manually. Extremely useful for increasing Texel Density and baking. It works using **Zen UV Dynamic Library** supported on Windows, Mac OS, and Linux platforms.
@@ -82,7 +88,12 @@
 - Updated **Texel Density** operators. The processing time has been significantly reduced.
 
 ---
-## Version 2.0
+## Version 2.0 (Transform)
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe src="https://www.youtube.com/embed/Y7dG2i-FASs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<br><br>
 ### General
 
 - Added **Hard Ops add-on integration.** It allows **displaying UV manipulations in 3D View.**
@@ -108,7 +119,7 @@
 - Fixed **Set TD** operator Now it works right with islands if the object has a scale different from (1,1,1)
 
 ---
-## Version 1.92
+## Version 1.92 (Texel Density)
 ### General
 
 - **Zen UV now works** not only in Edit Mode but also **in Object mode**. The following functions are available in Object Mode: Advanced UV Maps, UV Coverage, Checker Map, Texel Density Checker.
@@ -137,7 +148,12 @@
 - Added the possibility to add custom Checker textures and texture libraries.
 
 ---
-## Version 1.9
+## Version 1.9 (Texture Checker)
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe src="https://www.youtube.com/embed/w8o4TVW_VuM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<br><br>
 ### General
 
 - **Zen UV now works with multiple objects!**
@@ -163,7 +179,7 @@ Operator | Function
     **Preferences**    |     Hotkeys and other general settings.
     **Help**            |        Documentation and support section.
 
-<br>
+
 - Operators options were hidden under the **Settings icons** to optimize space.
 
 #### **Pie Menu:**
@@ -223,6 +239,12 @@ Operator | Function
 ---
 ## Version 1.8
 
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe src="https://www.youtube.com/embed/yZ-rRiE-8us" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<br><br>
+
+### General
 - Added Selected Only option to Zen Unwrap. It’s the separate workflow where only Selected Faces will be Unwrapped and Packed. It includes warnings and Unwrapping options if nothing is selected.
 - Added Islands Offset option to Zen Unwrap. It’s available after activating Selected Only. Adds the ability to move inactive islands in the UV viewport to the left when working with Zen Unwrap operator.
 - Auto Seams changed to Auto Mark. Zen UV now marks both Sharp Edges and Seam Edges. What exactly to mark can be configured in the panel using Mark Seams and Mark Sharp Edges checkboxes. In fact, this means that with Zen UV you can not only map, but also use it exclusively for the Sharp Edges marking.
@@ -245,6 +267,10 @@ Operator | Function
 
 ---
 ## 1.7
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe src="https://www.youtube.com/embed/dqpgWcRBE4o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<br><br>
 - Bugfix
 
 ---

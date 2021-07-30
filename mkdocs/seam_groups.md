@@ -1,10 +1,10 @@
 # Seam Groups
+!!! Panel
+    ![SeamGroups](img/screen/seam_groups/MainPanel.png)
 
-![SeamGroups](img/screen/seam_groups/MainPanel.png)
-
-## "+"
+## Add ![Add](img/icons/plus.png)
 Add a new Seam Group to the list.
-## "-"
+## Delete ![Delete](img/icons/minus.png)
 Delete the selected Seam Group from the list.
 
 ## Assign

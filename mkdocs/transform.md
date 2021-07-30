@@ -1,5 +1,14 @@
 # Transform
 
+!!! Panel
+    ![Transform](img/screen/transform/MainPanelMove.png)
+
+!!! Control
+    #### Universal Control Panel
+    ![Transform](img/screen/transform/UniversalControl.png)
+
+    The universal control panel that has through logic and different functions for different types of transformation.
+
 ## Pivot
 Transform Pivot.
 
@@ -9,9 +18,6 @@ Transform Pivot.
 Transform type Move.
 
 ## Universal Control Panel
-![Transform](img/screen/transform/UniversalControl.png)
-
-The universal control panel that has through logic and different functions for different types of transformation.
 In the Transform type Move buttons represents direction of shifting.
 ## Move Increment
 The value on which the island will be shifted.

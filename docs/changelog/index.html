@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="../css/theme.css" />
   <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
   
   <script>
     // Current page data
@@ -25,9 +25,8 @@
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
   <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
-  
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -41,7 +40,7 @@
         <a href=".." class="icon icon-home"> Zen UV for Blender</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -61,6 +60,10 @@
                 </ul>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">Advanced UV Maps</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../seam_groups/">Seam Groups</a>
                     </li>
                 </ul>
                 <ul>
@@ -84,6 +87,14 @@
                     </li>
                 </ul>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../transform/">Transform</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../stack/">Stack</a>
+                    </li>
+                </ul>
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
                     </li>
                 </ul>
@@ -98,31 +109,101 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Changelog</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#192">1.92</a>
+    <li class="toctree-l2"><a class="reference internal" href="#version-213">Version 2.1.3</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#general">General</a>
-    </li>
     <li class="toctree-l3"><a class="reference internal" href="#operators">Operators</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#advanced-uv-maps">Advanced UV Maps</a>
+    <li class="toctree-l4"><a class="reference internal" href="#seam-groups">Seam Groups</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#unwrap">Unwrap</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#pack">Pack</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#checker-map">Checker Map</a>
+    <li class="toctree-l4"><a class="reference internal" href="#stack">Stack</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#texel-density">Texel Density</a>
     </li>
         </ul>
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#19">1.9</a>
+    <li class="toctree-l2"><a class="reference internal" href="#version-21-stacks">Version 2.1 (Stacks)</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#general_1">General</a>
+    <li class="toctree-l3"><a class="reference internal" href="#general">General</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#ui">UI</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#main-menu">Main Menu</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#operators_1">Operators</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#advanced-uv-maps">Advanced UV Maps</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#unwrap_1">Unwrap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#select">Select</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#checker-map">Checker Map</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pack_1">Pack</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#texel-density_1">Texel Density</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-20-transform">Version 2.0 (Transform)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#general_1">General</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ui_1">UI</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#main-menu_1">Main Menu</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#operators_2">Operators</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#unwrap_2">Unwrap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#checker-map_1">Checker Map</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pack_2">Pack</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#texel-density_2">Texel Density</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-192-texel-density">Version 1.92 (Texel Density)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#general_2">General</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#operators_3">Operators</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#advanced-uv-maps_1">Advanced UV Maps</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#unwrap_3">Unwrap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pack_3">Pack</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#checker-map_2">Checker Map</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#version-19-texture-checker">Version 1.9 (Texture Checker)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#general_3">General</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ui_2">UI</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#main-menu_2">Main Menu</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#pie-menu">Pie Menu:</a>
     </li>
@@ -130,17 +211,17 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#operators_1">Operators</a>
+    <li class="toctree-l3"><a class="reference internal" href="#operators_4">Operators</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#uv-maps">UV Maps</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#unwrap_1">Unwrap</a>
+    <li class="toctree-l4"><a class="reference internal" href="#unwrap_4">Unwrap</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#select">Select</a>
+    <li class="toctree-l4"><a class="reference internal" href="#select_1">Select</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#pack_1">Pack</a>
+    <li class="toctree-l4"><a class="reference internal" href="#pack_4">Pack</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#checker-map_1">Checker Map</a>
+    <li class="toctree-l4"><a class="reference internal" href="#checker-map_3">Checker Map</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#preferences">Preferences</a>
     </li>
@@ -150,7 +231,11 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#18">1.8</a>
+    <li class="toctree-l2"><a class="reference internal" href="#version-18">Version 1.8</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#general_4">General</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#17">1.7</a>
     </li>
@@ -190,40 +275,166 @@
   
   <hr/>
 </div>
+
           <div role="main">
             <div class="section">
               
                 <h1 id="changelog">Changelog</h1>
-<h2 id="192">1.92</h2>
+<hr />
+<h2 id="version-213">Version 2.1.3</h2>
+<h3 id="operators">Operators</h3>
+<h4 id="seam-groups"><strong>Seam Groups</strong></h4>
+<ul>
+<li>Fixed a bug in Seam Groups operators when working with multiple objects.</li>
+</ul>
+<h4 id="unwrap"><strong>Unwrap</strong></h4>
+<ul>
+<li>Added functionality to Zen Unwrap operator for marking in switch mode. This allows you to use an operator similar to Blender&rsquo;s native Live Unwrap option.</li>
+<li>Fixed a bug when using Mark operators when marking the first seams on an object.</li>
+</ul>
+<h4 id="pack"><strong>Pack</strong></h4>
+<ul>
+<li>Fixed Lock Overlapping Mode - Any Part parameter for UVP2 Pack Engine.</li>
+<li>Fixed a delay when working with UVP2 if Heuristic mode is activated.</li>
+<li>Fixed a bug when UVP2 runs in demo mode. Added warning.</li>
+</ul>
+<h4 id="stack"><strong>Stack</strong></h4>
+<ul>
+<li>Added Remove All operator to remove all Manual Stack for selected objects.</li>
+<li>Fixed a bug in Manual Stacks when working with multiple objects.</li>
+<li>Fixed a bug in the Copy / Paste system when working with multiple objects.</li>
+</ul>
+<h4 id="texel-density"><strong>Texel Density</strong></h4>
+<ul>
+<li>Added Set to Checker operator for transferring Сurrent TD values to TD Checker.</li>
+<li>Added displaying units next to the Current TD display field.</li>
+<li>Fixed a bug in TD Checker operator when working with multi-user mesh.</li>
+</ul>
+<hr />
+<h2 id="version-21-stacks">Version 2.1 (Stacks)</h2>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe src="https://www.youtube.com/embed/Yj2SecY-c1Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<p><br><br></p>
 <h3 id="general">General</h3>
+<ul>
+<li>Added <strong>Stack</strong> category. <strong>Stack</strong> and <strong>Unstack</strong> islands automatically and manually. Extremely useful for increasing Texel Density and baking. It works using <strong>Zen UV Dynamic Library</strong> supported on Windows, Mac OS, and Linux platforms.</li>
+<li>Added <strong>Copy/Paste</strong> operators. Copy parameters (TD, Position, Size) between Islands.</li>
+</ul>
+<h3 id="ui">UI</h3>
+<h4 id="main-menu"><strong>Main Menu</strong></h4>
+<ul>
+<li>Added new operators for UV Editor window.</li>
+<li>Added panels management for UV Editor window. Now you can turn off the display of unused categories not only in 3D View but in UV Editor also.</li>
+<li>Fixed slowdown of the Main panel when working with large (~500,000 polygons) meshes.</li>
+</ul>
+<h3 id="operators_1">Operators</h3>
+<h4 id="advanced-uv-maps"><strong>Advanced UV Maps</strong></h4>
+<ul>
+<li>Fixed a bug with disabling <strong>Advanced UV Maps</strong> panel when Cycles render is selected.</li>
+</ul>
+<h4 id="unwrap_1"><strong>Unwrap</strong></h4>
+<ul>
+<li>Added <strong>Mark Seams By Open Edges</strong> operator. Mark all visible Edge Borders as Seams.</li>
+<li>Fixed <strong>Zen Unwrap</strong> operator. The situation when it is impossible to unite two islands, one of which is tagged FINISHED and the other UNFINISHED.</li>
+<li>Fixed <strong>Mark Seams by UV Borders</strong> operator. It now ignores hidden edges.</li>
+<li>Fixed <strong>Mirror Seams</strong> operator.</li>
+<li>Updated <strong>Display Finished</strong> operator. It now uses OSL Shaders instead of Vertex Color and can display Finished Islands and Checker textures simultaneously.</li>
+<li>Updated <strong>Quadrify</strong> operator. The processing time has been significantly reduced.</li>
+</ul>
+<h4 id="select"><strong>Select</strong></h4>
+<ul>
+<li>Added <strong>Select Similar Islands</strong> operator.</li>
+<li>Fixed <strong>Select Flipped Islands</strong> operator. It now handles n-gons correctly.</li>
+<li>Updated <strong>Isolate Island</strong> operator. It now works in any Blender UV Sync mode. Now you can use it not only in 3D View but in UV Editor also.</li>
+</ul>
+<h4 id="checker-map"><strong>Checker Map</strong></h4>
+<ul>
+<li>Fixed a bug when <strong>Reset Checker</strong> operator did not restore the texture.</li>
+<li>Updated <strong>Checker Texture (Toggle)</strong> operator. It now uses OSL Shaders instead of Vertex Color and can display Checker Texture and Finished Islands simultaneously.</li>
+</ul>
+<h4 id="pack_1"><strong>Pack</strong></h4>
+<ul>
+<li>Added <strong>Keep Stacked</strong> parameter.</li>
+</ul>
+<h4 id="texel-density_1"><strong>Texel Density</strong></h4>
+<ul>
+<li>Added the possibility to measure and set <strong>Texel Density in Object mode</strong>.</li>
+<li>Updated <strong>Texel Density</strong> operators. The processing time has been significantly reduced.</li>
+</ul>
+<hr />
+<h2 id="version-20-transform">Version 2.0 (Transform)</h2>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe src="https://www.youtube.com/embed/Y7dG2i-FASs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<p><br><br></p>
+<h3 id="general_1">General</h3>
+<ul>
+<li>Added <strong>Hard Ops add-on integration.</strong> It allows <strong>displaying UV manipulations in 3D View.</strong></li>
+<li>Added <strong>Seam Groups category.</strong> You can now work with more than one Seam set.</li>
+<li>Added <strong>Transform category.</strong> Move, Rotate, Scale, Flip, Fit, Orient and Align islands.</li>
+</ul>
+<h3 id="ui_1">UI</h3>
+<h4 id="main-menu_1"><strong>Main Menu</strong></h4>
+<ul>
+<li>Added panels management. Now you can disable displaying unused categories.</li>
+</ul>
+<h3 id="operators_2">Operators</h3>
+<h4 id="unwrap_2"><strong>Unwrap</strong></h4>
+<ul>
+<li>Added <strong>By selected Edges</strong> option to Quadrify Islands operator. It allows automatically mark selected Edges as Seams.</li>
+<li>Added <strong>Mirror Seams</strong> operator.</li>
+<li>Fixed <strong>Mark By Angle</strong> operator. Now it ignores hidden edges.</li>
+</ul>
+<h4 id="checker-map_1"><strong>Checker Map</strong></h4>
+<ul>
+<li>Fixed the logic of switching the display of <strong>Display Finished (Toggle)</strong> and <strong>Checker Texture (Toggle)</strong> operators.</li>
+</ul>
+<h4 id="pack_2"><strong>Pack</strong></h4>
+<ul>
+<li>Added possibility to specify <strong>Margin in pixels.</strong></li>
+</ul>
+<h4 id="texel-density_2"><strong>Texel Density</strong></h4>
+<ul>
+<li>Fixed <strong>Show TD</strong> operator. Now it doesn&rsquo;t show an error if objects other than the MESH type are selected.</li>
+<li>Fixed <strong>Set TD</strong> operator Now it works right with islands if the object has a scale different from (1,1,1)</li>
+</ul>
+<hr />
+<h2 id="version-192-texel-density">Version 1.92 (Texel Density)</h2>
+<h3 id="general_2">General</h3>
 <ul>
 <li><strong>Zen UV now works</strong> not only in Edit Mode but also <strong>in Object mode</strong>. The following functions are available in Object Mode: Advanced UV Maps, UV Coverage, Checker Map, Texel Density Checker.</li>
 <li><strong>Added Texel Density category.</strong> Get, Set, and Check Texel Density of UV Islands.</li>
 <li>Updated <strong>Checker Map category</strong>. Add your own textures, filter existing textures by resolution, square and rectangular formats.</li>
 <li>Updated <strong>UV Maps category</strong>. Now you can work on UV Maps of the selected objects in sync.</li>
 </ul>
-<h3 id="operators">Operators</h3>
-<h4 id="advanced-uv-maps"><strong>Advanced UV Maps</strong></h4>
+<h3 id="operators_3">Operators</h3>
+<h4 id="advanced-uv-maps_1"><strong>Advanced UV Maps</strong></h4>
 <ul>
 <li>Added <strong>Sync UV Maps operator.</strong> Now you can duplicate, remove, clean and rename UV Maps of the selected objects in sync.</li>
 <li>Added <strong>Rename UV Map</strong> operator with pattern UV_Channel_* to keep the right order of UV Maps during export.</li>
 </ul>
-<h4 id="unwrap"><strong>Unwrap</strong></h4>
+<h4 id="unwrap_3"><strong>Unwrap</strong></h4>
 <ul>
 <li>Fixed <strong>Zen Unwrap</strong> operator. Now it ignores Islands tagged as Finished.</li>
 <li>Updated <strong>Quadrify Islands</strong> operator. Islands with the same geometry get the same unfolding.</li>
 </ul>
-<h4 id="pack"><strong>Pack</strong></h4>
+<h4 id="pack_3"><strong>Pack</strong></h4>
 <ul>
 <li>Added <strong>UV Coverage</strong> operator. It helps to determine the percentage of UV Map coverage.</li>
 </ul>
-<h4 id="checker-map"><strong>Checker Map</strong></h4>
+<h4 id="checker-map_2"><strong>Checker Map</strong></h4>
 <ul>
 <li>Added <strong>Filters</strong> to filter existing textures by resolution, square and rectangular formats.</li>
 <li>Added the possibility to add custom Checker textures and texture libraries.</li>
 </ul>
-<h2 id="19">1.9</h2>
-<h3 id="general_1">General</h3>
+<hr />
+<h2 id="version-19-texture-checker">Version 1.9 (Texture Checker)</h2>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe src="https://www.youtube.com/embed/w8o4TVW_VuM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<p><br><br></p>
+<h3 id="general_3">General</h3>
 <ul>
 <li><strong>Zen UV now works with multiple objects!</strong></li>
 <li>Added <strong>Finished System.</strong> It helps to control and manage the state of unwrapping UV Islands (Finished/Unfinished) by tags and visually. Nothing will be left not unwrapped!</li>
@@ -232,8 +443,8 @@
 <li>Updated <strong>Quadrify</strong> operator. Now it is based on the native <strong>Follow Active Quad</strong> operator and sets the base polygon size based on the average size of current islands.</li>
 <li><strong>Redesigned UI</strong> to support current and all new updates.</li>
 </ul>
-<h3 id="ui">UI</h3>
-<h4 id="main-menu"><strong>Main Menu</strong></h4>
+<h3 id="ui_2">UI</h3>
+<h4 id="main-menu_2"><strong>Main Menu</strong></h4>
 <ul>
 <li>The interface has been completely redesigned and operators have been classified and divided into the following groups:</li>
 </ul>
@@ -275,8 +486,9 @@
 </tr>
 </tbody>
 </table>
-<p><br>
-- Operators options were hidden under the <strong>Settings icons</strong> to optimize space.</p>
+<ul>
+<li>Operators options were hidden under the <strong>Settings icons</strong> to optimize space.</li>
+</ul>
 <h4 id="pie-menu"><strong>Pie Menu:</strong></h4>
 <ul>
 <li>Alternative <strong>CTRL</strong> operators <strong>Pin/Unpin Islands</strong> were replaced by <strong>Tag Finished/Unfinished</strong> from the new powerful <strong>Finished System</strong>. (Sector 4 and Sector 6).</li>
@@ -287,12 +499,12 @@
 <ul>
 <li>All operator options were removed from the Pop Up menu, you can adjust them only in the Main menu. The order of operators is consistent with the Main menu.</li>
 </ul>
-<h3 id="operators_1">Operators</h3>
+<h3 id="operators_4">Operators</h3>
 <h4 id="uv-maps"><strong>UV Maps</strong></h4>
 <ul>
 <li>Added <strong>UV Maps Properties Tab</strong> to have quick access to UV Maps management.</li>
 </ul>
-<h4 id="unwrap_1"><strong>Unwrap</strong></h4>
+<h4 id="unwrap_4"><strong>Unwrap</strong></h4>
 <ul>
 <li>Added <strong>Tag Unwrapped</strong> option for <strong>Zen Unwrap</strong> operator.</li>
 <li>Added <strong>Sort Unwrapped</strong> option for <strong>Zen Unwrap</strong> operator.</li>
@@ -304,7 +516,7 @@
 <li>Added <strong>Finished System</strong>. It has absorbed <strong>Pin System</strong> and was made to control and manage the state of unwrapping UV Islands (Finished/Unfinished) by tags and visually. Tags can be assigned manually or automatically after unwrapping. Islands can be sorted and pinned by state in UV Editor. You can check the state of Islands in the viewport by using <strong>Display Finished (Toggle)</strong> operator. Nothing will be left not unwrapped!</li>
 <li>Updated <strong>Quadrify</strong> operator. Now it is based on the native <strong>Follow Active Quad</strong> operator and sets the base polygon size based on the average size of current islands.</li>
 </ul>
-<h4 id="select"><strong>Select</strong></h4>
+<h4 id="select_1"><strong>Select</strong></h4>
 <ul>
 <li>Updated <strong>Isolate Islands (Toggle)</strong> operator. Isolation mode now is working for any selection mode — Vertex/Edge/Polygon. It no longer requires you to select at least one Vertex/Edge/Polygon in order to return back.</li>
 <li>Added <strong>Select Flipped Islands</strong> operator.</li>
@@ -312,11 +524,11 @@
 <li>Added <strong>Select Seam Edges</strong> operator.</li>
 <li><strong>Select Edge Loop</strong> operator <strong><em>*name </em></strong><em>was changed to </em><em>Select Interseam Loop</em>*.</li>
 </ul>
-<h4 id="pack_1"><strong>Pack</strong></h4>
+<h4 id="pack_4"><strong>Pack</strong></h4>
 <ul>
 <li>Added <strong>Rotate Islands</strong> option for <strong>Pack Islands</strong> operator.</li>
 </ul>
-<h4 id="checker-map_1"><strong>Checker Map</strong></h4>
+<h4 id="checker-map_3"><strong>Checker Map</strong></h4>
 <ul>
 <li>Updated <strong>Checker System</strong>. Now it has 2 types of texture checker - color and monochrome. Each type has 4 sizes. Custom textures can be added easily by the user at the node level.. The <strong>Reset Checker</strong> operator will return the <strong>Checker System</strong> to its initial state.</li>
 <li>Added <strong>Show Image In UV Editor</strong> option. It allows you to turn off the display of texture in the UV Editor.</li>
@@ -330,7 +542,13 @@
 <ul>
 <li>Added information about the current Zen UV version number at the end of the section.</li>
 </ul>
-<h2 id="18">1.8</h2>
+<hr />
+<h2 id="version-18">Version 1.8</h2>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe src="https://www.youtube.com/embed/yZ-rRiE-8us" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<p><br><br></p>
+<h3 id="general_4">General</h3>
 <ul>
 <li>Added Selected Only option to Zen Unwrap. It’s the separate workflow where only Selected Faces will be Unwrapped and Packed. It includes warnings and Unwrapping options if nothing is selected.</li>
 <li>Added Islands Offset option to Zen Unwrap. It’s available after activating Selected Only. Adds the ability to move inactive islands in the UV viewport to the left when working with Zen Unwrap operator.</li>
@@ -352,14 +570,19 @@
 <li>Fully reworked Main and Popup menus, structure and design.</li>
 <li>Fixed the loading icons bug that occurs on some systems.</li>
 </ul>
+<hr />
 <h2 id="17">1.7</h2>
-<ul>
-<li>Bugfix</li>
-</ul>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe src="https://www.youtube.com/embed/dqpgWcRBE4o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<p><br><br>
+- Bugfix</p>
+<hr />
 <h2 id="165">1.65</h2>
 <ul>
 <li>Start!</li>
 </ul>
+<hr />
 <h2 id="164">1.64</h2>
 <ul>
 <li>Bugfix</li>
@@ -396,15 +619,16 @@
   </div>
 
   <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../troubleshooting/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-    </span>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../troubleshooting/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
 </div>
     <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
     <script src="../js/theme.js" defer></script>
       <script src="../search/main.js" defer></script>
     <script defer>

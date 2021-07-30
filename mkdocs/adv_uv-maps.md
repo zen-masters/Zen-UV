@@ -1,5 +1,8 @@
 # Advanced UV Maps
 
+!!! Panel
+    ![Advanced UV Map](img/screen/adv_uv_map/adv_uv_map.png)
+
 Advanced UV Maps section created to have quick access to Object Data Properties — UV Maps.
 
 It allows to select the active, add, remove, and rename UV Maps from the list.
@@ -18,13 +21,13 @@ Rename all UV Maps using UVChannel_* pattern.
 !!! tip
     Hold 'Alt' to apply on all selected objects.
 
-## Duplicate active UV Map ![Add Button](img/icons/adv_uv_add.png)
+## Duplicate active UV Map ![Add Button](img/icons/plus.png)
 Duplicate active UV Map.
 
 !!! tip
     Hold 'Alt' to apply on all selected objects.
 
-## Remove active UV Map ![Remove Button](img/icons/adv_uv_remove.png)
+## Remove active UV Map ![Remove Button](img/icons/minus.png)
 Remove active UV Map.
 
 !!! tip

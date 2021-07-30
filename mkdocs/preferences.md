@@ -1,6 +1,6 @@
 # Preferences
-
-![Preferences](img/screen/preferences/MainPanel_2_1_3.png)
+!!! Panel
+    ![Preferences](img/screen/preferences/MainPanel_2_1_3.png)
 
 ## Zen UV Keymaps ![Zen UV Pie Menu](img/icons/zen-uv@2x.png)
 Set Shortcuts for Zen UV Menus.

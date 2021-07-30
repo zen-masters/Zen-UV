@@ -14,6 +14,7 @@ nav:
     # - Controls: controls.md
     - Texel Density: texel_density.md
     - Transform: transform.md
+    - Stack: stack.md
     - Preferences: preferences.md
     - Help: help.md
     - Troubleshooting: troubleshooting.md
