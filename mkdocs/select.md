@@ -1,5 +1,8 @@
 # Select
 
+!!! Panel
+    ![Select](img/screen/select/select_section.png)
+
 ## Select Islands
 
 Select Islands by selected edge/face of the Islands.
@@ -27,3 +30,7 @@ Select Edges Marked as Sharp.
 ## Select Interseams Loop
 
 Select Edge Loop with Seams respect.
+
+## Select Similar Islands
+
+Select Islands similar to selected

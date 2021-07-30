@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Stack - Zen UV for Blender</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Stack";
+    var mkdocs_page_input_path = "stack.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Zen UV for Blender</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../pie-menu/">Pie Menu</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">Advanced UV Maps</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../seam_groups/">Seam Groups</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../unwrap/">Unwrap</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../select/">Select</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../pack/">Pack</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../checker/">Checker Map</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../texel_density/">Texel Density</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../transform/">Transform</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Stack</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#stack_1">Stack</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#move-only">Move Only</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#unstack-direction">Unstack Direction</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#unstack">Unstack</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stack-mode">Stack Mode</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#global-mode">Global Mode</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#selected-mode">Selected Mode</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#display-stacks">Display Stacks</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-stacks">Select Stacks</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stack-display-mode">Stack Display Mode</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#similar-static">Similar (Static)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#selected">Selected</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#stacked">Stacked</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#stacked-color">Stacked Color</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#only-uv-area">Only UV Area</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#primaries">Primaries</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#replicas">Replicas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#singles">Singles</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#copy">Copy</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#paste">Paste</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#manual-stack">Manual Stack</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#area-matching">Area Matching</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#move-only_1">Move Only</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#add">Add</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#delete">Delete</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#add-islands">Add Islands</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-islands">Select Islands</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#analyze-stack">Analyze Stack</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#remove-all">Remove All</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stack_2">Stack</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#unstack_1">Unstack</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stack-mode_1">Stack Mode</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#global-mode_1">Global Mode</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#selected-mode_1">Selected Mode</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#display-manual-stacks">Display Manual Stacks</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Zen UV for Blender</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Stack</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="stack">Stack</h1>
+<div class="admonition panel">
+<p class="admonition-title">Panel</p>
+<p><img alt="Stack" src="../img/screen/stack/stack.png" /></p>
+</div>
+<h2 id="stack_1">Stack</h2>
+<p>Collect Similar Islands on Stacks.</p>
+<div class="admonition preferences">
+<p class="admonition-title">Preferences</p>
+<p><img alt="Stack" src="../img/screen/stack/stack_options.png" /></p>
+<h4 id="move-only">Move Only</h4>
+<p>Don&rsquo;t fit Islands. Just move to the same position.</p>
+<h4 id="unstack-direction">Unstack Direction</h4>
+<p>Direction where the island will be shifted.</p>
+</div>
+<h2 id="unstack">Unstack</h2>
+<p>Shift Islands from Stacks in given direction.</p>
+<h2 id="stack-mode">Stack Mode</h2>
+<p>Mode for Stacking.</p>
+<div class="admonition options">
+<p class="admonition-title">Options</p>
+<h4 id="global-mode">Global Mode</h4>
+<p>Collect all Similar Islands on Stacks.</p>
+<h4 id="selected-mode">Selected Mode</h4>
+<p>Collect selected Similar Islands on Stacks.</p>
+</div>
+<h2 id="display-stacks">Display Stacks <img alt="Display" src="../img/icons/display.png" /></h2>
+<p>Display of stacks.</p>
+<h2 id="select-stacks">Select Stacks <img alt="Select" src="../img/icons/select.png" /></h2>
+<p>Select stacks.</p>
+<h2 id="stack-display-mode">Stack Display Mode</h2>
+<div class="admonition options">
+<p class="admonition-title">Options</p>
+<p><img alt="Display" src="../img/screen/stack/stack_display.png" /></p>
+<ul>
+<li>
+<h4 id="similar-static"><img alt="Display" src="../img/icons/display.png" /> Similar (Static)</h4>
+</li>
+</ul>
+<p>Display all Similar Islands.</p>
+<ul>
+<li>
+<h4 id="selected"><img alt="Display" src="../img/icons/display.png" /> Selected</h4>
+</li>
+</ul>
+<p>Display Similar Islands by Selected.</p>
+<ul>
+<li>
+<h4 id="stacked"><img alt="Display" src="../img/icons/display.png" /> Stacked <img alt="Select" src="../img/icons/select.png" /></h4>
+</li>
+</ul>
+<p>Display Stacked Islands.</p>
+<div class="admonition options">
+<p class="admonition-title">Options</p>
+<p><img alt="Display Stacked" src="../img/screen/stack/stack_display_stacked_options.png" /></p>
+<ul>
+<li>
+<h5 id="stacked-color">Stacked Color</h5>
+</li>
+</ul>
+<p>Color for displaying Stacked Islands.</p>
+<ul>
+<li>
+<h5 id="only-uv-area">Only UV Area</h5>
+</li>
+</ul>
+<p>Display Stacks only in UV area</p>
+</div>
+<ul>
+<li>
+<h4 id="primaries">Primaries <img alt="Select" src="../img/icons/select.png" /></h4>
+</li>
+</ul>
+<p>Primary Islands. Without Replicated Islands.</p>
+<ul>
+<li>
+<h4 id="replicas">Replicas <img alt="Select" src="../img/icons/select.png" /></h4>
+</li>
+</ul>
+<p>Islands that can be Stacked. Without Primary Islands.</p>
+<ul>
+<li>
+<h4 id="singles">Singles <img alt="Select" src="../img/icons/select.png" /></h4>
+</li>
+</ul>
+<p>Islands that don&rsquo;t have Similar Islands.</p>
+</div>
+<hr />
+<h2 id="copy">Copy</h2>
+<p>Copy parameters of selected Islands/Faces and save them.</p>
+<h2 id="paste">Paste</h2>
+<p>Paste the parameters saved earlier to selected Islands/Faces.</p>
+<hr />
+<h2 id="manual-stack">Manual Stack</h2>
+<div class="admonition panel">
+<p class="admonition-title">Panel</p>
+<p><img alt="Panel" src="../img/screen/stack/stack_manual_stack.png" /></p>
+</div>
+<h2 id="area-matching">Area Matching <img alt="Area Matching" src="../img/icons/a.png" /></h2>
+<p>Set strict requirements to Islands Area Matching when Stacking. Disable this option if the Islands have a slightly different Area.</p>
+<h2 id="move-only_1">Move Only <img alt="Move Only" src="../img/icons/m.png" /></h2>
+<p>Don&rsquo;t fit Islands. Just move to the same position.</p>
+<h2 id="add">Add <img alt="Add" src="../img/icons/plus.png" /></h2>
+<p>Add new Stack.</p>
+<h2 id="delete">Delete <img alt="Delete" src="../img/icons/minus.png" /></h2>
+<p>Delete selected Stack.</p>
+<h2 id="add-islands">Add Islands <img alt="Add Islands" src="../img/icons/download.png" /></h2>
+<p>Append selected Islands to the active Stack.</p>
+<h2 id="select-islands">Select Islands <img alt="Add Islands" src="../img/icons/select.png" /></h2>
+<p>Select Islands in the Stack</p>
+<h2 id="analyze-stack">Analyze Stack <img alt="Analyse Stack" src="../img/icons/analyse.png" /></h2>
+<p>Analyze Islands Similarities in the Stack. You can find details in the Zen UV Manual Stack Analyze document in the Text Editor.</p>
+<h2 id="remove-all">Remove All <img alt="Remove All" src="../img/icons/trash.png" /></h2>
+<p>Remove all Manual Stacks from selected Objects.</p>
+<h2 id="stack_2">Stack</h2>
+<p>Collect Islands on Manual Stacks.</p>
+<h2 id="unstack_1">Unstack</h2>
+<p>Shift Islands from Manual Stacks in given direction.</p>
+<h2 id="stack-mode_1">Stack Mode</h2>
+<p>Mode for Stacking.</p>
+<div class="admonition options">
+<p class="admonition-title">Options</p>
+<h4 id="global-mode_1">Global Mode</h4>
+<p>Collect all Similar Islands on Stacks.</p>
+<h4 id="selected-mode_1">Selected Mode</h4>
+<p>Collect selected Similar Islands on Stacks.</p>
+</div>
+<h2 id="display-manual-stacks">Display Manual Stacks</h2>
+<p>Display Manual Stacks (Static)</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../preferences/" class="btn btn-neutral float-right" title="Preferences">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../transform/" class="btn btn-neutral" title="Transform"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../transform/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../preferences/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

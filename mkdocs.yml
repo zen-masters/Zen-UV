@@ -5,6 +5,7 @@ nav:
     - Installation: installation.md
     - Pie Menu: pie-menu.md
     - Advanced UV Maps: adv_uv-maps.md
+    - Seam Groups: seam_groups.md
     # - Operators: operators.md
     - Unwrap: unwrap.md
     - Select: select.md
@@ -12,8 +13,11 @@ nav:
     - Checker Map: checker.md
     # - Controls: controls.md
     - Texel Density: texel_density.md
+    - Transform: transform.md
+    - Stack: stack.md
     - Preferences: preferences.md
     - Help: help.md
+    - Downloads: downloads.md
     - Troubleshooting: troubleshooting.md
     - Changelog: changelog.md
 docs_dir: mkdocs

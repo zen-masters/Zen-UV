@@ -2,11 +2,15 @@
 
 ![Checker Map](img/screen/checker.png)
 
+!!! Panel
+![Main Panel](img/screen/tex_checker/tex_checker.png)
+
 ## Checker Texture (Toggle) ![Checker Texture](img/icons/checker_32.png)
 
 Add Checker Texture to the mesh (Toggle).
 
 !!! Preferences
+    ![Main Panel](img/screen/tex_checker/tex_checker_options.png)
 
     #### Checker Library Folder
     Checker Library Folder indicates the folder with 

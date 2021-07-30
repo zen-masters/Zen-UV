@@ -20,14 +20,16 @@
 ## Unmark Seams/Sharp edges ![Unmark Seams](img/icons/unmark-seams@2x.png)
 
 - *Default* — Unmark selected edges or face borders as Seams and/or Sharp edges.
-- `CTRL` — Tag selected Islands as Unfinished.
-- `ALT` — Remove all the Seams and/or Sharp edges from the mesh
+- `ALT` — Unmark All - Remove all the Seams and/or Sharp edges from the mesh
+- `CTRL` — Tag Unfinished - Tag selected Islands as Unfinished.
+
 
 ## Select Islands
 
 - *Default* — Select Islands by selected edge/face of the Islands
 - `ALT` — Select Overlapped Islands.
 - `CTRL` — Select Flipped Islands.
+- `SHIFT` - Select Similar Islands.
 
 ## Isolate Islands (Toggle)
 
