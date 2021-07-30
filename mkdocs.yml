@@ -17,6 +17,7 @@ nav:
     - Stack: stack.md
     - Preferences: preferences.md
     - Help: help.md
+    - Downloads: downloads.md
     - Troubleshooting: troubleshooting.md
     - Changelog: changelog.md
 docs_dir: mkdocs
