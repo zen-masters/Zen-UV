@@ -2,13 +2,13 @@
 
 ## Zen Unwrap ![Zen Unwrap](img/icons/zen-unwrap@2x.png)
 
-Mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after
+Mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after.
 
 !!! Preferences
 
     #### Mark Unwrapped
 
-    Mark edges or face borders as Seams and/or Sharp edges after Zen Unwrap operation
+    Mark edges or face borders as Seams and/or Sharp edges after Zen Unwrap operation.
 
     #### Unwrap Selected Only
 
