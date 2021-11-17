@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Transform - Zen UV for Blender</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Transform";
+    var mkdocs_page_input_path = "transform.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Zen UV for Blender</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../pie-menu/">Pie Menu</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">Advanced UV Maps</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../seam_groups/">Seam Groups</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../unwrap/">Unwrap</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../select/">Select</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../pack/">Pack</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../checker/">Checker Map</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../texel_density/">Texel Density</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Transform</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#universal-control-panel">Universal Control Panel</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pivot">Pivot</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../stack/">Stack</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Zen UV for Blender</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Transform</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="transform">Transform</h1>
+<div class="admonition panel">
+<p class="admonition-title">Panel</p>
+<p><img alt="Transform" src="../img/screen/transform/MainPanelMove.png" /></p>
+</div>
+<div class="admonition control">
+<p class="admonition-title">Control</p>
+<h4 id="universal-control-panel">Universal Control Panel</h4>
+<p><img alt="Transform" src="../img/screen/transform/UniversalControl.png" /></p>
+<p>The universal control panel that has through logic and different functions for different types of transformation.</p>
+</div>
+<h2 id="pivot">Pivot</h2>
+<p>Transform Pivot.</p>
+<hr />
+<h1 id="move">Move</h1>
+<p><img alt="Transform" src="../img/screen/transform/MainPanelMove.png" />
+Transform type Move.</p>
+<h2 id="universal-control-panel_1">Universal Control Panel</h2>
+<p>In the Transform type Move buttons represents direction of shifting.</p>
+<h2 id="move-increment">Move Increment</h2>
+<p>The value on which the island will be shifted.</p>
+<hr />
+<h1 id="scale">Scale</h1>
+<p><img alt="Transform" src="../img/screen/transform/Scale.png" />
+Transform type Scale.</p>
+<h2 id="universal-control-panel_2">Universal Control Panel</h2>
+<p>In the Transform type Scale buttons represents Points from where island will be scaled.</p>
+<h2 id="scale_1">Scale</h2>
+<p>The value of the scale of the island for each of the axes.</p>
+<hr />
+<h1 id="rotate">Rotate</h1>
+<p><img alt="Transform" src="../img/screen/transform/Rotate.png" />
+Transform type Rotate.</p>
+<h2 id="universal-control-panel_3">Universal Control Panel</h2>
+<p>In the Transform type Scale each button works as described. Buttons located in the corners rotate the island in the specified direction.
+The central button performs the automatic aligning of the island horizontally or vertically. The buttons at the top and bottom align the island vertically. Buttons on the left and right align the island horizontally.</p>
+<h2 id="rotate-increment">Rotate Increment</h2>
+<p>The value on which the island will be rotated.</p>
+<h2 id="orient-by-selected">Orient by selected</h2>
+<p>Reoriented the island by selected elements (vertices, edges, polygons).</p>
+<hr />
+<h1 id="flip">Flip</h1>
+<p><img alt="Transform" src="../img/screen/transform/Flip.png" />
+Transform type Flip.</p>
+<h2 id="universal-control-panel_4">Universal Control Panel</h2>
+<p>In the Transform type Flip buttons represents flip direction.</p>
+<hr />
+<h1 id="fit">Fit</h1>
+<p><img alt="Transform" src="../img/screen/transform/Fit.png" />
+Transform type Fit.</p>
+<p>Fit island to UV Square.</p>
+<h2 id="universal-control-panel_5">Universal Control Panel</h2>
+<p>In the Transform type Fit buttons represents origins from where Fit will be performed.</p>
+<h2 id="fill-islands">Fill Islands</h2>
+<p>Fit Islands from Center without keeping proportions.</p>
+<h2 id="padding">Padding</h2>
+<p>Clearance between island and UV Square bounds.</p>
+<h2 id="bounds">Bounds</h2>
+<p>It makes it possible to fill out not UV Square but any other area.</p>
+<hr />
+<h1 id="align">Align</h1>
+<p><img alt="Transform" src="../img/screen/transform/Align.png" />
+Transform type Align.</p>
+<h2 id="universal-control-panel_6">Universal Control Panel</h2>
+<p>In the Transform type Align buttons represent the side by which the islands will be aligned.</p>
+<hr />
+<h1 id="2d-cursor">2D Cursor</h1>
+<p><img alt="Transform" src="../img/screen/transform/2dCursor.png" />
+Transform type 2D Cursor.</p>
+<p>Align 2D Cursor over the selected island.</p>
+<h2 id="universal-control-panel_7">Universal Control Panel</h2>
+<p>In the Transform type 2D Cursor buttons represent sides of the island or selected elements.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../stack/" class="btn btn-neutral float-right" title="Stack">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../texel_density/" class="btn btn-neutral" title="Texel Density"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../texel_density/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../stack/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

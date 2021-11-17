@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="css/theme.css" />
   <link rel="stylesheet" href="css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
   
   <script>
     // Current page data
@@ -25,9 +25,8 @@
   
   <script src="js/jquery-2.1.1.min.js" defer></script>
   <script src="js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
-  
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -41,7 +40,7 @@
         <a href="." class="icon icon-home"> Zen UV for Blender</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -66,7 +65,11 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="uv-maps/">UV Maps</a>
+                    <li class="toctree-l1"><a class="reference internal" href="adv_uv-maps/">Advanced UV Maps</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="seam_groups/">Seam Groups</a>
                     </li>
                 </ul>
                 <ul>
@@ -86,11 +89,27 @@
                     </li>
                 </ul>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="texel_density/">Texel Density</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="transform/">Transform</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="stack/">Stack</a>
+                    </li>
+                </ul>
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="preferences/">Preferences</a>
                     </li>
                 </ul>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="help/">Help</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="downloads/">Downloads</a>
                     </li>
                 </ul>
                 <ul>
@@ -130,26 +149,26 @@
   
   <hr/>
 </div>
+
           <div role="main">
             <div class="section">
               
-                <h1 id="zen-uv-for-blender-19">Zen UV for Blender 1.9</h1>
-<p><!-- <a href="https://www.youtube.com/watch?v=ook2eFfH724">klzzwxh:0000</a> -->
+                <h1 id="zen-uv-for-blender-21-stacks">Zen UV for Blender 2.1 (Stacks)</h1>
+<!-- [![Zen UV Introduction](img/cover--eng.png)](https://www.youtube.com/watch?v=ook2eFfH724) -->
 <!-- blank line -->
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
-<iframe src="https://www.youtube.com/embed/w8o4TVW_VuM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+<iframe src="https://www.youtube.com/embed/Yj2SecY-c1Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
 </div>
 <!-- blank line -->
-<br>
-<!-- blank line --></p>
+<p><br></p>
+<!-- blank line -->
+
 <p><strong>Zen UV</strong> is not just a set of tools, it is ready to use pipeline for fast creating UV’s in Blender. It represents an intuitive system created by professionals and refined in real projects.</p>
 <p><strong>Enjoy this experience with us!</strong></p>
 <p><img alt="Gumroad" src="img/icons/services/gumroad-16.png" /> <a href="https://gumroad.com/l/ZenUV"><strong>Gumroad</strong></a> | <img alt="BlenderMarket" src="img/icons/services/blendermarket-16.png" /> <a href="https://www.blendermarket.com/products/zen-uv"><strong>BlenderMarket</strong></a> | <img alt="Discord" src="img/icons/services/discord-16.png" /> <a href="https://discord.gg/wGpFeME"><strong>Discord</strong></a></p>
 <!-- blank line -->
-
 <hr />
 <!-- blank line -->
-
 <h2 id="main-cool-features">Main (Cool) Features</h2>
 <ul>
 <li><strong>Smart Zen Unwrap Operator</strong> to mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after. <strong>Unwrap your model easily with Zen Unwrap!</strong>
@@ -212,15 +231,16 @@
   </div>
 
   <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-      
-        <span style="margin-left: 15px"><a href="installation/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="installation/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
 </div>
     <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
     <script src="js/theme.js" defer></script>
       <script src="search/main.js" defer></script>
     <script defer>
@@ -233,6 +253,6 @@
 </html>
 
 <!--
-MkDocs version : 1.1
-Build Date UTC : 2020-11-03 17:16:16
+MkDocs version : 1.2.2
+Build Date UTC : 2021-07-30 11:01:42.798942+00:00
 -->

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Texel Density - Zen UV for Blender</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Texel Density";
+    var mkdocs_page_input_path = "texel_density.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Zen UV for Blender</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../pie-menu/">Pie Menu</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">Advanced UV Maps</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../seam_groups/">Seam Groups</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../unwrap/">Unwrap</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../select/">Select</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../pack/">Pack</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../checker/">Checker Map</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Texel Density</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#texel-density_1">Texel Density</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#units">Units</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#texture-size">Texture Size</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#get-td">Get TD</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#set-td">Set TD</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#set-td-mode">Set TD Mode</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overall-mode">Overall Mode</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#island-mode">Island Mode</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#td-checker">TD Checker</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#td-checker_1">TD Checker</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#less">Less</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#equal">Equal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#over">Over</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#show-td">Show TD</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hide-td">Hide TD</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../transform/">Transform</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../stack/">Stack</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Zen UV for Blender</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Texel Density</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="texel-density">Texel Density</h1>
+<div class="admonition panel">
+<p class="admonition-title">Panel</p>
+<p><img alt="Texel Density" src="../img/screen/texel_density/texel_density.png" /></p>
+</div>
+<h2 id="texel-density_1">Texel Density</h2>
+<p>Shows Texel Density value.</p>
+<div class="admonition preferences">
+<p class="admonition-title">Preferences</p>
+<p><img alt="Texel Density" src="../img/screen/texel_density/texel_density_options.png" /></p>
+<h4 id="units">Units</h4>
+<p>Texel density calculation units.</p>
+<h4 id="texture-size">Texture Size</h4>
+<p>Image Size for Texel Density computation.</p>
+</div>
+<h2 id="get-td">Get TD</h2>
+<p>Get Texel Density from selected Islands.</p>
+<h2 id="set-td">Set TD</h2>
+<p>Set Texel Density to selected Islands.</p>
+<h2 id="set-td-mode">Set TD Mode</h2>
+<p>Mode for setting Texel Density.</p>
+<div class="admonition options">
+<p class="admonition-title">Options</p>
+<h4 id="overall-mode">Overall Mode</h4>
+<p>Set Texel Density for all selected Islands together.</p>
+<h4 id="island-mode">Island Mode</h4>
+<p>Set Texel Density individually for every selected Island.</p>
+</div>
+<h2 id="td-checker">TD Checker</h2>
+<p>Texel Density value used for Show TD operation.</p>
+<div class="admonition preferences">
+<p class="admonition-title">Preferences</p>
+<p><img alt="Texel Density Checker" src="../img/screen/texel_density/texel_density_checker_options.png" /></p>
+<h4 id="td-checker_1">TD Checker</h4>
+<p>Texel Density value used for Show TD operation.</p>
+<h4 id="less">Less</h4>
+<p>Viewport display color to represent Texel Density less than TD Checker value.</p>
+<h4 id="equal">Equal</h4>
+<p>Viewport display color to represent Texel Density equal to TD Checker value.</p>
+<h4 id="over">Over</h4>
+<p>Viewport display color to represent Texel Density over than TD Checker value.</p>
+</div>
+<h2 id="show-td">Show TD</h2>
+<p>Display Texel Density in Viewport by chosen TD Checker value and colors.</p>
+<h2 id="hide-td">Hide TD</h2>
+<p>Disable displaying Texel Density in Viewport by chosen TD Checker value and colors.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../transform/" class="btn btn-neutral float-right" title="Transform">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../checker/" class="btn btn-neutral" title="Checker Map"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../checker/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../transform/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

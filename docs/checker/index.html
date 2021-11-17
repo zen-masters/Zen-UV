@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="../css/theme.css" />
   <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
   
   <script>
     // Current page data
@@ -25,9 +25,8 @@
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
   <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
-  
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -41,7 +40,7 @@
         <a href=".." class="icon icon-home"> Zen UV for Blender</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -60,7 +59,11 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../uv-maps/">UV Maps</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">Advanced UV Maps</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../seam_groups/">Seam Groups</a>
                     </li>
                 </ul>
                 <ul>
@@ -80,9 +83,17 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#checker-texture-toggle">Checker Texture (Toggle)</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#checker-texture">Checker Texture</a>
+    <li class="toctree-l3"><a class="reference internal" href="#checker-library-folder">Checker Library Folder</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#show-image-in-uv-editor">Show Image In UV Editor</a>
+    <li class="toctree-l3"><a class="reference internal" href="#reset-folder">Reset Folder</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#load-your-texture">Load Your Texture</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#refresh-texture-library">Refresh Texture Library</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#auto-sync-checker">Auto Sync Checker</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#open-shader-editor">Open Shader Editor</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#reset-checker">Reset Checker</a>
     </li>
@@ -90,7 +101,23 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#remove-checker-nodes">Remove Checker Nodes</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#checker-textures">Checker Textures</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#filter">Filter</a>
+    </li>
     </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../texel_density/">Texel Density</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../transform/">Transform</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../stack/">Stack</a>
                     </li>
                 </ul>
                 <ul>
@@ -99,6 +126,10 @@
                 </ul>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
                     </li>
                 </ul>
                 <ul>
@@ -138,24 +169,48 @@
   
   <hr/>
 </div>
+
           <div role="main">
             <div class="section">
               
                 <h1 id="checker-map">Checker Map</h1>
 <p><img alt="Checker Map" src="../img/screen/checker.png" /></p>
+<div class="admonition panel">
+<p class="admonition-title">Panel</p>
+</div>
+<p><img alt="Main Panel" src="../img/screen/tex_checker/tex_checker.png" /></p>
 <h2 id="checker-texture-toggle">Checker Texture (Toggle) <img alt="Checker Texture" src="../img/icons/checker_32.png" /></h2>
 <p>Add Checker Texture to the mesh (Toggle).</p>
 <div class="admonition preferences">
 <p class="admonition-title">Preferences</p>
-<h4 id="checker-texture">Checker Texture</h4>
-<p>Presets of Zen UV Default Checker.</p>
-<h4 id="show-image-in-uv-editor">Show Image In UV Editor</h4>
-<p>Show Image In UV Editor Toggle.</p>
+<p><img alt="Main Panel" src="../img/screen/tex_checker/tex_checker_options.png" /></p>
+<h4 id="checker-library-folder">Checker Library Folder</h4>
+<p>Checker Library Folder indicates the folder with 
+which Zen UV Checker will work.
+    All textures in * .JPG, * .PNG formats that are 
+    inside this folder will be collected in 
+    Checker Textures list and can be used to display 
+    on selected models.</p>
+<h4 id="reset-folder">Reset Folder</h4>
+<p>Reset Checker Library path to Default State.</p>
+<h4 id="load-your-texture">Load Your Texture</h4>
+<p>Open File Browser and add selected texture to the Checker Library.</p>
+<h4 id="refresh-texture-library">Refresh Texture Library</h4>
+<p>Refresh Textures from Checker Library Folder.</p>
+<h4 id="auto-sync-checker">Auto Sync Checker</h4>
+<p>Automatically sync selected Checker Texture with Viewport.</p>
+<h4 id="open-shader-editor">Open Shader Editor</h4>
+<p>Open Shader Editor with Zen UV Checker Node.</p>
 <h4 id="reset-checker">Reset Checker</h4>
 <p>Reset Zen UV Checker to Default state.</p>
 </div>
 <h2 id="remove-checker-nodes">Remove Checker Nodes</h2>
-<p>Remove Checker from the scene materials.</p>
+<p>Remove Zen UV Checker Nodes from the scene materials.</p>
+<h2 id="checker-textures">Checker Textures</h2>
+<p>The Checker Textures field is used to select the checker texture that will be displayed on the selected models.</p>
+<h2 id="filter">Filter <img alt="Filter Button" src="../img/icons/checker-Filter_32.png" /></h2>
+<p>Enable resolution fields to filter existing textures by X or/and Y resolutions.
+It includes Lock button for filtering square format textures.</p>
               
             </div>
           </div>
@@ -163,7 +218,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../preferences/" class="btn btn-neutral float-right" title="Preferences">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../texel_density/" class="btn btn-neutral float-right" title="Texel Density">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../pack/" class="btn btn-neutral" title="Pack"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -189,17 +244,18 @@
   </div>
 
   <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../pack/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../preferences/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../pack/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../texel_density/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
 </div>
     <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
     <script src="../js/theme.js" defer></script>
       <script src="../search/main.js" defer></script>
     <script defer>
