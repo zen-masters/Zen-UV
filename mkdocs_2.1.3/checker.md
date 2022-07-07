@@ -2,11 +2,15 @@
 
 ![Checker Map](img/screen/checker.png)
 
+!!! Panel
+![Main Panel](img/screen/tex_checker/tex_checker.png)
+
 ## Checker Texture (Toggle) ![Checker Texture](img/icons/checker_32.png)
 
 Add Checker Texture to the mesh (Toggle).
 
 !!! Preferences
+    ![Main Panel](img/screen/tex_checker/tex_checker_options.png)
 
     #### Checker Library Folder
     Checker Library Folder indicates the folder with 
@@ -18,7 +22,7 @@ Add Checker Texture to the mesh (Toggle).
     #### Reset Folder
     Reset Checker Library path to Default State.
     #### Load Your Texture
-    Open File Browser and add the selected texture to the Checker Library.
+    Open File Browser and add selected texture to the Checker Library.
     #### Refresh Texture Library
     Refresh Textures from Checker Library Folder.
     #### Auto Sync Checker
@@ -36,4 +40,4 @@ The Checker Textures field is used to select the checker texture that will be di
 
 ## Filter ![Filter Button](img/icons/checker-Filter_32.png)
 Enable resolution fields to filter existing textures by X or/and Y resolutions.
-It includes a Lock button for filtering square format textures.
+It includes Lock button for filtering square format textures.

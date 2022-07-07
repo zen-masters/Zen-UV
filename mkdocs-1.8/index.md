@@ -8,7 +8,7 @@
 <br>
 <!-- blank line -->
 
-**Zen UV** is not just a set of tools, it is ready to use pipeline for fast creating UV’s in Blender. It represents an intuitive system created by professionals and refined in real projects.
+**Zen UV** is not just a set of tools, it is ready to use the pipeline for fast creating UVs in Blender. It represents an intuitive system created by professionals and refined in real projects.
 
 **Enjoy this experience with us!**
 
@@ -29,7 +29,7 @@
 - [**Select Overlapped Islands Operator**](operators/#select-overlapped-islands) for displaying problem areas.
 - Checking the current state of UV’s by using [**Checker Texture Toggle.**](operators/#checker-texture-toggle)
 - Intuitive UI with multifunctional [**Pie,**](pie-menu) Panel, and Popup menus.
-- Flexible [**Preferences**](preferences) system will help you to adjust Zen UV for your needs.
+- A Flexible [**Preferences**](preferences) system will help you to adjust Zen UV for your needs.
 - Quick support on the [**Discord channel**](https://discord.gg/wGpFeME).
 
 ## Default Shortcut

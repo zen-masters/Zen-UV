@@ -10,7 +10,7 @@ Mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges
 
     #### Mark Unwrapped
 
-    Mark edges or face borders as Seams and/or Sharp edges after the Zen Unwrap operation
+    Mark edges or face borders as Seams and/or Sharp edges after Zen Unwrap operation
 
     #### Unwrap Selected Only
 
@@ -67,7 +67,7 @@ Mark Sharp edges by existing Seams.
 Mirror Seams by axes.
 
 ## Mark Seams by Open Edges
-Mark Seams by Open Edges. The way that looks in the viewport.
+Mark Seams by Open Edges. Way that looks in the viewport.
 
 ---
 ## Smooth by Sharp (Toggle)
@@ -103,14 +103,14 @@ Select Islands tagged as Finished.
 
 ## Display Finished (Toggle)
 
-Display Finished/Unfinished Islands in the viewport.
+Display Finished/Unfinished Islands in viewport
 
 ---
 ## Quadrify Islands ![Quadrify Islands](img/icons/quadrify_32.png)
 
 ![Unwrap](img/screen/unwrap/quadrify_options.png)
 
-Straighten rectangular-shaped Islands.
+Straighten rectangular shaped Islands
 
 !!! Preferences
 
@@ -124,7 +124,7 @@ Straighten rectangular-shaped Islands.
 
     #### Mark Not-Quadrified
 
-    Mark faces boundaries of Not-Quadrified parts as Seams after Quadrify Islands operation.
+    Mark face boundaries of Not-Quadrified parts as Seams after Quadrify Islands operation.
 
     #### By selected Edges
 
