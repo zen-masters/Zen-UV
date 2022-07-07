@@ -8,7 +8,7 @@
 <br>
 <!-- blank line -->
 
-**Zen UV** is not just a set of tools, it is ready to use the pipeline for fast creating UVs in Blender. It represents an intuitive system created by professionals and refined in real projects.
+**Zen UV** is not just a set of tools, it is ready to use the pipeline for fast creating UV’s in Blender. It represents an intuitive system created by professionals and refined in real projects.
 
 **Enjoy this experience with us!**
 

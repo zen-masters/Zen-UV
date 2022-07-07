@@ -1,14 +1,14 @@
-# Zen UV for Blender 2.1 (Stacks)
+# Zen UV for Blender 3.0 (Relax)
 <!-- [![Zen UV Introduction](img/cover--eng.png)](https://www.youtube.com/watch?v=ook2eFfH724) -->
 <!-- blank line -->
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
-<iframe src="https://www.youtube.com/embed/Yj2SecY-c1Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+<iframe src="https://www.youtube.com/embed/Yj2SecY-c1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
 </div>
 <!-- blank line -->
 <br>
 <!-- blank line -->
 
-**Zen UV** is not just a set of tools, it is ready to use pipeline for fast creating UV’s in Blender. It represents an intuitive system created by professionals and refined in real projects.
+**Zen UV** is not just a set of tools, it is ready to use the pipeline for fast creating UVs in Blender. It represents an intuitive system created by professionals and refined in real projects.
 
 **Enjoy this experience with us!**
 
@@ -29,20 +29,20 @@
 <br><br>
 - Different Pack Engines. **Yes, you can use UVPackmaster 2 with Zen UV!**
 <br><br>
-- Isolate Island (Toggle) for comfortable step by step work with separate geometry parts.
+- Isolate Island (Toggle) for comfortable step-by-step work with separate geometry parts.
 <br><br>
 - **Checker System** is a node-based system that contains Checker Textures designed specifically for Zen UV. Custom textures can be added easily by the user at the node level. **Check UV's state on the model without ruining existing materials!**
 <br><br>
-- Flexible Preferences system will help you to adjust Zen UV for your needs.
+- A flexible Preferences system will help you to adjust Zen UV for your needs.
 <br><br>
 - Smooth by Sharp (Toggle)**. Set hard/soft edges for perfect normal map bakes in one click!**
 <br><br>
 - UV Maps Properties Tab to have quick access to UV Maps management.
 <br><br>
-- Intuitive UI with multifunctional Main, Pie and Popup menus. **You will like it!**
+- Intuitive UI with multifunctional Main, Pie, and Popup menus. **You will like it!**
 <br><br>
 - Quick support on the [**Discord channel**](https://discord.gg/wGpFeME).
 
-## Default Shortcut
+## Default Shortcuts
 - Zen UV Pie Menu ![Zen UV Pie Menu](img/icons/zen-uv@2x.png) --- `Alt + U`
 - Zen UV Popup Menu --- `Shift + U`

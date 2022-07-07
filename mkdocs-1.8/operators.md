@@ -1,6 +1,6 @@
 # Operators
 
-## Zen Unwrap ![Zen Unwrap](img/icons/zen-unwrap@2x.png)
+## Zen Unwrap ![zenunwrap](img/icons/zen-unwrap@2x.png)
 Unwrap by Marked edges and Pack after. Also, you can select edges/faces and do Zen Unwrap. All selected edges/faces will be Marked as Seams and/or Sharp edges and unwrapped after.
 
 !!! Preferences
@@ -42,7 +42,7 @@ Mark Seams by existing Sharp edges.
 Mark Sharp edges by existing Seams.
 
 ## Quadrify Islands
-Straighten rectangular shaped UV Islands.
+Straighten rectangular-shaped UV Islands.
 
 *The addon is using the [quadrification algorithm](https://github.com/Radivarig/UvSquares) by Radivarig.*
 
@@ -71,12 +71,12 @@ Pack all Islands.
 ## Select Islands
 Select UV Islands. 
 
-*Select at least one edge/face of the Island(s)..*
+*Select at least one edge/face of the Island(s).*
 
 ## Isolate Islands (Toggle)
 Isolate UV Islands (Toggle). 
 
-*Select at least one edge/face of the Island(s)..*
+*Select at least one edge/face of the Island(s).*
 
 
 ## Select Overlapped Islands
@@ -90,12 +90,12 @@ Select edge loops with Seams respect.
 ## Pin UV Island
 Pin UV Island. 
 
-*Select at least one edge/face of the Island(s)..*
+*Select at least one edge/face of the Island(s).*
 
 ## Unpin UV Island
 Unpin UV Island. 
 
-*Select at least one edge/face of the Island(s)..*
+*Select at least one edge/face of the Island(s).*
 
 ## Show Pinned Islands (Toggle)
 Show Pinned Islands (Toggle).

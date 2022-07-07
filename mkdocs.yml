@@ -1,4 +1,4 @@
-site_name: Zen UV for Blender
+site_name: Zen UV 3.0 for Blender
 site_description: Zen UV for Blender Documentation
 nav:
     - Introduction: index.md
@@ -19,7 +19,7 @@ nav:
     - Help: help.md
     - Downloads: downloads.md
     - Troubleshooting: troubleshooting.md
-    - Changelog: changelog.md
+    - Changelog: changelg.md
 docs_dir: mkdocs
 site_dir: docs
 theme: readthedocs
