@@ -15,7 +15,9 @@ nav:
     - Texel Density: texel_density.md
     - Transform: transform.md
     - Stack: stack.md
+    - Sticky UV Editor: sticky_uv_editor.md
     - Preferences: preferences.md
+    - Addon Preferences: addon_prefs.md
     - Help: help.md
     - Downloads: downloads.md
     - Troubleshooting: troubleshooting.md

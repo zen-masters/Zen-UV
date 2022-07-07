@@ -10,19 +10,21 @@ It allows to select the active, add, remove, and rename UV Maps from the list.
 If more than one object is selected, you can synchronously work with UV maps of the selected objects.
 
 ## Clean UV Maps
-Remove all inactive UV Maps.
+Remove inactive UV Map.
 
 !!! tip
-    Hold 'Alt' to apply on all selected objects.
+    Hold [Zen Modifier Key](addon_prefs.md/#zen-modifier-key) (default 'Alt') to apply on all selected objects.
 
 ## Rename UV Maps
-Rename all UV Maps using UVChannel_* pattern.
+Rename UV Map using pattern. The pattern can be defined in the operator popup.
+![](img/screen/adv_uv_map/rename_uv_maps_popup.png)
 
 !!! tip
     Hold 'Alt' to apply on all selected objects.
 
 ## Duplicate active UV Map ![Add Button](img/icons/plus.png)
-Duplicate active UV Map.
+Duplicate the active UV Map or create a new one depending on the operator's properties.
+![](img/screen/adv_uv_map/duplicate_active_map.png)
 
 !!! tip
     Hold 'Alt' to apply on all selected objects.
