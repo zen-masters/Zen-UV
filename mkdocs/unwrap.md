@@ -79,7 +79,7 @@ Mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges
 - Toggle between Auto Smooth 180° (with sharp edges) and regular smooth modes.
 
 ---
-# Finishing System
+## Finishing System
 
 !!! Panel
     ![](img/screen/unwrap/finished_system.png)
@@ -110,4 +110,3 @@ Mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges
 ### Display Finished (Toggle)
 
 - Display Finished/Unfinished Islands in the viewport.
-- 
