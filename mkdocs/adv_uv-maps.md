@@ -54,7 +54,7 @@ In automatic synchronization mode:
 
 ## Copy UV / Paste UV
 
-Allows transferring the UV coordinates between an UV Maps.
+Allows transferring the UV coordinates between UV Maps.
 
 ![](img/screen/adv_uv_map/uv_copy_paste.png)
 

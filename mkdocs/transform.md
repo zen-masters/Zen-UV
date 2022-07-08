@@ -26,6 +26,7 @@ The value on which the island will be shifted.
 # Scale
 ![Transform](img/screen/transform/Scale.png)
 Transform type Scale.
+
 ## Universal Control Panel
 In the Transform type Scale buttons represents Points from where island will be scaled.
 ## Scale
@@ -80,3 +81,22 @@ Transform type 2D Cursor.
 Align 2D Cursor over the selected island.
 ## Universal Control Panel
 In the Transform type 2D Cursor buttons represent sides of the island or selected elements.
+
+---
+# Independent Transform Operators
+
+## Quadrify Islands ![Quadrify Islands](img/icons/quadrify_32.png)
+
+![Unwrap](img/screen/unwrap/quadrify_options.png)
+
+Straighten rectangular-shaped Islands.
+
+!!! Preferences
+
+    - **Pin Quadrified** - Pin Islands after Quadrify Islands operation.
+
+    - **Pack Quadrified** - Pin Islands after Quadrify Islands operation.
+
+    - **Mark Not-Quadrified** - Mark faces boundaries of Not-Quadrified parts as Seams after Quadrify Islands operation.
+
+    - **By selected Edges** - Selected Edges will be used and marked as Seams during Quadrify Islands operation. Works only in edge selection mode.
