@@ -42,7 +42,7 @@ Mark Seams by existing Sharp edges.
 Mark Sharp edges by existing Seams.
 
 ## Quadrify Islands
-Straighten rectangular shaped UV Islands.
+Straighten rectangular-shaped UV Islands.
 
 *The addon is using the [quadrification algorithm](https://github.com/Radivarig/UvSquares) by Radivarig.*
 
@@ -71,12 +71,12 @@ Pack all Islands.
 ## Select Islands
 Select UV Islands. 
 
-*Select at least one edge/face of the Island(s)..*
+*Select at least one edge/face of the Island(s).*
 
 ## Isolate Islands (Toggle)
 Isolate UV Islands (Toggle). 
 
-*Select at least one edge/face of the Island(s)..*
+*Select at least one edge/face of the Island(s).*
 
 
 ## Select Overlapped Islands

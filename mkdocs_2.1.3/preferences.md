@@ -6,7 +6,7 @@
 Set Shortcuts for Zen UV Menus.
 
 ## Reset Preferences
-Reset Zen UV preferences to Default state.
+Reset Zen UV preferences to the Default state.
 
 ---
 
@@ -16,7 +16,7 @@ Reset Zen UV preferences to Default state.
 ### HOps UV Display 
 Display UV's in 3D View using Hard Ops addon.
 
-### Context sensitive
+### Context-sensitive
 Enable HOps UV Display if UV Editor is open.
 
 ---
@@ -43,4 +43,4 @@ Display crease edges created for the Subdivision modifier. It can be overlapped 
 ## Panels Panel
 ![Preferences](img/screen/preferences/PanelPanels.png)
 
-Allow to disable displaying unused categories.
+Allow disabling displaying unused categories.

@@ -15,12 +15,12 @@ Collect Similar Islands on Stacks.
 
     #### Unstack Direction
 
-    Direction where the island will be shifted.
+    The direction where the island will be shifted.
 
 
 ## Unstack
 
-Shift Islands from Stacks in given direction.
+Shift Islands from Stacks in a given direction.
 
 ## Stack Mode
 Mode for Stacking.
@@ -65,7 +65,7 @@ Select stacks.
 
         - ##### Only UV Area
   
-        Display Stacks only in UV area
+        Display Stacks only in the UV area
 
     - #### Primaries ![Select](img/icons/select.png)
 
@@ -98,7 +98,7 @@ Paste the parameters saved earlier to selected Islands/Faces.
 
 ## Area Matching ![Area Matching](img/icons/a.png)
 
-Set strict requirements to Islands Area Matching when Stacking. Disable this option if the Islands have a slightly different Area.
+Set strict requirements for Islands Area Matching when Stacking. Disable this option if the Islands have a slightly different Area.
 
 
 ## Move Only ![Move Only](img/icons/m.png)
@@ -135,7 +135,7 @@ Collect Islands on Manual Stacks.
 
 ## Unstack
 
-Shift Islands from Manual Stacks in given direction.
+Shift Islands from Manual Stacks in the given direction.
 
 ## Stack Mode
 Mode for Stacking.

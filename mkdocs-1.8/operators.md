@@ -1,6 +1,6 @@
 # Operators
 
-## Zen Unwrap ![zenunwrap](img/icons/zen-unwrap@2x.png)
+## Zen Unwrap ![](img/icons/zen-unwrap@2x.png)
 Unwrap by Marked edges and Pack after. Also, you can select edges/faces and do Zen Unwrap. All selected edges/faces will be Marked as Seams and/or Sharp edges and unwrapped after.
 
 !!! Preferences
