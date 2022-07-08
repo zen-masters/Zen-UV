@@ -1,12 +1,12 @@
 # Pack
 !!! Panel
-    ![Pack](img/screen/pack/pack.png)
+    ![Pack](img/screen/pack/pack_main_panel.png)
 
-## Pack Islands
+### Pack Islands
 
-Pack all Islands.
+- Pack all Islands.
 
-!!! Preferences
+<!-- !!! Preferences
     ![Pack Options](img/screen/pack/pack_options.png)
 
     #### Average Islands Scale
@@ -25,12 +25,24 @@ Pack all Islands.
     Select Pack Engine for Pack Islands operation.
 
     - Blender Pack
-    - UVPackmaster 2
+    - UVPackmaster 2 -->
 
-## Margin
+### Margin
 
-Set space between Islands for Pack Islands operation.
+- Set space between Islands for Pack Islands operation.
 
-## UV Coverage
+### UV Coverage
 
-Calculate UV Coverage of selected objects for active UV map.
+- Calculate UV Coverage of selected objects for active UV map.
+
+# Pack Engine
+!!! Panel
+    ![](img/screen/pack/pack_engine.png)
+
+Three Pack engines are supported.
+
+- Blender Pack
+- [UV Pack Master](https://uvpackmaster.com) (v2, v3)
+- [UV Packer](https://www.uv-packer.com/)
+  
+Each Pack engine has its own set of options. To obtain information, please refer to the documentation of the corresponding engine.
