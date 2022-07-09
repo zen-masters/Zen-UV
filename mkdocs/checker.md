@@ -46,6 +46,12 @@ Add Checker Texture to the mesh (Toggle).
 
 ![](img/screen/tex_checker/chk_textures_full_list.png)
 
+- Any texture can be tiled or offset but only in the Material Preview or Rendered modes.
+
+![](img/screen/tex_checker/m_prev_offset_modes.png)
+
+![](img/screen/tex_checker/chk_tiling_offset.png)
+
 - Every texture has an bright green pixel in U = 0, V = 0 coordinates.
 - If you see green faces - keep in mind that they do not have UV coordinates.
   
@@ -62,3 +68,12 @@ Add Checker Texture to the mesh (Toggle).
 - Orient filtering is on.
   
 ![](img/screen/tex_checker/filter_orient_is_on.png)
+
+### Display Stretch Map
+
+- Display an angle-based stretching map.
+
+![](img/screen/tex_checker/stretch_map_sample.png)
+
+  1. Toggle displaying of the stretch map.
+  2. Select stretched faces.
