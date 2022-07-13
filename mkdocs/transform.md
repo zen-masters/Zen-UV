@@ -7,26 +7,65 @@
 ## Independent Transform Operators:
 ---
 ### Relax ![](img/icons/relax-1_32.png)
+
+ - Allows to reduce the stretching the faces of the island. Uses three algorithms.
+     - **Zen Relax** - The algorithm is most suitable for organic objects.
+     - **Angle Based** - Blender's native algorithm. Most suitable for the hard surfaces objects.
+     - **Conformal** - Blender's native algorithm. Same as **Angle Based**, but much faster. However, can lead to undesired results if the island is complicated.
+
+![](img/screen/transform/relax.png)
+
 ---
-### World Orient
+### World Orient.
+
+ - Rotate Islands the way they are oriented on the Models. Each method (Organic/Hard Surface) uses a heuristic approach and correctly orients most of the Islands in its area.
+  
+  ![](img/screen/transform/world_orient_props.png)
+
+ - **Method: Hard Surface / Organic** - The orientation method is suitable for geometry types.
+ - **Further orient** - Additional turn. Allows you to turn the island to a horizontal or vertical if the island is located at an angle in the model.
+ - **Flip By Axis** - Allow changing direction of the island after basic orientation. Suitable if needed change orientation from legs to head for example.
+
 ---
-### Randomize
+### Randomize.
+ - Randomize the position, rotation, and scale of the islands or selected vertices.
+
+ ![](img/screen/transform/randomize.png)
+
 ---
 ### Quadrify Islands ![](img/icons/quadrify_32.png)
 
-![Unwrap](img/screen/unwrap/quadrify_options.png)
-
 Straighten rectangular-shaped Islands.
+
+![](img/screen/transform/quadrify_op_props.png)
 
 !!! Preferences
 
+    - **By selected Edges** - Selected Edges will be used and marked as Seams during Quadrify Islands operation. Works only in edge selection mode.
+    - **Mark Borders** - Mark borders as seams/sharp after Quadrify Island operation.
+    - **Mark Seams** - Mark seam in case **Mark Borders** is on.
+    - **Mark Sharp** - Mark sharp in case **Mark Borders** is on.
+    - **Orient to: ** - How to orient Quadrified Islands.
+      - **Initial** - Leave orientation as is.
+      - **Vertical** - Set orientation vertical.
+      - **Horizontal** - Set orientation horizontal.
+
+    - **Average Texel Density** - Averaging the size for the processed islands.
+
+    - **Pack Quadrified** - Pac Islands after Quadrify Islands operation.
     - **Pin Quadrified** - Pin Islands after Quadrify Islands operation.
 
-    - **Pack Quadrified** - Pin Islands after Quadrify Islands operation.
+---
 
-    - **Mark Not-Quadrified** - Mark faces boundaries of Not-Quadrified parts as Seams after Quadrify Islands operation.
+### Reshape Island
 
-    - **By selected Edges** - Selected Edges will be used and marked as Seams during Quadrify Islands operation. Works only in edge selection mode.
+Changes the island’s shape depending on the preset. [Here is full information](operators/reshape_island.md) about Reshape Island.
+
+- **Selected** -  Straighten the selected Edge Loops and relax not selected vertices.
+- **U Direction / V Direction** - Edges is aligned in the indicated direction.
+- **Borders** - Straighten the edges of the island in even lines according to the given parameters.
+
+![](img/screen/transform/reshape_presets_collected.png)
 
 ---
 ## Unified Transform System:
