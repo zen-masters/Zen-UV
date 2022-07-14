@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Checker Map - Zen UV for Blender</title>
+  <title>Checker Map - Zen UV 3.0 for Blender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -37,7 +37,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Zen UV for Blender</a>
+        <a href=".." class="icon icon-home"> Zen UV 3.0 for Blender</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -82,28 +82,20 @@
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Checker Map</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#checker-texture-toggle">Checker Texture (Toggle)</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#checker-library-folder">Checker Library Folder</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#reset-folder">Reset Folder</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#load-your-texture">Load Your Texture</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#refresh-texture-library">Refresh Texture Library</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#auto-sync-checker">Auto Sync Checker</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#open-shader-editor">Open Shader Editor</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#reset-checker">Reset Checker</a>
-    </li>
-        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#remove-checker-nodes">Remove Checker Nodes</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#checker-textures">Checker Textures</a>
+    <li class="toctree-l2"><a class="reference internal" href="#checker-textures-selector">Checker Textures Selector</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-interpolation">1. Interpolation</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#filter">Filter</a>
+    <li class="toctree-l3"><a class="reference internal" href="#2-checker-textures">2. Checker Textures</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-filter">3. Filter</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#display-stretch-map">Display Stretch Map</a>
     </li>
     </ul>
                     </li>
@@ -121,7 +113,15 @@
                     </li>
                 </ul>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sticky_uv_editor/">Sticky UV Editor</a>
+                    </li>
+                </ul>
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../addon_prefs/">Addon Preferences</a>
                     </li>
                 </ul>
                 <ul>
@@ -137,7 +137,11 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../changelg/">Changelog</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../our_addons/">Our Add-ons</a>
                     </li>
                 </ul>
       </div>
@@ -149,7 +153,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Zen UV for Blender</a>
+        <a href="..">Zen UV 3.0 for Blender</a>
       </nav>
 
       
@@ -177,40 +181,75 @@
 <p><img alt="Checker Map" src="../img/screen/checker.png" /></p>
 <div class="admonition panel">
 <p class="admonition-title">Panel</p>
+<p><img alt="Main Panel" src="../img/screen/tex_checker/checker_main_panel.png" /></p>
 </div>
-<p><img alt="Main Panel" src="../img/screen/tex_checker/tex_checker.png" /></p>
-<h2 id="checker-texture-toggle">Checker Texture (Toggle) <img alt="Checker Texture" src="../img/icons/checker_32.png" /></h2>
+<h3 id="checker-texture-toggle">Checker Texture (Toggle) <img alt="Checker Texture" src="../img/icons/checker_32.png" /></h3>
 <p>Add Checker Texture to the mesh (Toggle).</p>
 <div class="admonition preferences">
 <p class="admonition-title">Preferences</p>
-<p><img alt="Main Panel" src="../img/screen/tex_checker/tex_checker_options.png" /></p>
-<h4 id="checker-library-folder">Checker Library Folder</h4>
-<p>Checker Library Folder indicates the folder with 
+<p><img alt="Main Panel" src="../img/screen/tex_checker/tex_chk_props.png" /></p>
+<ul>
+<li><strong>Checker Library Folder</strong> - Checker Library Folder indicates the folder with 
 which Zen UV Checker will work.
     All textures in * .JPG, * .PNG formats that are 
     inside this folder will be collected in 
     Checker Textures list and can be used to display 
-    on selected models.</p>
-<h4 id="reset-folder">Reset Folder</h4>
-<p>Reset Checker Library path to Default State.</p>
-<h4 id="load-your-texture">Load Your Texture</h4>
-<p>Open File Browser and add selected texture to the Checker Library.</p>
-<h4 id="refresh-texture-library">Refresh Texture Library</h4>
-<p>Refresh Textures from Checker Library Folder.</p>
-<h4 id="auto-sync-checker">Auto Sync Checker</h4>
-<p>Automatically sync selected Checker Texture with Viewport.</p>
-<h4 id="open-shader-editor">Open Shader Editor</h4>
-<p>Open Shader Editor with Zen UV Checker Node.</p>
-<h4 id="reset-checker">Reset Checker</h4>
-<p>Reset Zen UV Checker to Default state.</p>
+    on selected models.</li>
+<li><strong>Reset Folder</strong> - Reset Checker Library path to Default State.</li>
+<li><strong>Load Your Texture</strong> - Open File Browser and add the selected texture to the Checker Library.</li>
+<li><strong>Refresh Texture Library</strong> - Refresh Textures from Checker Library Folder.</li>
+<li><strong>Auto Sync Checker</strong> - Automatically sync selected Checker Texture with Viewport.</li>
+<li><strong>Open Shader Editor</strong> - Open Shader Editor with Zen UV Checker Node.</li>
+<li><strong>Reset Checker</strong> - Reset Zen UV Checker to Default state.</li>
+</ul>
 </div>
-<h2 id="remove-checker-nodes">Remove Checker Nodes</h2>
-<p>Remove Zen UV Checker Nodes from the scene materials.</p>
-<h2 id="checker-textures">Checker Textures</h2>
-<p>The Checker Textures field is used to select the checker texture that will be displayed on the selected models.</p>
-<h2 id="filter">Filter <img alt="Filter Button" src="../img/icons/checker-Filter_32.png" /></h2>
-<p>Enable resolution fields to filter existing textures by X or/and Y resolutions.
-It includes Lock button for filtering square format textures.</p>
+<h3 id="remove-checker-nodes">Remove Checker Nodes</h3>
+<ul>
+<li>Remove Zen UV Checker Nodes from the scene materials.</li>
+</ul>
+<h3 id="checker-textures-selector">Checker Textures Selector</h3>
+<p><img alt="" src="../img/screen/tex_checker/chk_filter_interpolation.png" /></p>
+<h4 id="1-interpolation">1. Interpolation <img alt="" src="../img/screen/tex_checker/ico_interpolation.png" /></h4>
+<ul>
+<li>Switch texture interpolation in the Checker Node between Linear and Closest.</li>
+</ul>
+<p><img alt="" src="../img/screen/tex_checker/interp_differences.png" /></p>
+<h4 id="2-checker-textures">2. Checker Textures</h4>
+<ul>
+<li>The Checker Textures field is used to select the checker texture that will be displayed on the selected models.</li>
+<li>A full list of default textures.</li>
+</ul>
+<p><img alt="" src="../img/screen/tex_checker/chk_textures_full_list.png" /></p>
+<ul>
+<li>Any texture can be tiled or offset but only in the Material Preview or Rendered modes.</li>
+</ul>
+<p><img alt="" src="../img/screen/tex_checker/m_prev_offset_modes.png" /></p>
+<p><img alt="" src="../img/screen/tex_checker/chk_tiling_offset.png" /></p>
+<ul>
+<li>Every texture has an bright green pixel in U = 0, V = 0 coordinates.</li>
+<li>If you see green faces - keep in mind that they do not have UV coordinates.</li>
+</ul>
+<p><img alt="" src="../img/screen/tex_checker/magic_pixel.png" /></p>
+<h4 id="3-filter">3. Filter <img alt="" src="../img/icons/checker-Filter_32.png" /></h4>
+<ul>
+<li>Enable resolution fields to filter existing textures by X or/and Y resolutions.</li>
+<li>Includes a Lock button for filtering square format textures.</li>
+<li>Includes an &ldquo;O&rdquo; button for activating Orient Checker texture.</li>
+</ul>
+<p><img alt="" src="../img/screen/tex_checker/filter_is_on.png" /></p>
+<ul>
+<li>Orient filtering is on.</li>
+</ul>
+<p><img alt="" src="../img/screen/tex_checker/filter_orient_is_on.png" /></p>
+<h3 id="display-stretch-map">Display Stretch Map</h3>
+<ul>
+<li>Display an angle-based stretching map.</li>
+</ul>
+<p><img alt="" src="../img/screen/tex_checker/stretch_map_sample.png" /></p>
+<ol>
+<li>Toggle displaying of the stretch map.</li>
+<li>Select stretched faces.</li>
+</ol>
               
             </div>
           </div>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Release note 1.9 - Zen UV 3.0 for Blender</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Release note 1.9";
+    var mkdocs_page_input_path = "changelg\\release_note_1.9.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Zen UV 3.0 for Blender</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation/">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pie-menu/">Pie Menu</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../adv_uv-maps/">Advanced UV Maps</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seam_groups/">Seam Groups</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../unwrap/">Unwrap</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../select/">Select</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pack/">Pack</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../checker/">Checker Map</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../texel_density/">Texel Density</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../transform/">Transform</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../stack/">Stack</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sticky_uv_editor/">Sticky UV Editor</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../addon_prefs/">Addon Preferences</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../help/">Help</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../downloads/">Downloads</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../">Changelog</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../our_addons/">Our Add-ons</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Zen UV 3.0 for Blender</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Release note 1.9</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="version-19-texture-checker">Version 1.9 (Texture Checker)</h2>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe src="https://www.youtube.com/embed/w8o4TVW_VuM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
+</div>
+<p><br><br></p>
+<h3 id="general">General</h3>
+<ul>
+<li><strong>Zen UV now works with multiple objects!</strong></li>
+<li>Added <strong>Finished System.</strong> It helps to control and manage the state of unwrapping UV Islands (Finished/Unfinished) by tags and visually. Nothing will be left not unwrapped!</li>
+<li>Updated <strong>Checker System.</strong> Now it is based on nodes and contains textures designed specifically for Zen UV. Custom textures can be added easily by the user at the node level.</li>
+<li>Added <strong>UV Maps Properties Tab</strong> to have quick access to UV Maps management.</li>
+<li>Updated <strong>Quadrify</strong> operator. Now it is based on the native <strong>Follow Active Quad</strong> operator and sets the base polygon size based on the average size of current islands.</li>
+<li><strong>Redesigned UI</strong> to support current and all new updates.</li>
+</ul>
+<h3 id="ui">UI</h3>
+<h4 id="main-menu"><strong>Main Menu</strong></h4>
+<ul>
+<li>The interface has been completely redesigned and operators have been classified and divided into the following groups:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">Operator</th>
+<th align="left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>UV Maps</strong></td>
+<td align="left"> Selecting and managing UV maps.</td>
+</tr>
+<tr>
+<td align="left"><strong>Unwrap</strong></td>
+<td align="left"> Marking and unwrapping operations.</td>
+</tr>
+<tr>
+<td align="left"><strong>Select</strong></td>
+<td align="left"> Edges/Islands selection operations.</td>
+</tr>
+<tr>
+<td align="left"><strong>Pack</strong></td>
+<td align="left"> Pack operations.</td>
+</tr>
+<tr>
+<td align="left"><strong>Checker Map</strong></td>
+<td align="left">Display control of Checker textures.</td>
+</tr>
+<tr>
+<td align="left"><strong>Preferences</strong></td>
+<td align="left">Hotkeys and other general settings.</td>
+</tr>
+<tr>
+<td align="left"><strong>Help</strong></td>
+<td align="left">Documentation and support section.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Operators options were hidden under the <strong>Settings icons</strong> to optimize space.</li>
+</ul>
+<h4 id="pie-menu"><strong>Pie Menu:</strong></h4>
+<ul>
+<li>Alternative <strong>CTRL</strong> operators <strong>Pin/Unpin Islands</strong> were replaced by <strong>Tag Finished/Unfinished</strong> from the new powerful <strong>Finished System</strong>. (Sector 4 and Sector 6).</li>
+<li>Added new alternative <strong>CTRL</strong> operator <strong>Select Flipped Islands</strong> to <strong>Select Islands</strong> (Sector 7).</li>
+<li>Added icons for <strong>Quadrify Islands</strong> and <strong>Checker Texture (Toggle)</strong> operators.</li>
+</ul>
+<h4 id="pop-up-menu"><strong>Pop Up Menu:</strong></h4>
+<ul>
+<li>All operator options were removed from the Pop Up menu, you can adjust them only in the Main menu. The order of operators is consistent with the Main menu.</li>
+</ul>
+<h3 id="operators">Operators</h3>
+<h4 id="uv-maps"><strong>UV Maps</strong></h4>
+<ul>
+<li>Added <strong>UV Maps Properties Tab</strong> to have quick access to UV Maps management.</li>
+</ul>
+<h4 id="unwrap"><strong>Unwrap</strong></h4>
+<ul>
+<li>Added <strong>Tag Unwrapped</strong> option for <strong>Zen Unwrap</strong> operator.</li>
+<li>Added <strong>Sort Unwrapped</strong> option for <strong>Zen Unwrap</strong> operator.</li>
+<li>Added <strong>Auto UV Sync</strong> option for <strong>Zen Unwrap</strong> operator.</li>
+<li>Added <strong>Unwrap Method</strong> option for choosing Unwrap algorithm.</li>
+<li><strong>Zen Unwrap</strong> now is using the packing algorithm selected in <strong>Pack Engine</strong>.</li>
+<li>Added a warning for the <strong>Marking System</strong> when both <strong>Mark Seams</strong> and <strong>Mark Sharp Edges</strong> options are off.</li>
+<li>Fixed <strong>Smooth by Sharp (Toggle)</strong> operator<strong>.</strong> Now its use ****does not require re-switching.</li>
+<li>Added <strong>Finished System</strong>. It has absorbed <strong>Pin System</strong> and was made to control and manage the state of unwrapping UV Islands (Finished/Unfinished) by tags and visually. Tags can be assigned manually or automatically after unwrapping. Islands can be sorted and pinned by state in UV Editor. You can check the state of Islands in the viewport by using <strong>Display Finished (Toggle)</strong> operator. Nothing will be left not unwrapped!</li>
+<li>Updated <strong>Quadrify</strong> operator. Now it is based on the native <strong>Follow Active Quad</strong> operator and sets the base polygon size based on the average size of current islands.</li>
+</ul>
+<h4 id="select"><strong>Select</strong></h4>
+<ul>
+<li>Updated <strong>Isolate Islands (Toggle)</strong> operator. Isolation mode now is working for any selection mode — Vertex/Edge/Polygon. It no longer requires you to select at least one Vertex/Edge/Polygon in order to return back.</li>
+<li>Added <strong>Select Flipped Islands</strong> operator.</li>
+<li>Added <strong>Select Sharp Edges</strong> operator.</li>
+<li>Added <strong>Select Seam Edges</strong> operator.</li>
+<li><strong>Select Edge Loop</strong> operator <strong><em>*name </em></strong><em>was changed to </em><em>Select Interseam Loop</em>*.</li>
+</ul>
+<h4 id="pack"><strong>Pack</strong></h4>
+<ul>
+<li>Added <strong>Rotate Islands</strong> option for <strong>Pack Islands</strong> operator.</li>
+</ul>
+<h4 id="checker-map"><strong>Checker Map</strong></h4>
+<ul>
+<li>Updated <strong>Checker System</strong>. Now it has 2 types of texture checker - color and monochrome. Each type has 4 sizes. Custom textures can be added easily by the user at the node level.. The <strong>Reset Checker</strong> operator will return the <strong>Checker System</strong> to its initial state.</li>
+<li>Added <strong>Show Image In UV Editor</strong> option. It allows you to turn off the display of texture in the UV Editor.</li>
+<li>Added <strong>Remove Checker Nodes</strong> operator. It removes all checker nodes from the scene to not interfere with the export.</li>
+</ul>
+<h4 id="preferences"><strong>Preferences</strong></h4>
+<ul>
+<li><strong>Reset Preferences</strong> now returns Auto Mark operator angle settings to their default values.</li>
+</ul>
+<h4 id="help"><strong>Help</strong></h4>
+<ul>
+<li>Added information about the current Zen UV version number at the end of the section.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

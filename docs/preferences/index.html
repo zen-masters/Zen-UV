@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Preferences - Zen UV for Blender</title>
+  <title>Preferences - Zen UV 3.0 for Blender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -37,7 +37,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Zen UV for Blender</a>
+        <a href=".." class="icon icon-home"> Zen UV 3.0 for Blender</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -94,34 +94,24 @@
                     <li class="toctree-l1"><a class="reference internal" href="../stack/">Stack</a>
                     </li>
                 </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sticky_uv_editor/">Sticky UV Editor</a>
+                    </li>
+                </ul>
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Preferences</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#zen-uv-keymaps">Zen UV Keymaps</a>
+    <li class="toctree-l2"><a class="reference internal" href="#preferences-subpanel">Preferences subpanel</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#reset-preferences">Reset Preferences</a>
+    <li class="toctree-l2"><a class="reference internal" href="#display-subpanel">Display subpanel</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#display-panel">Display Panel</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#hops-uv-display">HOps UV Display</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#context-sensitive">Context sensitive</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#auto-fit-uv-view">Auto Fit UV View</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#show-seams">Show Seams</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#show-sharp-edges">Show Sharp Edges</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#show-bevel-weights">Show Bevel Weights</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#show-crease-edges">Show Crease Edges</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#panels-panel">Panels Panel</a>
+    <li class="toctree-l2"><a class="reference internal" href="#panels-subpanel">Panels subpanel</a>
     </li>
     </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../addon_prefs/">Addon Preferences</a>
                     </li>
                 </ul>
                 <ul>
@@ -137,7 +127,11 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../changelg/">Changelog</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../our_addons/">Our Add-ons</a>
                     </li>
                 </ul>
       </div>
@@ -149,7 +143,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Zen UV for Blender</a>
+        <a href="..">Zen UV 3.0 for Blender</a>
       </nav>
 
       
@@ -173,37 +167,33 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="preferences">Preferences</h1>
+                <h1 id="preferences-system">Preferences System</h1>
+<hr />
+<h2 id="preferences-subpanel">Preferences subpanel</h2>
 <div class="admonition panel">
 <p class="admonition-title">Panel</p>
 <p><img alt="Preferences" src="../img/screen/preferences/MainPanel_2_1_3.png" /></p>
 </div>
-<h2 id="zen-uv-keymaps">Zen UV Keymaps <img alt="Zen UV Pie Menu" src="../img/icons/zen-uv%402x.png" /></h2>
-<p>Set Shortcuts for Zen UV Menus.</p>
-<h2 id="reset-preferences">Reset Preferences</h2>
-<p>Reset Zen UV preferences to Default state.</p>
+<ul>
+<li><img alt="" src="../img/icons/zen-uv%402x.png" /> <strong>Zen UV Keymaps</strong> - Set Shortcuts for Zen UV Menus.</li>
+<li><strong>Reset Preferences</strong> - Reset Zen UV preferences to the Default state.</li>
+</ul>
 <hr />
-<h2 id="display-panel">Display Panel</h2>
+<h2 id="display-subpanel">Display subpanel</h2>
 <p><img alt="Preferences" src="../img/screen/preferences/PanelDisplay.png" /></p>
-<h3 id="hops-uv-display">HOps UV Display</h3>
-<p>Display UV&rsquo;s in 3D View using Hard Ops addon.</p>
-<h3 id="context-sensitive">Context sensitive</h3>
-<p>Enable HOps UV Display if UV Editor is open.</p>
+<ul>
+<li><strong>HOps UV Display</strong> - Display UV in 3D View using Hard Ops addon.</li>
+<li><strong>Context-sensitive</strong> - Enable HOps UV Display if UV Editor is open.</li>
+<li><strong>Auto Fit UV View</strong> - Automatically Fit and Zoom UV viewport.</li>
+<li><strong>Show Seams</strong> - Display UV Seams.</li>
+<li><strong>Show Sharp Edges</strong> - Display Sharp edges. It can be overlapped by Seams/Bevel Weights/Crease Edges display.</li>
+<li><strong>Show Bevel Weights</strong> - Display Sharp edges. It can be overlapped by Seams/Bevel Weights/Crease Edges display.</li>
+<li><strong>Show Crease Edges</strong> - Display crease edges created for the Subdivision modifier. It can be overlapped by Seams/Bevel Weights display.</li>
+</ul>
 <hr />
-<h3 id="auto-fit-uv-view">Auto Fit UV View</h3>
-<p>Automatically Fit and Zoom UV viewport.</p>
-<hr />
-<h3 id="show-seams">Show Seams</h3>
-<p>Display UV Seams.</p>
-<h3 id="show-sharp-edges">Show Sharp Edges</h3>
-<p>Display Sharp edges. It can be overlapped by Seams/Bevel Weights/Crease Edges display.</p>
-<h3 id="show-bevel-weights">Show Bevel Weights</h3>
-<p>Display Sharp edges. It can be overlapped by Seams/Bevel Weights/Crease Edges display.</p>
-<h3 id="show-crease-edges">Show Crease Edges</h3>
-<p>Display crease edges created for the Subdivision modifier. It can be overlapped by Seams/Bevel Weights display.</p>
-<h2 id="panels-panel">Panels Panel</h2>
+<h2 id="panels-subpanel">Panels subpanel</h2>
 <p><img alt="Preferences" src="../img/screen/preferences/PanelPanels.png" /></p>
-<p>Allow to disable displaying unused categories.</p>
+<p>Allow disabling displaying unused categories.</p>
               
             </div>
           </div>
@@ -211,10 +201,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../help/" class="btn btn-neutral float-right" title="Help">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../addon_prefs/" class="btn btn-neutral float-right" title="Addon Preferences">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../stack/" class="btn btn-neutral" title="Stack"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../sticky_uv_editor/" class="btn btn-neutral" title="Sticky UV Editor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -240,10 +230,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../stack/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../sticky_uv_editor/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../help/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../addon_prefs/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

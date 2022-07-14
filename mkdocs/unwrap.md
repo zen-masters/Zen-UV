@@ -8,125 +8,105 @@ Mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges
 
 !!! Preferences
 
-    #### Mark Unwrapped
+    ![Unwrap](img/screen/unwrap/zen_unwrap_prefs.png)
 
-    Mark edges or face borders as Seams and/or Sharp edges after Zen Unwrap operation.
+    - **Mark Unwrapped** - Mark edges or face borders as Seams and/or Sharp edges after the Zen Unwrap operation.
 
-    #### Unwrap Selected Only
+    - **Unwrap Selected Only** - Separate workflow where only Selected Faces will be Unwrapped. It includes warnings and Unwrapping options if nothing is selected.
 
-    Separate workflow where only Selected Faces will be Unwrapped. It includes warnings and Unwrapping options if nothing is selected.
+    - **Tag Unwrapped** - Tag Unwrapped Islands as Finished after Zen Unwrap operation.
 
-    #### Tag Unwrapped
+    - **Sort Unwrapped** - Sort Islands by Tags after Zen Unwrap operation. Finished Islands move to the right side from Main UV Tile, Unfinished — to the left.
 
-    Tag Unwrapped Islands as Finished after Zen Unwrap operation.
+    - **Auto UV Sync** - Automatically Activate UV Sync Selection Mode in UV Editor for Zen Unwrap operation.
 
-    #### Sort Unwrapped
+    - **Pack Unwrapped** - Execute Pack after Zen Unwrap operation.
 
-    Sort Islands by Tags after Zen Unwrap operation. Finished Islands move to the right side from Main UV Tile, Unfinished — to the left.
-
-    #### Auto UV Sync
-
-    Automatically Activate UV Sync Selection Mode in UV Editor for Zen Unwrap operation.
-
-    #### Pack Unwrapped
-
-    Execute Pack after Zen Unwrap operation.
-
-    #### Unwrap Method
-    - Conformal
-    - Angle Based
+    - **Unwrap Method**
+        - Conformal
+        - Angle Based
 
 ---
-## Mark by Angle
+## Mark System
+!!! Panel
+    ![](img/screen/unwrap/unwrap_mark_section.png)
 
-Mark edges as Seams and/or Sharp edges by Angle.
+### Mark by Angle
 
-## Mark ![Mark Seams](img/icons/mark-seams@2x.png)
+- Mark edges as Seams and/or Sharp edges by Angle.
 
-Mark selected edges or face borders as Seams and/or Sharp edges.
+!!! Preferences
+    ![](img/screen/unwrap/mark_by_angle_prefs.png)
+    - **Use Global Mark Settings** - In this mode, all the operators from the Mark System use the settings below. If off, every operator uses its own settings.
+    - **Mark Seams** - Automatically assign Seams
+    - **Mark Sharp Edges** - Automatically assign Sharp edges
 
-## Unmark ![Unmark Seams](img/icons/unmark-seams@2x.png)
+### Mark ![Mark Seams](img/icons/mark-seams@2x.png)
 
-Unmark selected edges or face borders as Seams and/or Sharp edges.
+- Mark selected edges or face borders as Seams and/or Sharp edges.
 
-## Unmark All
+### Unmark ![Unmark Seams](img/icons/unmark-seams@2x.png)
 
-Remove all the Seams and/or Sharp edges from the mesh.
+- Unmark selected edges or face borders as Seams and/or Sharp edges.
+
+### Unmark All
+
+- Remove all the Seams and/or Sharp edges from the mesh.
 
 ---
-## Mark Seams by UV Borders
-Mark Seams by existing UV Borders.
+## Conversion System
+!!! Panel
+    ![](img/screen/unwrap/conversion_system.png)
 
-## Mark Seams by Sharp Edges
-Mark Seams by existing Sharp edges.
+### Seams by UV Borders
+- Mark Seams by existing UV Borders.
+### Sharp by UV Borders
+- Mark Sharp by existing UV Borders.
+### Seams by Sharp Edges
+- Mark Seams by existing Sharp edges.
+### Sharp Edges by Seams
+- Mark Sharp edges by existing Seams.
+### Seams by Open Edges
+- Mark Seams by Open Edges. The way that looks in the viewport.
 
-## Mark Sharp Edges by Seams
-Mark Sharp edges by existing Seams.
-
+---
 ## Mirror Seams
-Mirror Seams by axes.
 
-## Mark Seams by Open Edges
-Mark Seams by Open Edges. Way that looks in the viewport.
+- Mirror Seams by axes.
 
 ---
 ## Smooth by Sharp (Toggle)
-Toggle between Auto Smooth 180° (with sharp edges) and regular smooth modes.
+- Toggle between Auto Smooth 180° (with sharp edges) and regular smooth modes.
 
 ---
+## Finishing System
+
+!!! Panel
+    ![](img/screen/unwrap/finished_system.png)
+
 ## Sort Islands by Tags
-Sort Islands by Tags. Finished Islands move to the right side from Main UV Tile, Unfinished — to the left.
-
-![Unwrap](img/screen/unwrap/finished_options.png)
+- Finished Islands move to the right side from Main UV Tile, Unfinished — to the left.
 
 !!! Preferences
-    #### Pin Finished
-    Pin Islands after Tag Finished operation.
-    #### Auto Sort Islands
-    Automatically Sort Islands by Tags. Finished Islands move to the right side from Main UV Tile, Unfinished — to the left
-    #### Finished Color
-    Finished Islands viewport display color.
-    #### Unfinished Color
-    Unfinished Islands viewport display color.
+    ![Unwrap](img/screen/unwrap/finishing_prefs.png)
 
-## Tag Finished
+    - **Pin Finished** - Pin Islands after Tag Finished operation.
+    - **Auto Sort Islands** - Automatically Sort Islands by Tags. Finished Islands move to the right side from Main UV Tile, Unfinished — to the left
+    - **Finished Color** - Finished Islands viewport display color.
+    - **Unfinished Color** - Unfinished Islands viewport display color.
 
-Tag Islands as Finished.
+### Tag Finished
 
-## Tag Unfinished
+- Tag Islands as Finished.
 
-Tag Islands as Unfinished.
+### Tag Unfinished
 
-## Select Finished
+- Tag Islands as Unfinished.
 
-Select Islands tagged as Finished.
+### Select Finished
 
-## Display Finished (Toggle)
+- Select Islands tagged as Finished.
 
-Display Finished/Unfinished Islands in viewport
+### Display Finished (Toggle)
 
----
-## Quadrify Islands ![Quadrify Islands](img/icons/quadrify_32.png)
-
-![Unwrap](img/screen/unwrap/quadrify_options.png)
-
-Straighten rectangular shaped Islands
-
-!!! Preferences
-
-    #### Pin Quadrified
-
-    Pin Islands after Quadrify Islands operation.
-
-    #### Pack Quadrified
-
-    Pin Islands after Quadrify Islands operation.
-
-    #### Mark Not-Quadrified
-
-    Mark face boundaries of Not-Quadrified parts as Seams after Quadrify Islands operation.
-
-    #### By selected Edges
-
-    Selected Edges will be used and marked as Seams during Quadrify Islands operation. Works only in edge selection mode.
-
+- Display Finished/Unfinished Islands in the viewport.

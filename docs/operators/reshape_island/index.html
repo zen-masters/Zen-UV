@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Reshape Island - Zen UV 3.0 for Blender</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Reshape Island";
+    var mkdocs_page_input_path = "operators\\reshape_island.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Zen UV 3.0 for Blender</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation/">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pie-menu/">Pie Menu</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../adv_uv-maps/">Advanced UV Maps</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seam_groups/">Seam Groups</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../unwrap/">Unwrap</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../select/">Select</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../pack/">Pack</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../checker/">Checker Map</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../texel_density/">Texel Density</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../transform/">Transform</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../stack/">Stack</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../sticky_uv_editor/">Sticky UV Editor</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../addon_prefs/">Addon Preferences</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../help/">Help</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../downloads/">Downloads</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/">Troubleshooting</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelg/">Changelog</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../our_addons/">Our Add-ons</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Zen UV 3.0 for Blender</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Reshape Island</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="reshape-island">Reshape Island</h1>
+<p>Changes the island’s shape depending on the preset.</p>
+<h2 id="preset-selected">Preset Selected:</h2>
+<ul>
+<li>Straighten the selected Edge Loops and relax not selected vertices.</li>
+</ul>
+<p><img alt="" src="../../img/screen/transform/reshape_preset_selected.png" /></p>
+<div class="admonition properties">
+<p class="admonition-title">Properties</p>
+<ul>
+<li><strong>Orient loop along</strong> - How to orient the selected loops.<ul>
+<li><strong>Auto</strong> - Automatic finding loop orientation.</li>
+<li><strong>U Axis</strong> - Along the U axis.</li>
+<li><strong>V Axis</strong> - Along the V axis.</li>
+<li><strong>In Place</strong> - The beginning and end of the loop will remain such as before the operator runs.</li>
+</ul>
+</li>
+<li><strong>Reverse Direction</strong> - Change the direction of the loop to the opposite.</li>
+<li><strong>Spacing</strong> - How to set the distances between the points of the loop.<ul>
+<li><strong>UV</strong> - As in the UV Map.</li>
+<li><strong>Geometry</strong> - As in the mesh.</li>
+<li><strong>Evenly</strong> - Distribute at an equal distance.</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="orient-along-sample">Orient Along Sample:</h3>
+<p><img alt="" src="../../img/gifs/reshape_island/orient_along_sample.gif" /></p>
+<h3 id="spacing-sample">Spacing Sample:</h3>
+<p><img alt="" src="../../img/gifs/reshape_island/spacing_sample.gif" /></p>
+<h2 id="advanced-properties">Advanced Properties:</h2>
+<ul>
+<li>The properties of the operator for aligning the loops relative to each other.</li>
+</ul>
+<div class="admonition properties">
+<p class="admonition-title">Properties</p>
+<ul>
+<li><strong>Start Position:</strong> - How to set the beginning of the loop.<ul>
+<li><strong>As is</strong> - Leave in place.</li>
+<li><strong>Max</strong> - Set to the maximal position of the loops.</li>
+<li><strong>Averaged</strong> - Set to the averaged position of the loops.</li>
+<li><strong>Min</strong> - Set to the minimal position of the loops.</li>
+</ul>
+</li>
+<li><strong>Lock</strong> - Lock Start Position and the End Position.</li>
+<li><strong>End Position:</strong> - How to set the ending of the loop.<ul>
+<li><strong>As is</strong> - Leave in place.</li>
+<li><strong>Max</strong> - Set to the maximal position of the loops.</li>
+<li><strong>Averaged</strong> - Set to the averaged position of the loops.</li>
+<li><strong>Min</strong> - Set to the minimal position of the loops.</li>
+</ul>
+</li>
+<li><strong>Offset</strong> - Indicates the offset of each next loop relative to the previous. Sorting begins on the left bottom. The red color indicates that the value is not zero.</li>
+</ul>
+</div>
+<h3 id="start-end-position-sample">Start / End Position Sample:</h3>
+<p><img alt="" src="../../img/gifs/reshape_island/start_positions_sample.gif" /></p>
+<h3 id="offset-sample">Offset Sample:</h3>
+<p><img alt="" src="../../img/gifs/reshape_island/offset_sample.gif" /></p>
+<hr />
+<h2 id="preset-uv-direction">Preset U/V Direction:</h2>
+<div class="admonition properties">
+<p class="admonition-title">Properties</p>
+<ul>
+<li><strong>Angle</strong> - If the slope of the edge is less or equal to this value, then the edge will be selected.</li>
+<li><strong>Spacing</strong> - How to set the distances between the points of the loop.</li>
+</ul>
+</div>
+<p><img alt="" src="../../img/gifs/reshape_island/preset_u_v_dir_sample.gif" /></p>
+<p>Please refer to the <a href="#advanced-properties">Advanced Properties</a> to learn more.</p>
+<p>How to work Angle value:</p>
+<p><img alt="" src="../../img/screen/transform/sample_angle.png" /></p>
+<ul>
+<li>If <strong>angle 01</strong> is less than <strong>angle 02</strong> means the edge is aligned along the U axis. If opposite, then the edge is aligned along the V axis.</li>
+<li>If the value ​​of the <strong>Angle:</strong> operator’s properties are less than <strong>angle 01</strong>, then the edge will not be selected.</li>
+</ul>
+<h2 id="preset-borders">Preset Borders:</h2>
+<div class="admonition properties">
+<p class="admonition-title">Properties</p>
+</div>
+<ul>
+<li><strong>Corners By:</strong> - How to detect corners of the Island.<ul>
+<li><strong>Corner</strong> - By corner vertices.</li>
+<li><strong>Pinned</strong> - By pinned vertices.</li>
+<li><strong>Pinned &amp; Corners</strong> - By pinned and corner vertices.</li>
+</ul>
+</li>
+<li><strong>Length</strong> - How to calculate the length for each straightened border segment.<ul>
+<li><strong>UV</strong> - As a sum of UV edges length.</li>
+<li><strong>Geometry</strong> - As a sum of mesh edge length.</li>
+<li><strong>Short</strong> - As a distance from the first point to the last point of the edge loop.</li>
+</ul>
+</li>
+<li><strong>Border Offset</strong> - Offset all the vertices use the first point as a pivot. This leads to island scaling.</li>
+</ul>
+<h3 id="corner-sample">Corner Sample:</h3>
+<p><img alt="" src="../../img/screen/transform/corner_pinned_sample.png" /></p>
+<ul>
+<li>A Corner Point - it&rsquo;s a point that has 2 connected edges.</li>
+<li>Pinned Point - it&rsquo;s a point that is pinned by Blender&rsquo;s native Pin operator.</li>
+</ul>
+<h3 id="length-sample">Length Sample:</h3>
+<p><img alt="" src="../../img/screen/transform/preset_border_length_prop.png" /></p>
+<p><img alt="" src="../../img/gifs/reshape_island/preset_borders_length_sample.gif" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

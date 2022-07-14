@@ -1,36 +1,44 @@
 # Select
 
 !!! Panel
-    ![Select](img/screen/select/select_section.png)
+    ![Select](img/screen/select/select_main_panel.png)
 
-## Select Islands
+### Islands ![](img/icons/select.png)
 
-Select Islands by selected edge/face of the Islands.
+- Select Islands by selected edge/face of the Islands.
+  
+### Int. Loop
 
-## Isolate Islands (Toggle)
+- Inter seam loop. Select Edge Loop with respect to Seams.
+  
+### Overlapped
 
-Isolate Islands (Toggle).
+- Select Overlapped Islands.
 
-## Select Overlapped Islands
+### Flipped
 
-Select Overlapped Islands.
+- Select Flipped Islands.
 
-## Select Flipped Islands
+### Seam
 
-Select Flipped Islands.
+- Select Edges Marked as Seams.
 
-## Select Seams Edges
+### Sharp
 
-Select Edges Marked as Seams.
+- Select Edges Marked as Sharp.
 
-## Select Sharp Edges
+### Select UV Borders
 
-Select Edges Marked as Sharp.
+- Select existing UV Borders.
 
-## Select Interseams Loop
+### Similar
 
-Select Edge Loop with Seams respect.
+- Select Islands similar to those selected.
+  
+### Select Edges By Direction
 
-## Select Similar Islands
+- Select edges by direction along U or V axis.
 
-Select Islands similar to selected
+### Isolate Islands (Toggle)
+
+- Isolate Islands (Toggle).

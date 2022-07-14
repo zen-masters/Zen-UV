@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Texel Density - Zen UV for Blender</title>
+  <title>Texel Density - Zen UV 3.0 for Blender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -37,7 +37,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Zen UV for Blender</a>
+        <a href=".." class="icon icon-home"> Zen UV 3.0 for Blender</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -86,40 +86,36 @@
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Texel Density</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#texel-density_1">Texel Density</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#units">Units</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#texture-size">Texture Size</a>
-    </li>
-        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#get-td">Get TD</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#set-td">Set TD</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#set-td-mode">Set TD Mode</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#overall-mode">Overall Mode</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#island-mode">Island Mode</a>
-    </li>
-        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#td-checker">TD Checker</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#td-checker_1">TD Checker</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#less">Less</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#equal">Equal</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#over">Over</a>
-    </li>
-        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#show-td">Show TD</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#hide-td">Hide TD</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#texel-density-presets">Texel Density Presets</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#generate">Generate</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#get">Get</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#clear">Clear</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#set-from-preset">Set From Preset</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#select-by-td">Select by TD</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#show-presets">Show Presets</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#hide">Hide</a>
+    </li>
+        </ul>
     </li>
     </ul>
                     </li>
@@ -133,7 +129,15 @@
                     </li>
                 </ul>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sticky_uv_editor/">Sticky UV Editor</a>
+                    </li>
+                </ul>
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../addon_prefs/">Addon Preferences</a>
                     </li>
                 </ul>
                 <ul>
@@ -149,7 +153,11 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../changelg/">Changelog</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../our_addons/">Our Add-ons</a>
                     </li>
                 </ul>
       </div>
@@ -161,7 +169,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Zen UV for Blender</a>
+        <a href="..">Zen UV 3.0 for Blender</a>
       </nav>
 
       
@@ -188,49 +196,122 @@
                 <h1 id="texel-density">Texel Density</h1>
 <div class="admonition panel">
 <p class="admonition-title">Panel</p>
-<p><img alt="Texel Density" src="../img/screen/texel_density/texel_density.png" /></p>
+<p><img alt="Texel Density" src="../img/screen/texel_density/texel_density_main_panel.png" /></p>
 </div>
-<h2 id="texel-density_1">Texel Density</h2>
-<p>Shows Texel Density value.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul>
+<li>Texel Density System uses Vertex Color for displaying some information.
+  Make sure viewport shading is switched to <strong>Solid</strong> mode.</li>
+</ul>
+</div>
+<h3 id="texel-density_1">Texel Density</h3>
+<ul>
+<li>Shows Texel Density value.</li>
+</ul>
 <div class="admonition preferences">
 <p class="admonition-title">Preferences</p>
 <p><img alt="Texel Density" src="../img/screen/texel_density/texel_density_options.png" /></p>
-<h4 id="units">Units</h4>
-<p>Texel density calculation units.</p>
-<h4 id="texture-size">Texture Size</h4>
-<p>Image Size for Texel Density computation.</p>
+<ul>
+<li><strong>Units</strong> - Texel density calculation units.</li>
+<li><strong>Texture Size</strong> - Image Size for Texel Density computation.</li>
+</ul>
 </div>
-<h2 id="get-td">Get TD</h2>
-<p>Get Texel Density from selected Islands.</p>
-<h2 id="set-td">Set TD</h2>
-<p>Set Texel Density to selected Islands.</p>
-<h2 id="set-td-mode">Set TD Mode</h2>
-<p>Mode for setting Texel Density.</p>
+<h3 id="get-td">Get TD</h3>
+<ul>
+<li>Get Texel Density from selected Islands.</li>
+</ul>
+<h3 id="set-td">Set TD</h3>
+<ul>
+<li>Set Texel Density to selected Islands.</li>
+</ul>
+<h3 id="set-td-mode">Set TD Mode</h3>
+<ul>
+<li>Mode for setting Texel Density.</li>
+</ul>
 <div class="admonition options">
 <p class="admonition-title">Options</p>
-<h4 id="overall-mode">Overall Mode</h4>
-<p>Set Texel Density for all selected Islands together.</p>
-<h4 id="island-mode">Island Mode</h4>
-<p>Set Texel Density individually for every selected Island.</p>
+<ul>
+<li>
+<p><strong>Overall Mode</strong> - Set Texel Density for all selected Islands together.</p>
+</li>
+<li>
+<p><strong>Island Mode</strong> - Set Texel Density individually for every selected Island.</p>
+</li>
+</ul>
 </div>
-<h2 id="td-checker">TD Checker</h2>
-<p>Texel Density value used for Show TD operation.</p>
+<h3 id="td-checker">TD Checker</h3>
+<p><img alt="" src="../img/screen/texel_density/td_checker.png" /></p>
+<ol>
+<li>Texel Density value used for Show TD operation.</li>
+<li>Copy Current TD value to TD Checker value (point 1).</li>
+</ol>
 <div class="admonition preferences">
 <p class="admonition-title">Preferences</p>
 <p><img alt="Texel Density Checker" src="../img/screen/texel_density/texel_density_checker_options.png" /></p>
-<h4 id="td-checker_1">TD Checker</h4>
-<p>Texel Density value used for Show TD operation.</p>
-<h4 id="less">Less</h4>
-<p>Viewport display color to represent Texel Density less than TD Checker value.</p>
-<h4 id="equal">Equal</h4>
-<p>Viewport display color to represent Texel Density equal to TD Checker value.</p>
-<h4 id="over">Over</h4>
-<p>Viewport display color to represent Texel Density over than TD Checker value.</p>
+<ul>
+<li>
+<p><strong>TD Checker</strong> - Texel Density value used for Show TD operation.</p>
+</li>
+<li>
+<p><strong>Less</strong> - Viewport display color to represent Texel Density less than TD Checker value.</p>
+</li>
+<li>
+<p><strong>Equal</strong> - Viewport display color to represent Texel Density equal to TD Checker value.</p>
+</li>
+<li>
+<p><strong>Over</strong> - Viewport display color to represent Texel Density over than TD Checker value.</p>
+</li>
+</ul>
 </div>
-<h2 id="show-td">Show TD</h2>
-<p>Display Texel Density in Viewport by chosen TD Checker value and colors.</p>
-<h2 id="hide-td">Hide TD</h2>
-<p>Disable displaying Texel Density in Viewport by chosen TD Checker value and colors.</p>
+<h3 id="show-td">Show TD</h3>
+<ul>
+<li>Display Texel Density in Viewport by chosen TD Checker value and colors.</li>
+</ul>
+<h3 id="hide-td">Hide TD</h3>
+<ul>
+<li>Disable displaying Texel Density in Viewport by chosen TD Checker value and colors.</li>
+</ul>
+<hr />
+<h2 id="texel-density-presets">Texel Density Presets</h2>
+<p><img alt="" src="../img/screen/texel_density/td_presets.png" /></p>
+<h3 id="generate">Generate</h3>
+<ul>
+<li>Generate most general Presets.</li>
+</ul>
+<h3 id="get">Get</h3>
+<ul>
+<li>Get TD from selected Islands to active preset.</li>
+</ul>
+<h3 id="clear">Clear</h3>
+<ul>
+<li>Clear List</li>
+</ul>
+<h3 id="set-from-preset">Set From Preset</h3>
+<ul>
+<li>Set TD from active preset to selected Islands.</li>
+</ul>
+<h3 id="select-by-td">Select by TD</h3>
+<ul>
+<li>Select Islands By Texel Density</li>
+</ul>
+<p><img alt="" src="../img/screen/texel_density/td_presets_select.png" /></p>
+<div class="admonition options">
+<p class="admonition-title">Options</p>
+<ul>
+<li><strong>Under Rated</strong> - Select islands which have TD less than minimal in the list.</li>
+<li><strong>Over Rated</strong> - Select islands which have TD bigger than maximal in the list.</li>
+<li><strong>By Value</strong> - Select by active preset value.</li>
+</ul>
+</div>
+<h3 id="show-presets">Show Presets</h3>
+<ul>
+<li>Turn on Presets Displaying.</li>
+</ul>
+<h3 id="hide">Hide</h3>
+<ul>
+<li>Turn off Presets displaying.</li>
+</ul>
               
             </div>
           </div>
