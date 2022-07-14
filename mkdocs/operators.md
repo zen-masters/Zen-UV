@@ -90,12 +90,12 @@ Select edge loops with Seams respect.
 ## Pin UV Island
 Pin UV Island. 
 
-*Select at least one edge/face of the Island(s)..*
+*Select at least one edge/face of the Island(s).*
 
 ## Unpin UV Island
 Unpin UV Island. 
 
-*Select at least one edge/face of the Island(s)..*
+*Select at least one edge/face of the Island(s).*
 
 ## Show Pinned Islands (Toggle)
 Show Pinned Islands (Toggle).

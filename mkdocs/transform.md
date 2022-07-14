@@ -72,6 +72,8 @@ Changes the island’s shape depending on the preset. [Here is full information]
 !!! Panel
     ![](img/screen/transform/tr_un_tr_sys.png)
 
+### Universal Control Panel
+
 !!! Control
     **Universal Control Panel**
 
@@ -80,13 +82,13 @@ Changes the island’s shape depending on the preset. [Here is full information]
     The universal control panel has logic and different functions for different types of transformation.
 
 ---
-#### Pivot.
+### Pivot.
 
  - The pivot of transformation.
 
 ![](img/screen/transform/tr_un_pivot.png)
 
-#### Mode.
+### Mode.
 
  - The Mode of transformation. In the Elements mode transformation will be performed over vertices, edges, and faces.
 
@@ -101,7 +103,7 @@ Changes the island’s shape depending on the preset. [Here is full information]
 
 
 !!! Info
-    - Buttons of the **Universal Control Panel** in the Transform type **Move** represent the direction of shifting.
+    - Buttons of the [**Universal Control Panel**](#universal-control-panel) in the Transform type **Move** represent the direction of shifting.
 
 #### Move Increment
  - The value on which the island will be shifted.
@@ -112,7 +114,7 @@ Changes the island’s shape depending on the preset. [Here is full information]
 ![Transform](img/screen/transform/tr_scale.png)
 
 !!! Info
-    - Buttons of the **Universal Control Panel** in the Transform type **Scale** represent Points from where the island will be scaled.
+    - Buttons of the [**Universal Control Panel**](#universal-control-panel) in the Transform type **Scale** represent Points from where the island will be scaled.
 
 #### Scale Mode:
 
@@ -145,7 +147,7 @@ Changes the island’s shape depending on the preset. [Here is full information]
 
 
 !!! Info
-    - Buttons of the **Universal Control Panel** in the Transform type **Scale** works as described. Buttons located in the corners rotate the island in the specified direction.
+    - Buttons of the [**Universal Control Panel**](#universal-control-panel) in the Transform type **Scale** works as described. Buttons located in the corners rotate the island in the specified direction.
     The central button performs the automatic aligning of the island horizontally or vertically. The buttons at the top and bottom align the island vertically. Buttons on the left and right align the island horizontally.
 
 #### Rotate Increment
@@ -159,7 +161,7 @@ Changes the island’s shape depending on the preset. [Here is full information]
 ![Transform](img/screen/transform/Flip.png)
 
 !!! Info
-    - Buttons of the **Universal Control Panel** in the Transform type **Flip** represent flip direction.
+    - Buttons of the [**Universal Control Panel**](#universal-control-panel) in the Transform type **Flip** represent flip direction.
 
 ---
 ### Transform type Fit. ![](img/icons/transform-fit.png)
@@ -169,7 +171,7 @@ Changes the island’s shape depending on the preset. [Here is full information]
 Fit island to UV Square.
 
 !!! Info
-    - Buttons of the **Universal Control Panel** in the Transform type **Fit** represent origins from where **Fit** will be performed.
+    - Buttons of the [**Universal Control Panel**](#universal-control-panel) in the Transform type **Fit** represent origins from where **Fit** will be performed.
 
 #### Fill Islands
 
@@ -198,7 +200,7 @@ Fit island to UV Square.
 
 
 !!! Info
-    - Buttons of the **Universal Control Panel** in the Transform type **Align** represent the side by which the islands will be aligned.
+    - Buttons of the [**Universal Control Panel**](#universal-control-panel) in the Transform type **Align** represent the side by which the islands will be aligned.
 
 ### To UV Area Bounds
  - Allow aligning current selection to the UV Area bounds.
@@ -211,5 +213,5 @@ Fit island to UV Square.
 Align 2D Cursor over the selected island.
 
 !!! Info
-    - Buttons of the **Universal Control Panel** in the Transform type **2D Cursor** represent sides of the island or selected elements.
+    - Buttons of the [**Universal Control Panel**](#universal-control-panel) in the Transform type **2D Cursor** represent sides of the island or selected elements.
 

@@ -6,87 +6,77 @@
 
 Collect Similar Islands on Stacks.
 
-!!! Preferences
+!!! Properties
     ![Stack](img/screen/stack/stack_options.png)
 
-    #### Move Only
-
-    Don't fit Islands. Just move to the same position.
-
-    #### Unstack Direction
-
-    Direction where the island will be shifted.
+    - **Move Only** - Don't fit Islands. Just move to the same position.
+    - **Stack Offset** - The offset value. Can be used for preventing auto merging the UV vertices.
+    - **Unstack Direction** - The Direction where the island will be shifted.
 
 
 ## Unstack
 
-Shift Islands from Stacks in given direction.
+Shift Islands from Stacks in a given direction.
 
 ## Stack Mode
 Mode for Stacking.
 
-!!! Options
+ ![](img/screen/stack/stack_modes.png)
 
-    #### Global Mode
-
-    Collect all Similar Islands on Stacks.
-
-    #### Selected Mode
-    
-    Collect selected Similar Islands on Stacks.
-
-## Display Stacks ![Display](img/icons/display.png)
-Display of stacks.
-## Select Stacks ![Select](img/icons/select.png)
-Select stacks.
+!!! Properties
+    - **Global Mode** - Collect all Similar Islands on Stacks.
+    - **Selected Mode** - Collect selected Similar Islands on Stacks.
+    - **Simple Mode** - Collect selected islands in the stack, with no respect for their topology.
 
 ## Stack Display Mode
 
+### Primaries
+Primaries this is islands which detected as a better instance. The position and the topology from Primaries will be translated to the Replicas. The island is defined as Primary if its position is closer to the center of coordinates, and the distortion of topology is less compared to other similar islands.
+
+### Replicas
+
+Replicas are islands that have the same topology but were not chosen as Primary. The position and topology of the Replicas will be changed in the process of Stacking.
+
+### Singles
+
+Singles this is islands that have no similar islands.
+
 !!! Options
-    ![Display](img/screen/stack/stack_display.png)
+    ![Display](img/screen/stack/stack_display_select_sys.png)
 
-    - #### ![Display](img/icons/display.png) Similar (Static)
+    - **Similar** (Static) - Display all Similar Islands. Static assumes that the displaying will not change along with a mesh change.
+    - **Selected** - Display Similar Islands by Selected.
 
-    Display all Similar Islands.
+    - **Stacked** ![Select](img/icons/select_bl_ico.png) - Display Stacked Islands.
 
-    - #### ![Display](img/icons/display.png) Selected
-    
-    Display Similar Islands by Selected.
+    - **Primaries** ![Select](img/icons/select_bl_ico.png) - Primary Islands. Without Replicated Islands.
 
-    - #### ![Display](img/icons/display.png) Stacked ![Select](img/icons/select.png)
+    - **Replicas** ![Select](img/icons/select_bl_ico.png) - Islands that can be Stacked. Without Primary Islands.
 
-    Display Stacked Islands.
-    !!! Options
-        ![Display Stacked](img/screen/stack/stack_display_stacked_options.png)
+    - **Singles** ![Select](img/icons/select_bl_ico.png) - Islands that don't have Similar Islands.
 
-        - ##### Stacked Color
-  
-        Color for displaying Stacked Islands.
+    - ![](img/icons/display.png) **Display**  - Display of stacks.
 
-        - ##### Only UV Area
-  
-        Display Stacks only in UV area
+    - ![](img/icons/select_bl_ico.png) **Select** - Select Stack Parts. Every operator with this icon perform a selection operation for current types.
 
-    - #### Primaries ![Select](img/icons/select.png)
+!!! Options
 
-    Primary Islands. Without Replicated Islands.
+    **Options for Stacked Islands**
 
-    - #### Replicas ![Select](img/icons/select.png)
+    ![Display Stacked](img/screen/stack/stack_display_stacked_options.png)
 
-    Islands that can be Stacked. Without Primary Islands.
-
-    - #### Singles ![Select](img/icons/select.png)
-
-    Islands that don't have Similar Islands.
+    - **Stacked Color** - Color for displaying Stacked Islands.
+    - **Only UV Area** - Display Stacks only in the UV area.
 
 ---
 
-## Copy
+## Copy / Paste System
 
-Copy parameters of selected Islands/Faces and save them.
+ - **Copy** - Copy parameters of selected Islands/Faces and save them.
 
-## Paste
-Paste the parameters saved earlier to selected Islands/Faces.
+ - **Paste** - Paste the parameters saved earlier to selected Islands/Faces.
+
+[Here is full information](operators/stack_copy_paste.md) about Copy / Paste System.
 
 ---
 
@@ -96,61 +86,55 @@ Paste the parameters saved earlier to selected Islands/Faces.
     ![Panel](img/screen/stack/stack_manual_stack.png)
 
 
-## Area Matching ![Area Matching](img/icons/a.png)
+### Area Matching ![Area Matching](img/icons/a.png)
 
-Set strict requirements to Islands Area Matching when Stacking. Disable this option if the Islands have a slightly different Area.
+Set strict requirements for Islands Area Matching when Stacking. Disable this option if the Islands have a slightly different Area.
 
 
-## Move Only ![Move Only](img/icons/m.png)
+### Move Only ![Move Only](img/icons/m.png)
 
 Don't fit Islands. Just move to the same position.
 
-## Add ![Add](img/icons/plus.png)
+### Add ![Add](img/icons/plus.png)
 
 Add new Stack.
 
-## Delete ![Delete](img/icons/minus.png)
+### Delete ![Delete](img/icons/minus.png)
 
 Delete selected Stack.
 
-## Add Islands ![Add Islands](img/icons/download.png)
+### Add Islands ![Add Islands](img/icons/download.png)
 
 Append selected Islands to the active Stack.
 
-## Select Islands ![Add Islands](img/icons/select.png)
+### Select Islands ![Add Islands](img/icons/select_bl_ico.png)
 
 Select Islands in the Stack
 
-## Analyze Stack ![Analyse Stack](img/icons/analyse.png)
+### Analyze Stack ![Analyse Stack](img/icons/analyse.png)
 
 Analyze Islands Similarities in the Stack. You can find details in the Zen UV Manual Stack Analyze document in the Text Editor.
 
-## Remove All ![Remove All](img/icons/trash.png)
+### Remove All ![Remove All](img/icons/trash.png)
 
 Remove all Manual Stacks from selected Objects.
 
-## Stack
+### Stack
 
 Collect Islands on Manual Stacks.
 
-## Unstack
+### Unstack
 
-Shift Islands from Manual Stacks in given direction.
+Shift Islands from Manual Stacks in a given direction.
 
-## Stack Mode
+### Stack Mode
 Mode for Stacking.
 
 !!! Options
 
-    #### Global Mode
+    - **Global Mode** - Collect all Similar Islands on Stacks.
+    - **Selected Mode** - Collect selected Similar Islands on Stacks.
 
-    Collect all Similar Islands on Stacks.
-
-    #### Selected Mode
-    
-    Collect selected Similar Islands on Stacks.
-
-## Display Manual Stacks
+### Display Manual Stacks
 
 Display Manual Stacks (Static)
-
