@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Transform - Zen UV for Blender</title>
+  <title>Transform - Zen UV 3.0 for Blender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -37,7 +37,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Zen UV for Blender</a>
+        <a href=".." class="icon icon-home"> Zen UV 3.0 for Blender</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -89,9 +89,77 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Transform</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#universal-control-panel">Universal Control Panel</a>
+    <li class="toctree-l2"><a class="reference internal" href="#independent-transform-operators">Independent Transform Operators:</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#relax">Relax</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#pivot">Pivot</a>
+    <li class="toctree-l3"><a class="reference internal" href="#world-orient">World Orient.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#randomize">Randomize.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#quadrify-islands">Quadrify Islands</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reshape-island">Reshape Island</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#unified-transform-system">Unified Transform System:</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#universal-control-panel">Universal Control Panel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pivot">Pivot.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mode">Mode.</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#transform-types">Transform Types:</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#transform-type-move">Transform type Move.</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#move-increment">Move Increment</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#transform-type-scale">Transform type Scale.</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#scale-mode">Scale Mode:</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mode-axis">Mode - Axis.</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mode-units">Mode - Units.</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#transform-type-rotate">Transform type Rotate.</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#rotate-increment">Rotate Increment</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#orient-by-selected">Orient by selected</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#transform-type-flip">Transform type Flip.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#transform-type-fit">Transform type Fit.</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#fill-islands">Fill Islands</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#padding">Padding</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#bounds">Bounds</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fit-into-region">Fit into Region.</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#transform-type-align">Transform type Align.</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#to-uv-area-bounds">To UV Area Bounds</a>
+    </li>
+        </ul>
     </li>
     </ul>
                     </li>
@@ -101,7 +169,15 @@
                     </li>
                 </ul>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sticky_uv_editor/">Sticky UV Editor</a>
+                    </li>
+                </ul>
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../addon_prefs/">Addon Preferences</a>
                     </li>
                 </ul>
                 <ul>
@@ -117,7 +193,11 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../changelg/">Changelog</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../our_addons/">Our Add-ons</a>
                     </li>
                 </ul>
       </div>
@@ -129,7 +209,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Zen UV for Blender</a>
+        <a href="..">Zen UV 3.0 for Blender</a>
       </nav>
 
       
@@ -153,78 +233,224 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="transform">Transform</h1>
+                <h1 id="transform-system">Transform System</h1>
 <div class="admonition panel">
 <p class="admonition-title">Panel</p>
-<p><img alt="Transform" src="../img/screen/transform/MainPanelMove.png" /></p>
+<p><img alt="Transform" src="../img/screen/transform/tr_main_panel.png" /></p>
 </div>
+<hr />
+<h2 id="independent-transform-operators">Independent Transform Operators:</h2>
+<hr />
+<h3 id="relax">Relax <img alt="" src="../img/icons/relax-1_32.png" /></h3>
+<ul>
+<li>Allows to reduce the stretching the faces of the island. Uses three algorithms.<ul>
+<li><strong>Zen Relax</strong> - The algorithm is most suitable for organic objects.</li>
+<li><strong>Angle Based</strong> - Blender&rsquo;s native algorithm. Most suitable for the hard surfaces objects.</li>
+<li><strong>Conformal</strong> - Blender&rsquo;s native algorithm. Same as <strong>Angle Based</strong>, but much faster. However, can lead to undesired results if the island is complicated.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../img/screen/transform/relax.png" /></p>
+<hr />
+<h3 id="world-orient">World Orient.</h3>
+<ul>
+<li>Rotate Islands the way they are oriented on the Models. Each method (Organic/Hard Surface) uses a heuristic approach and correctly orients most of the Islands in its area.</li>
+</ul>
+<p><img alt="" src="../img/screen/transform/world_orient_props.png" /></p>
+<ul>
+<li><strong>Method: Hard Surface / Organic</strong> - The orientation method is suitable for geometry types.</li>
+<li><strong>Further orient</strong> - Additional turn. Allows you to turn the island to a horizontal or vertical if the island is located at an angle in the model.</li>
+<li><strong>Flip By Axis</strong> - Allow changing direction of the island after basic orientation. Suitable if needed change orientation from legs to head for example.</li>
+</ul>
+<hr />
+<h3 id="randomize">Randomize.</h3>
+<ul>
+<li>Randomize the position, rotation, and scale of the islands or selected vertices.</li>
+</ul>
+<p><img alt="" src="../img/screen/transform/randomize.png" /></p>
+<hr />
+<h3 id="quadrify-islands">Quadrify Islands <img alt="" src="../img/icons/quadrify_32.png" /></h3>
+<p>Straighten rectangular-shaped Islands.</p>
+<p><img alt="" src="../img/screen/transform/quadrify_op_props.png" /></p>
+<div class="admonition preferences">
+<p class="admonition-title">Preferences</p>
+<ul>
+<li><strong>By selected Edges</strong> - Selected Edges will be used and marked as Seams during Quadrify Islands operation. Works only in edge selection mode.</li>
+<li><strong>Mark Borders</strong> - Mark borders as seams/sharp after Quadrify Island operation.</li>
+<li><strong>Mark Seams</strong> - Mark seam in case <strong>Mark Borders</strong> is on.</li>
+<li><strong>Mark Sharp</strong> - Mark sharp in case <strong>Mark Borders</strong> is on.</li>
+<li><strong>Orient to: </strong> - How to orient Quadrified Islands.</li>
+<li><strong>Initial</strong> - Leave orientation as is.</li>
+<li><strong>Vertical</strong> - Set orientation vertical.</li>
+<li>
+<p><strong>Horizontal</strong> - Set orientation horizontal.</p>
+</li>
+<li>
+<p><strong>Average Texel Density</strong> - Averaging the size for the processed islands.</p>
+</li>
+<li>
+<p><strong>Pack Quadrified</strong> - Pac Islands after Quadrify Islands operation.</p>
+</li>
+<li><strong>Pin Quadrified</strong> - Pin Islands after Quadrify Islands operation.</li>
+</ul>
+</div>
+<hr />
+<h3 id="reshape-island">Reshape Island</h3>
+<p>Changes the island’s shape depending on the preset. <a href="../operators/reshape_island/">Here is full information</a> about Reshape Island.</p>
+<ul>
+<li><strong>Selected</strong> -  Straighten the selected Edge Loops and relax not selected vertices.</li>
+<li><strong>U Direction / V Direction</strong> - Edges is aligned in the indicated direction.</li>
+<li><strong>Borders</strong> - Straighten the edges of the island in even lines according to the given parameters.</li>
+</ul>
+<p><img alt="" src="../img/screen/transform/reshape_presets_collected.png" /></p>
+<hr />
+<h2 id="unified-transform-system">Unified Transform System:</h2>
+<div class="admonition panel">
+<p class="admonition-title">Panel</p>
+<p><img alt="" src="../img/screen/transform/tr_un_tr_sys.png" /></p>
+</div>
+<h3 id="universal-control-panel">Universal Control Panel</h3>
 <div class="admonition control">
 <p class="admonition-title">Control</p>
-<h4 id="universal-control-panel">Universal Control Panel</h4>
+<p><strong>Universal Control Panel</strong></p>
 <p><img alt="Transform" src="../img/screen/transform/UniversalControl.png" /></p>
-<p>The universal control panel that has through logic and different functions for different types of transformation.</p>
+<p>The universal control panel has logic and different functions for different types of transformation.</p>
 </div>
-<h2 id="pivot">Pivot</h2>
-<p>Transform Pivot.</p>
 <hr />
-<h1 id="move">Move</h1>
-<p><img alt="Transform" src="../img/screen/transform/MainPanelMove.png" />
-Transform type Move.</p>
-<h2 id="universal-control-panel_1">Universal Control Panel</h2>
-<p>In the Transform type Move buttons represents direction of shifting.</p>
-<h2 id="move-increment">Move Increment</h2>
-<p>The value on which the island will be shifted.</p>
+<h3 id="pivot">Pivot.</h3>
+<ul>
+<li>The pivot of transformation.</li>
+</ul>
+<p><img alt="" src="../img/screen/transform/tr_un_pivot.png" /></p>
+<h3 id="mode">Mode.</h3>
+<ul>
+<li>The Mode of transformation. In the Elements mode transformation will be performed over vertices, edges, and faces.</li>
+</ul>
+<p><img alt="" src="../img/screen/transform/tr_un_mode.png" /></p>
 <hr />
-<h1 id="scale">Scale</h1>
-<p><img alt="Transform" src="../img/screen/transform/Scale.png" />
-Transform type Scale.</p>
-<h2 id="universal-control-panel_2">Universal Control Panel</h2>
-<p>In the Transform type Scale buttons represents Points from where island will be scaled.</p>
-<h2 id="scale_1">Scale</h2>
-<p>The value of the scale of the island for each of the axes.</p>
+<h2 id="transform-types">Transform Types:</h2>
+<h3 id="transform-type-move">Transform type Move. <img alt="" src="../img/icons/transform-move.png" /></h3>
+<p><img alt="Transform" src="../img/screen/transform/MainPanelMove.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>Buttons of the <a href="#universal-control-panel"><strong>Universal Control Panel</strong></a> in the Transform type <strong>Move</strong> represent the direction of shifting.</li>
+</ul>
+</div>
+<h4 id="move-increment">Move Increment</h4>
+<ul>
+<li>The value on which the island will be shifted.</li>
+</ul>
 <hr />
-<h1 id="rotate">Rotate</h1>
-<p><img alt="Transform" src="../img/screen/transform/Rotate.png" />
-Transform type Rotate.</p>
-<h2 id="universal-control-panel_3">Universal Control Panel</h2>
-<p>In the Transform type Scale each button works as described. Buttons located in the corners rotate the island in the specified direction.
-The central button performs the automatic aligning of the island horizontally or vertically. The buttons at the top and bottom align the island vertically. Buttons on the left and right align the island horizontally.</p>
-<h2 id="rotate-increment">Rotate Increment</h2>
-<p>The value on which the island will be rotated.</p>
-<h2 id="orient-by-selected">Orient by selected</h2>
-<p>Reoriented the island by selected elements (vertices, edges, polygons).</p>
+<h3 id="transform-type-scale">Transform type Scale. <img alt="" src="../img/icons/transform-scale.png" /></h3>
+<p><img alt="Transform" src="../img/screen/transform/tr_scale.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>Buttons of the <a href="#universal-control-panel"><strong>Universal Control Panel</strong></a> in the Transform type <strong>Scale</strong> represent Points from where the island will be scaled.</li>
+</ul>
+</div>
+<h4 id="scale-mode">Scale Mode:</h4>
+<p><img alt="" src="../img/screen/transform/tr_scale_modes.png" /></p>
+<h4 id="mode-axis">Mode - <strong>Axis</strong>.</h4>
+<p><img alt="" src="../img/screen/transform/tr_scale_mode_axis.png" /></p>
+<ul>
+<li><strong>Scale</strong> - The value of the scale of the island for each of the axes.</li>
+<li><strong>Tuner</strong> - System that helps change values quickly.<ul>
+<li>&ldquo;D&rdquo; - Increase by two times.</li>
+<li>&ldquo;H&rdquo; - Decrease two times.</li>
+<li>&ldquo;R&rdquo; - Reset value to 1.0 .</li>
+<li>Lock. - The Lock mode allows changing values as one.</li>
+</ul>
+</li>
+</ul>
+<h4 id="mode-units">Mode - <strong>Units</strong>.</h4>
+<p><img alt="" src="../img/screen/transform/tr_scale_mode_units.png" /></p>
+<ul>
+<li><strong>UV Size</strong> - The estimated width of the UV area.</li>
+<li><strong>Desired size</strong> - The size of which should be set for selected elements relative to UV area.</li>
+<li><strong>G</strong> - Grab desired size from current selection. Exist only in the 3D Viewort context. Can be used only for 2 vertices or for one edge selection.</li>
+<li><strong>Horizontal / Vertical</strong> - What mean the Desired Size.</li>
+</ul>
 <hr />
-<h1 id="flip">Flip</h1>
-<p><img alt="Transform" src="../img/screen/transform/Flip.png" />
-Transform type Flip.</p>
-<h2 id="universal-control-panel_4">Universal Control Panel</h2>
-<p>In the Transform type Flip buttons represents flip direction.</p>
+<h3 id="transform-type-rotate">Transform type Rotate. <img alt="" src="../img/icons/transform-rotate.png" /></h3>
+<p><img alt="Transform" src="../img/screen/transform/Rotate.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>Buttons of the <a href="#universal-control-panel"><strong>Universal Control Panel</strong></a> in the Transform type <strong>Scale</strong> works as described. Buttons located in the corners rotate the island in the specified direction.
+The central button performs the automatic aligning of the island horizontally or vertically. The buttons at the top and bottom align the island vertically. Buttons on the left and right align the island horizontally.</li>
+</ul>
+</div>
+<h4 id="rotate-increment">Rotate Increment</h4>
+<ul>
+<li>The value on which the island will be rotated.</li>
+</ul>
+<h4 id="orient-by-selected">Orient by selected</h4>
+<ul>
+<li>Reorient the island by selected elements (vertices, edges, polygons).</li>
+</ul>
 <hr />
-<h1 id="fit">Fit</h1>
-<p><img alt="Transform" src="../img/screen/transform/Fit.png" />
-Transform type Fit.</p>
+<h3 id="transform-type-flip">Transform type Flip. <img alt="" src="../img/icons/transform-flip.png" /></h3>
+<p><img alt="Transform" src="../img/screen/transform/Flip.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>Buttons of the <a href="#universal-control-panel"><strong>Universal Control Panel</strong></a> in the Transform type <strong>Flip</strong> represent flip direction.</li>
+</ul>
+</div>
+<hr />
+<h3 id="transform-type-fit">Transform type Fit. <img alt="" src="../img/icons/transform-fit.png" /></h3>
+<p><img alt="Transform" src="../img/screen/transform/Fit.png" /></p>
 <p>Fit island to UV Square.</p>
-<h2 id="universal-control-panel_5">Universal Control Panel</h2>
-<p>In the Transform type Fit buttons represents origins from where Fit will be performed.</p>
-<h2 id="fill-islands">Fill Islands</h2>
-<p>Fit Islands from Center without keeping proportions.</p>
-<h2 id="padding">Padding</h2>
-<p>Clearance between island and UV Square bounds.</p>
-<h2 id="bounds">Bounds</h2>
-<p>It makes it possible to fill out not UV Square but any other area.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>Buttons of the <a href="#universal-control-panel"><strong>Universal Control Panel</strong></a> in the Transform type <strong>Fit</strong> represent origins from where <strong>Fit</strong> will be performed.</li>
+</ul>
+</div>
+<h4 id="fill-islands">Fill Islands</h4>
+<ul>
+<li>Fit Islands from Center without keeping proportions.</li>
+</ul>
+<h4 id="padding">Padding</h4>
+<ul>
+<li>Clearance between island and UV Square bounds.</li>
+</ul>
+<h4 id="bounds">Bounds</h4>
+<ul>
+<li>It makes it possible to fill out not UV Square but any other area.</li>
+</ul>
+<h3 id="fit-into-region">Fit into Region.</h3>
+<p><img alt="" src="../img/screen/transform/fit_into_region.png" /></p>
+<ul>
+<li><strong>Grab Region: Selection / Island</strong> - Allow to grab Region size in different manners.</li>
+<li><strong>Bottom Left: Top Right:</strong> - The bounding box of the region.</li>
+<li><strong>Fit into Region</strong> - Fit selected island in to the Region described in the bounding box.</li>
+</ul>
 <hr />
-<h1 id="align">Align</h1>
-<p><img alt="Transform" src="../img/screen/transform/Align.png" />
-Transform type Align.</p>
-<h2 id="universal-control-panel_6">Universal Control Panel</h2>
-<p>In the Transform type Align buttons represent the side by which the islands will be aligned.</p>
+<h2 id="transform-type-align">Transform type Align. <img alt="" src="../img/icons/transform-orient.png" /></h2>
+<p><img alt="Transform" src="../img/screen/transform/Align.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>Buttons of the <a href="#universal-control-panel"><strong>Universal Control Panel</strong></a> in the Transform type <strong>Align</strong> represent the side by which the islands will be aligned.</li>
+</ul>
+</div>
+<h3 id="to-uv-area-bounds">To UV Area Bounds</h3>
+<ul>
+<li>Allow aligning current selection to the UV Area bounds.</li>
+</ul>
 <hr />
-<h1 id="2d-cursor">2D Cursor</h1>
-<p><img alt="Transform" src="../img/screen/transform/2dCursor.png" />
-Transform type 2D Cursor.</p>
+<h1 id="transform-type-2d-cursor">Transform type 2D Cursor. <img alt="" src="../img/icons/transform-cursor.png" /></h1>
+<p><img alt="Transform" src="../img/screen/transform/2dCursor.png" /></p>
 <p>Align 2D Cursor over the selected island.</p>
-<h2 id="universal-control-panel_7">Universal Control Panel</h2>
-<p>In the Transform type 2D Cursor buttons represent sides of the island or selected elements.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>Buttons of the <a href="#universal-control-panel"><strong>Universal Control Panel</strong></a> in the Transform type <strong>2D Cursor</strong> represent sides of the island or selected elements.</li>
+</ul>
+</div>
               
             </div>
           </div>

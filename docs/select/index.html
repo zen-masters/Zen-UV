@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Select - Zen UV for Blender</title>
+  <title>Select - Zen UV 3.0 for Blender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -37,7 +37,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Zen UV for Blender</a>
+        <a href=".." class="icon icon-home"> Zen UV 3.0 for Blender</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -73,21 +73,25 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Select</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#select-islands">Select Islands</a>
+    <li class="toctree-l2"><a class="reference internal" href="#islands">Islands</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#int-loop">Int. Loop</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#overlapped">Overlapped</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#flipped">Flipped</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#seam">Seam</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sharp">Sharp</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-uv-borders">Select UV Borders</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#similar">Similar</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-edges-by-direction">Select Edges By Direction</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#isolate-islands-toggle">Isolate Islands (Toggle)</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#select-overlapped-islands">Select Overlapped Islands</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#select-flipped-islands">Select Flipped Islands</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#select-seams-edges">Select Seams Edges</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#select-sharp-edges">Select Sharp Edges</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#select-interseams-loop">Select Interseams Loop</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#select-similar-islands">Select Similar Islands</a>
     </li>
     </ul>
                     </li>
@@ -113,7 +117,15 @@
                     </li>
                 </ul>
                 <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sticky_uv_editor/">Sticky UV Editor</a>
+                    </li>
+                </ul>
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../addon_prefs/">Addon Preferences</a>
                     </li>
                 </ul>
                 <ul>
@@ -129,7 +141,11 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../changelg/">Changelog</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../our_addons/">Our Add-ons</a>
                     </li>
                 </ul>
       </div>
@@ -141,7 +157,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Zen UV for Blender</a>
+        <a href="..">Zen UV 3.0 for Blender</a>
       </nav>
 
       
@@ -168,24 +184,48 @@
                 <h1 id="select">Select</h1>
 <div class="admonition panel">
 <p class="admonition-title">Panel</p>
-<p><img alt="Select" src="../img/screen/select/select_section.png" /></p>
+<p><img alt="Select" src="../img/screen/select/select_main_panel.png" /></p>
 </div>
-<h2 id="select-islands">Select Islands</h2>
-<p>Select Islands by selected edge/face of the Islands.</p>
-<h2 id="isolate-islands-toggle">Isolate Islands (Toggle)</h2>
-<p>Isolate Islands (Toggle).</p>
-<h2 id="select-overlapped-islands">Select Overlapped Islands</h2>
-<p>Select Overlapped Islands.</p>
-<h2 id="select-flipped-islands">Select Flipped Islands</h2>
-<p>Select Flipped Islands.</p>
-<h2 id="select-seams-edges">Select Seams Edges</h2>
-<p>Select Edges Marked as Seams.</p>
-<h2 id="select-sharp-edges">Select Sharp Edges</h2>
-<p>Select Edges Marked as Sharp.</p>
-<h2 id="select-interseams-loop">Select Interseams Loop</h2>
-<p>Select Edge Loop with Seams respect.</p>
-<h2 id="select-similar-islands">Select Similar Islands</h2>
-<p>Select Islands similar to selected</p>
+<h3 id="islands">Islands <img alt="" src="../img/icons/select.png" /></h3>
+<ul>
+<li>Select Islands by selected edge/face of the Islands.</li>
+</ul>
+<h3 id="int-loop">Int. Loop</h3>
+<ul>
+<li>Inter seam loop. Select Edge Loop with respect to Seams.</li>
+</ul>
+<h3 id="overlapped">Overlapped</h3>
+<ul>
+<li>Select Overlapped Islands.</li>
+</ul>
+<h3 id="flipped">Flipped</h3>
+<ul>
+<li>Select Flipped Islands.</li>
+</ul>
+<h3 id="seam">Seam</h3>
+<ul>
+<li>Select Edges Marked as Seams.</li>
+</ul>
+<h3 id="sharp">Sharp</h3>
+<ul>
+<li>Select Edges Marked as Sharp.</li>
+</ul>
+<h3 id="select-uv-borders">Select UV Borders</h3>
+<ul>
+<li>Select existing UV Borders.</li>
+</ul>
+<h3 id="similar">Similar</h3>
+<ul>
+<li>Select Islands similar to those selected.</li>
+</ul>
+<h3 id="select-edges-by-direction">Select Edges By Direction</h3>
+<ul>
+<li>Select edges by direction along U or V axis.</li>
+</ul>
+<h3 id="isolate-islands-toggle">Isolate Islands (Toggle)</h3>
+<ul>
+<li>Isolate Islands (Toggle).</li>
+</ul>
               
             </div>
           </div>
