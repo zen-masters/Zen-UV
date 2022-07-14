@@ -1,4 +1,4 @@
-# Zen UV for Blender 3.0 (Relax)
+# Zen UV v3.0 for Blender.
 <!-- [![Zen UV Introduction](img/cover--eng.png)](https://www.youtube.com/watch?v=ook2eFfH724) -->
 ![stand_with_Ukraine](img/I_stand_with_Ukraine_banner.svg)
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">

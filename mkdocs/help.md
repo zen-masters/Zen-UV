@@ -3,9 +3,9 @@
 !!! Panel
     ![Help](img/screen/help/help.png)
 
-## Documentation
+## [Documentation](https://zen-masters.github.io/Zen-UV/)
 
-Link to the documentation of the current version.
+[Link](https://zen-masters.github.io/Zen-UV/) to the documentation of the current version.
 
 ## ![Discord](img/icons/services/discord-16.png) [**Discord**](https://discord.gg/wGpFeME)
 
@@ -13,7 +13,8 @@ Link to the documentation of the current version.
 
 ## Version
 
-Current version of Zen UV
+Current version of the [Zen UV](https://www.blendermarket.com/products/zen-uv).
+
 
 ## Core
 

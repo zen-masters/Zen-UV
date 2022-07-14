@@ -20,6 +20,7 @@ nav:
     - Downloads: downloads.md
     - Troubleshooting: troubleshooting.md
     - Changelog: changelg.md
+    - Our Add-ons: our_addons.md
 docs_dir: mkdocs
 site_dir: docs
 theme: readthedocs
