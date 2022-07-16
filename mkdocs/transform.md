@@ -206,6 +206,22 @@ Fit island to UV Square.
  - Allow aligning current selection to the UV Area bounds.
 
 ---
+## Transform type Distribute. ![](img/icons/transform-distribute.png)
+
+![Transform](img/screen/transform/Distribute.png)
+
+### Islands Mode
+
+ - **Distribute & Sort** - Distributes and Sorts the selected islands.
+ - **Arrange** - Arrange the selected islands.
+
+### Elements Mode
+
+ - **Distribute** - Distribute vertices along the line.
+
+
+---
+
 # Transform type 2D Cursor. ![](img/icons/transform-cursor.png)
 
 ![Transform](img/screen/transform/2dCursor.png)
