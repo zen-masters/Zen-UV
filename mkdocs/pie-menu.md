@@ -23,7 +23,7 @@
 - `CTRL` — Tag Unfinished - Tag selected Islands as Unfinished.
 
 
-## Select Islands
+## Select Islands ![Select Islands](img/icons/select.png)
 
 - *Default* — Select Islands by selected edge/face of the Islands.
 - `ALT` — Select Overlapped Islands.
