@@ -1,4 +1,4 @@
-# Zen UV v3.0 for Blender.
+# Zen UV v3.0.1 for Blender.
 <!-- [![Zen UV Introduction](img/cover--eng.png)](https://www.youtube.com/watch?v=ook2eFfH724) -->
 ![stand_with_Ukraine](img/I_stand_with_Ukraine_banner.svg)
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
@@ -15,32 +15,30 @@
 <!-- blank line -->
 ----
 <!-- blank line -->
-## Main (Cool) Features
+## Main Features
 
-- **Smart Zen Unwrap Operator** to mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after. **Unwrap your model easily with Zen Unwrap!**
-<br><br>
-- Powerful **Marking System** that helps you to mark Seams and/or Sharp automatically by angle, by existing UV Borders/Sharp Edges, and manually.
-<br><br>
-- **New Finished System.** It helps to control and manage the state of unwrapping UV Islands (Finished/Unfinished) by tags and visually. **Nothing will be left not unwrapped!**
-<br><br>
-- **Quadrify Islands Operator** to straighten rectangular-shaped UV Islands.
-<br><br>
-- Different Pack Engines. **Yes, you can use UVPackmaster 2 with Zen UV!**
-<br><br>
-- Isolate Island (Toggle) for comfortable step-by-step work with separate geometry parts.
-<br><br>
-- **Checker System** is a node-based system that contains Checker Textures designed specifically for Zen UV. Custom textures can be added easily by the user at the node level. **Check UV's state on the model without ruining existing materials!**
-<br><br>
-- A flexible Preferences system will help you to adjust Zen UV for your needs.
-<br><br>
-- Smooth by Sharp (Toggle)**. Set hard/soft edges for perfect normal map bakes in one click!**
-<br><br>
-- UV Maps Properties Tab to have quick access to UV Maps management.
-<br><br>
-- Intuitive UI with multifunctional Main, Pie, and Popup menus. **You will like it!**
-<br><br>
+-   [**World Orient**](https://zen-masters.github.io/Zen-UV/transform/#world-orient) operator that rotates UV Islands the way they are oriented in the model.
+-   [**Stack System.**](https://zen-masters.github.io/Zen-UV/stack/) Stack and Unstack UV Islands automatically and manually. Extremely useful for increasing Texel Density and baking.
+-   [**Relax Operator**.](https://zen-masters.github.io/Zen-UV/transform/#relax) This is a new unwrapping method that is well suited for working with organic models.
+-   [**Copy/Paste Operators.**](https://zen-masters.github.io/Zen-UV/stack/#copy-paste-system) Copy/Paste parameters (Structure,TD, Position, Size) between Islands/Faces/Maps.
+-   [**Quadrify Islands Operator**](https://zen-masters.github.io/Zen-UV/transform/#quadrify-islands) to straighten rectangular-shaped UV Islands. 
+-   [**Full set of Transform tools**.](https://zen-masters.github.io/Zen-UV/transform/) Move, Rotate, Scale, Flip, Fit, Orient, Sort and Align Islands and Elements (vertices, edges, polygons).
+-   [**Finished System.**](https://zen-masters.github.io/Zen-UV/unwrap/#finishing-system) It helps to control and manage the state of unwrapping UV Islands (Finished/Unfinished) by tags and visually.
+-   [**Different Pack Engines**.](https://zen-masters.github.io/Zen-UV/operators/#pack-engine) Yes, you can use UVPackmaster 2, 3 and UV-Packer with Zen UV.
+-   [**Zen Unwrap Operator**](https://zen-masters.github.io/Zen-UV/unwrap/#zen-unwrap) to mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after.
+-   [**Marking System**](https://zen-masters.github.io/Zen-UV/unwrap/#mark-system) that helps you to mark Seams and/or Sharp automatically by angle, by existing UV Borders/Sharp Edges, and manually.
+-   [**Seam Groups.**](https://zen-masters.github.io/Zen-UV/seam_groups/) Work with more than one Seam set!
+-   [**Isolate Island Mode**](https://zen-masters.github.io/Zen-UV/select/#isolate-islands-toggle) for comfortable step-by-step work with separate geometry parts.
+-   [**Checker Map System**](https://zen-masters.github.io/Zen-UV/checker/) is a node-based system that contains Checker Textures designed specifically for Zen UV. Square and rectangular formats. Check UV's state on the model without ruining existing materials!
+-   [**Texel Density.**](https://zen-masters.github.io/Zen-UV/texel_density/) Get, Set, and Check Texel Density of UV Islands.
+-   [**Sticky UV Editor**](https://zen-masters.github.io/Zen-UV/sticky_uv_editor/) for quick access to UV Editor.
+-   [**Advanced UV Maps**.](https://zen-masters.github.io/Zen-UV/adv_uv-maps/) Duplicate, remove, clean, and rename UV Maps of the selected objects in sync.  
+-   [**Hard Ops add-on integration**.](https://zen-masters.github.io/Zen-UV/preferences/#display-subpanel) It allows displaying UV manipulations in 3D View!
+-   [**Smooth by Sharp (Toggle).**](https://zen-masters.github.io/Zen-UV/unwrap/#smooth-by-sharp-toggle) Set smoothing for perfect normal map bakes in one click!
 - Quick support on the [**Discord channel**](https://discord.gg/wGpFeME).
 
 ## Default Shortcuts
 - Zen UV Pie Menu ![Zen UV Pie Menu](img/icons/zen-uv@2x.png) --- `Alt + U`
 - Zen UV Popup Menu --- `Shift + U`
+- Checker Texture (Toggle) --- `Alt + T`
+- Sticky UV Editor (Toggle) --- `Shift + T`
