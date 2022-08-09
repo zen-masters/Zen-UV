@@ -2,7 +2,7 @@ site_name: Zen UV 3.0 for Blender
 site_description: Zen UV for Blender Documentation
 nav:
     - Introduction: index.md
-    - Installation: installation.md
+    - Installation and Update: installation.md
     - Pie Menu: pie-menu.md
     - Advanced UV Maps: adv_uv-maps.md
     - Seam Groups: seam_groups.md
