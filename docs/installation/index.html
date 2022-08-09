@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Installation - Zen UV 3.0 for Blender</title>
+  <title>Installation and Update - Zen UV 3.0 for Blender</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Installation";
+    var mkdocs_page_name = "Installation and Update";
     var mkdocs_page_input_path = "installation.md";
     var mkdocs_page_url = null;
   </script>
@@ -51,13 +51,17 @@
                     </li>
                 </ul>
                 <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Installation</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Installation and Update</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#zen-uv">Zen UV</a>
+    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#zen-uv-core-library">Zen UV - Core Library</a>
+    <li class="toctree-l2"><a class="reference internal" href="#zen-uv-core-library-installation">Zen UV Core Library Installation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#update">Update</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#installation_1">Installation</a>
+    <li class="toctree-l3"><a class="reference internal" href="#manual-update">Manual Update</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#still-have-problems-with-update">Still have problems with update?</a>
     </li>
         </ul>
     </li>
@@ -157,7 +161,7 @@
     
       
     
-    <li>Installation</li>
+    <li>Installation and Update</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -169,30 +173,72 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link"></a></h1>
-<h2 id="zen-uv">Zen UV<a class="headerlink" href="#zen-uv" title="Permanent link"></a></h2>
-<p>To install the addon go to <strong>Preferences &mdash; Addons &mdash; Install</strong>, then you can enable the addon by clicking on the checkbox.
-<br><br>
-<img alt="Installation" src="../img/screen/installation.png" /></p>
-<p>Also, you can <a href="https://youtu.be/dqpgWcRBE4o?t=17"><strong>watch the video</strong></a> (with time code) how to install it.</p>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
-<iframe src="https://www.youtube.com/embed/dqpgWcRBE4o?t=20" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
-</div>
-<p><br><br></p>
-<h2 id="zen-uv-core-library">Zen UV - Core Library<a class="headerlink" href="#zen-uv-core-library" title="Permanent link"></a></h2>
-<p><img alt="Core Library" src="../img/screen/core_library/core_library.png" /></p>
-<p>This is an additional library of the Zen UV add-on to get the fastest computations (Stack algorithm) in C++ which is impossible to be implemented in Python. It is distributed separately from the add-on as it is licensed differently from the GPL (Apache License 2.0). Zen UV Core library does not collect or send any data. It does not use any network connections: either internet or local. (Supported on Windows, Mac OS, and Linux platforms.)</p>
-<h3 id="installation_1">Installation<a class="headerlink" href="#installation_1" title="Permanent link"></a></h3>
+                <h1 id="installation-and-update">Installation and update<a class="headerlink" href="#installation-and-update" title="Permanent link"></a></h1>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link"></a></h2>
 <ol>
-<li>Be sure that the Zen UV add-on is already installed.</li>
-<li>Go to Edit -&gt; Preferences -&gt; Add-ons -&gt; Zen UV.</li>
-<li>Go to Modules.</li>
-<li>Press  Install Zen UV Core.</li>
-<li>Select the zen_uv_lib file in the Blender File View Window.</li>
-<li>Press  Install Zen UV Core</li>
+<li>Go to <strong>Edit</strong> -&gt; <strong>Preferences</strong>.</li>
+<li>Go to <strong>Add-ons</strong>.</li>
+<li>Press <strong>Install</strong>.</li>
+<li>Select Zen UV.zip.</li>
+<li>Press <strong>Install Add-on</strong>.</li>
+<li>Enable Zen UV add-on using checkbox and restart Blender. </li>
+<li>Done! Let&rsquo;s go further and <a href="https://zen-masters.github.io/Zen-UV/installation/#zen-uv-core-library-installation"><strong>install Zen UV Core Library</strong></a> to enable <a href="https://zen-masters.github.io/Zen-UV/stack/#stack"><strong>Stack</strong></a> feature!  </li>
+</ol>
+<p><img alt="" src="../img/screen/installation/installation.png" />
+<img alt="" src="../img/screen/installation/installation_enable.png" /></p>
+<h2 id="zen-uv-core-library-installation">Zen UV Core Library Installation<a class="headerlink" href="#zen-uv-core-library-installation" title="Permanent link"></a></h2>
+<div class="admonition library">
+<p class="admonition-title">Library</p>
+<p>Zen UV Core library is an additional library of the Zen UV add-on to get the fastest computations (<a href="https://zen-masters.github.io/Zen-UV/stack/#stack">Stack</a> algorithm) in C++ which is impossible to be implemented in Python. It is distributed separately from the add-on as it is licensed differently from the GPL (Apache License 2.0). Zen UV Core library does not collect or send any data. It does not use any network connections: either internet or local. It is supported on Windows, Mac OS 11 (M1 CPU Universal app only), and Linux platforms.</p>
+</div>
+<ol>
+<li>Go to <strong>Preferences</strong> -&gt; <strong>Add-ons</strong>.</li>
+<li>Find installed and enabled Zen UV add-on.</li>
+<li>Go to <strong>Modules</strong>.</li>
+<li>Press <a href="https://gumroad.com/l/ZenUVCore"><strong>Download Zen UV Core Library (FREE)</strong></a> if you don&rsquo;t have it.</li>
+<li>Press <strong>Install Zen UV Core Library</strong>.</li>
+<li>Select Zen UV Core Library file.</li>
+<li>Press <strong>Install Zen UV Core Library</strong>.</li>
+<li>Done! Now the add-on is fully installed and you can use all the features!</li>
+</ol>
+<p><img alt="" src="../img/screen/installation/installation_zen_core.png" />
+<img alt="" src="../img/screen/installation/installation_zen_core_done.png" /></p>
+<h2 id="update">Update<a class="headerlink" href="#update" title="Permanent link"></a></h2>
+<ol>
+<li>Go to <strong>Preferences</strong> -&gt; <strong>Add-ons</strong>.</li>
+<li>Find installed and enabled Zen UV add-on.</li>
+<li>Press <strong>Update Zen UV</strong>.</li>
+<li>Select new version Zen UV.zip.</li>
+<li>Press <strong>Update Zen UV</strong> and restart Blender.</li>
+<li><a href="https://zen-masters.github.io/Zen-UV/installation/#zen-uv-core-library-installation"><strong>Install Zen UV Core Library</strong></a>.</li>
 <li>Done!</li>
 </ol>
-<p><img alt="Core Installation" src="../img/screen/core_library/core_installation.png" /></p>
+<p><img alt="" src="../img/screen/installation/installation_update.png" /></p>
+<h3 id="manual-update">Manual Update<a class="headerlink" href="#manual-update" title="Permanent link"></a></h3>
+<div class="admonition manual">
+<p class="admonition-title">Manual</p>
+<p>Use this update method if for some reason you need to update the add-on using Blender&rsquo;s standard method. In all other cases, we recommend using <a href="https://zen-masters.github.io/Zen-UV/installation/#update"><strong>Zen UV Update</strong></a>. </p>
+</div>
+<ol>
+<li>Go to <strong>Preferences</strong> -&gt; <strong>Add-ons</strong>.</li>
+<li>Find installed and enabled Zen UV add-on.</li>
+<li>Go to <strong>Modules</strong>.</li>
+<li>Press <strong>Unregister Zen UV Core Libary</strong>.</li>
+<li>Press <strong>Install</strong>.</li>
+<li>Select new version Zen UV.zip.</li>
+<li>Press <strong>Install Add-on</strong> and restart Blender.</li>
+<li><a href="https://zen-masters.github.io/Zen-UV/installation/#zen-uv-core-library-installation"><strong>Install Zen UV Core Library</strong></a>.</li>
+<li>Done!</li>
+</ol>
+<p><img alt="" src="../img/screen/installation/installation_manual_update_1.png" />
+<img alt="" src="../img/screen/installation/installation_manual_update_2.png" /></p>
+<h3 id="still-have-problems-with-update">Still have problems with update?<a class="headerlink" href="#still-have-problems-with-update" title="Permanent link"></a></h3>
+<ol>
+<li>Go to Blender add-ons folder. (C:\Users\Sergey\AppData\Roaming\Blender Foundation\Blender\3.2\scripts\addons).</li>
+<li>Delete Zen UV folder manually.</li>
+<li><a href="https://zen-masters.github.io/Zen-UV/installation/#installation"><strong>Install Zen UV add-on</strong></a>.</li>
+<li>Done!</li>
+</ol>
               
             </div>
           </div>
