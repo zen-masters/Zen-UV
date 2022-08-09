@@ -27,3 +27,5 @@ theme: readthedocs
 markdown_extensions:
     - smarty
     - admonition
+    - toc:
+        permalink: 
