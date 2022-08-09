@@ -51,27 +51,35 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation and Update</a>
                     </li>
                 </ul>
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Pie Menu</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#zen-unwrap">Zen Unwrap</a>
+    <li class="toctree-l2"><a class="reference internal" href="#operators">Operators</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#quadrify-relax">Quadrify | Relax</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#mark-by-angle">Mark by Angle</a>
+    <li class="toctree-l3"><a class="reference internal" href="#zen-unwrap-pack">Zen Unwrap | Pack</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#mark-seamssharp-edges">Mark Seams/Sharp edges</a>
+    <li class="toctree-l3"><a class="reference internal" href="#checker-finished">Checker | Finished</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#unmark-seamssharp-edges">Unmark Seams/Sharp edges</a>
+    <li class="toctree-l3"><a class="reference internal" href="#unmark-tag-finished">Unmark | Tag Finished</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#select-islands">Select Islands</a>
+    <li class="toctree-l3"><a class="reference internal" href="#mark-tag-finished">Mark | Tag Finished</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#isolate-islands-toggle">Isolate Islands (Toggle)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#select-islands-overlapped">Select: Islands | Overlapped</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#quadrify-islands">Quadrify Islands</a>
+    <li class="toctree-l3"><a class="reference internal" href="#isolate-islands-toggle">Isolate Islands (Toggle)</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#checker-texture-toggle">Checker Texture (Toggle)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#mark-by-angle">Mark by Angle</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pie-menu-assist">Pie Menu Assist</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#default-shortcut">Default Shortcut</a>
     </li>
     </ul>
                     </li>
@@ -178,49 +186,64 @@
             <div class="section">
               
                 <h1 id="pie-menu">Pie Menu<a class="headerlink" href="#pie-menu" title="Permanent link"></a></h1>
-<p><img alt="Pie Menu" src="../img/screen/pie.png" /></p>
-<h2 id="zen-unwrap">Zen Unwrap <img alt="Zen Unwrap" src="../img/icons/zen-unwrap%402x.png" /><a class="headerlink" href="#zen-unwrap" title="Permanent link"></a></h2>
+<p><img alt="Pie Menu" src="../img/gifs/pie_menu/pie_menu.gif" /></p>
+<h2 id="operators">Operators<a class="headerlink" href="#operators" title="Permanent link"></a></h2>
+<h3 id="quadrify-relax">Quadrify | Relax <img alt="Quadrify Islands" src="../img/icons/quadrify_32.png" /><a class="headerlink" href="#quadrify-relax" title="Permanent link"></a></h3>
 <ul>
-<li><em>Default</em> — <strong>Zen Unwrap.</strong> Mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after.</li>
-<li><code>ALT</code> — Pack all Islands.</li>
+<li><code>Default</code> — <a href="https://zen-masters.github.io/Zen-UV/transform/#quadrify-islands"><strong>Quadrify Islands</strong></a>. Straighten rectangular-shaped Islands.</li>
+<li><code>CTRL</code> — <a href="https://zen-masters.github.io/Zen-UV/transform/#relax"><strong>Relax</strong></a>. Relax Selected Islands.</li>
 </ul>
-<h2 id="mark-by-angle">Mark by Angle<a class="headerlink" href="#mark-by-angle" title="Permanent link"></a></h2>
+<h3 id="zen-unwrap-pack">Zen Unwrap | Pack <img alt="Zen Unwrap" src="../img/icons/zen-unwrap%402x.png" /><a class="headerlink" href="#zen-unwrap-pack" title="Permanent link"></a></h3>
 <ul>
-<li><em>Default</em> — Setup Auto Seams.</li>
+<li><code>Default</code> — <a href="https://zen-masters.github.io/Zen-UV/unwrap/#zen-unwrap"><strong>Zen Unwrap</strong></a>. Unwrap by Marked edges. If you have selected edges or faces they will be Marked as Seams and/or Sharp Edges and Unwrapped after.</li>
+<li><code>ALT</code> — <a href="https://zen-masters.github.io/Zen-UV/pack/#pack-islands"><strong>Pack Islands</strong></a>. Pack Islands by chosen Pack Engine.</li>
 </ul>
-<h2 id="mark-seamssharp-edges">Mark Seams/Sharp edges <img alt="Mark Seams" src="../img/icons/mark-seams%402x.png" /><a class="headerlink" href="#mark-seamssharp-edges" title="Permanent link"></a></h2>
+<h3 id="checker-finished">Checker | Finished <img alt="Checker Texture" src="../img/icons/checker_32.png" /><a class="headerlink" href="#checker-finished" title="Permanent link"></a></h3>
 <ul>
-<li><em>Default</em> — Mark selected edges or face borders as Seams and/or Sharp edges.</li>
-<li><code>CTRL</code> — Tag selected Islands as Finished.</li>
+<li><code>Default</code> — <a href="https://zen-masters.github.io/Zen-UV/checker/#checker-texture-toggle"><strong>Checker Texture (Toggle)</strong></a>. Add/Remove Checker Texture to/from the mesh.</li>
+<li><code>ALT</code> — <a href="https://zen-masters.github.io/Zen-UV/checker/#display-stretch-map"><strong>Display Stretch Map</strong></a>. Display an angle-based stretching map.</li>
+<li><code>CTRL</code> — <a href="https://zen-masters.github.io/Zen-UV/unwrap/#display-finished-toggle"><strong>Display Finished</strong></a>. Display Finished Islands (Toggle).</li>
 </ul>
-<h2 id="unmark-seamssharp-edges">Unmark Seams/Sharp edges <img alt="Unmark Seams" src="../img/icons/unmark-seams%402x.png" /><a class="headerlink" href="#unmark-seamssharp-edges" title="Permanent link"></a></h2>
+<h3 id="unmark-tag-finished">Unmark | Tag Finished <img alt="Unmark Seams" src="../img/icons/unmark-seams%402x.png" /><a class="headerlink" href="#unmark-tag-finished" title="Permanent link"></a></h3>
 <ul>
-<li><em>Default</em> — Unmark selected edges or face borders as Seams and/or Sharp edges.</li>
-<li><code>ALT</code> — Unmark All - Remove all the Seams and/or Sharp edges from the mesh.</li>
-<li><code>CTRL</code> — Tag Unfinished - Tag selected Islands as Unfinished.</li>
+<li><code>Default</code> — <a href="https://zen-masters.github.io/Zen-UV/unwrap/#unmark"><strong>Unmark</strong></a>. Unmark selected edges or face borders as Seams and/or Sharp edges.</li>
+<li><code>ALT</code> — <a href="https://zen-masters.github.io/Zen-UV/unwrap/#unmark-all"><strong>Unmark All</strong></a>. Remove all Seams and/or Sharp edges from the mesh.</li>
+<li><code>CTRL</code> — <a href="https://zen-masters.github.io/Zen-UV/unwrap/#tag-unfinished"><strong>Tag Unfinished</strong></a>. Tag selected Islands as Unfinished.</li>
 </ul>
-<h2 id="select-islands">Select Islands <img alt="Select Islands" src="../img/icons/select.png" /><a class="headerlink" href="#select-islands" title="Permanent link"></a></h2>
+<h3 id="mark-tag-finished">Mark | Tag Finished <img alt="Mark Seams" src="../img/icons/mark-seams%402x.png" /><a class="headerlink" href="#mark-tag-finished" title="Permanent link"></a></h3>
 <ul>
-<li><em>Default</em> — Select Islands by selected edge/face of the Islands.</li>
-<li><code>ALT</code> — Select Overlapped Islands.</li>
-<li><code>CTRL</code> — Select Flipped Islands.</li>
-<li><code>SHIFT</code> - Select Similar Islands.</li>
+<li><code>Default</code> — <a href="https://zen-masters.github.io/Zen-UV/unwrap/#mark"><strong>Mark</strong></a>. Mark selected edges or face borders as Seams and/or Sharp edges.</li>
+<li><code>CTRL</code> — <a href="https://zen-masters.github.io/Zen-UV/unwrap/#tag-finished"><strong>Tag Finished</strong></a>. Tag selected Islands as Finished. Islands Taged as Finished won&rsquo;t be unwrapped, recommended to Tag manually changed Islands (e.g. Quadrified Islands).</li>
 </ul>
-<h2 id="isolate-islands-toggle">Isolate Islands (Toggle)<a class="headerlink" href="#isolate-islands-toggle" title="Permanent link"></a></h2>
+<h3 id="select-islands-overlapped">Select: Islands | Overlapped <img alt="" src="../img/icons/select.png" /><a class="headerlink" href="#select-islands-overlapped" title="Permanent link"></a></h3>
 <ul>
-<li><em>Default</em> — Isolate Islands (Toggle) by selected edge/face of the Islands.</li>
+<li><code>Default</code> — <a href="https://zen-masters.github.io/Zen-UV/select/#islands"><strong>Select Islands</strong></a>. Select Islands by selected edge/face of the Islands.</li>
+<li><code>ALT</code> — <a href="https://zen-masters.github.io/Zen-UV/select/#overlapped"><strong>Select Overlapped Islands</strong></a>.</li>
+<li><code>CTRL</code> — <a href="https://zen-masters.github.io/Zen-UV/select/#flipped"><strong>Select Flipped Islands</strong></a>.</li>
+<li><code>SHIFT</code> — <a href="https://zen-masters.github.io/Zen-UV/select/#similar"><strong>Select Similar Islands</strong></a>.</li>
 </ul>
-<h2 id="quadrify-islands">Quadrify Islands <img alt="Quadrify Islands" src="../img/icons/quadrify_32.png" /><a class="headerlink" href="#quadrify-islands" title="Permanent link"></a></h2>
+<h3 id="isolate-islands-toggle">Isolate Islands (Toggle)<a class="headerlink" href="#isolate-islands-toggle" title="Permanent link"></a></h3>
 <ul>
-<li><em>Default</em> — Straighten rectangular-shaped Islands.</li>
-<li><code>CTRL</code> — Relax(beta) - Relax Selected Islands.</li>
+<li><code>Default</code> — <a href="https://zen-masters.github.io/Zen-UV/select/#isolate-islands-toggle"><strong>Isolate Islands (Toggle)</strong></a>. Isolate Islands by selected edge/face of the Islands.</li>
 </ul>
-<h2 id="checker-texture-toggle">Checker Texture (Toggle) <img alt="Checker Texture" src="../img/icons/checker_32.png" /><a class="headerlink" href="#checker-texture-toggle" title="Permanent link"></a></h2>
+<h3 id="mark-by-angle">Mark by Angle<a class="headerlink" href="#mark-by-angle" title="Permanent link"></a></h3>
 <ul>
-<li><em>Default</em> — Add Checker Texture to the mesh (Toggle).</li>
-<li><code>ALT</code> — Display Stretch Map. Display an angle-based stretching map.</li>
-<li><code>CTRL</code> — Display Finished Islands (Toggle).</li>
+<li><code>Default</code> — <a href="https://zen-masters.github.io/Zen-UV/unwrap/#mark-by-angle"><strong>Mark by Angle</strong></a>. Mark edges as Seams and/or Sharp edges by Angle.</li>
 </ul>
+<hr />
+<h2 id="pie-menu-assist">Pie Menu Assist<a class="headerlink" href="#pie-menu-assist" title="Permanent link"></a></h2>
+<p><img alt="Pie Menu Assist" src="../img/screen/pie_menu/pie_menu_assitant.png" /></p>
+<p>Pie Menu Assist is special help window, which is located below the Pie Menu. There you can find, highlight and execute all the alternative <code>ALT</code>, <code>CTRL</code>, <code>SHIFT</code> Pie Menu commands.</p>
+<div class="admonition assist">
+<p class="admonition-title">Assist</p>
+<p>If you want to disable Pie Menu Assist, you can do it here <strong>N-Panel</strong> -&gt; <strong>Zen UV</strong> -&gt; <strong>Preferences</strong> -&gt; <strong>Display</strong> -&gt; <strong>Display Pie Assist</strong>. </p>
+</div>
+<h2 id="default-shortcut">Default Shortcut<a class="headerlink" href="#default-shortcut" title="Permanent link"></a></h2>
+<p>Zen UV Pie Menu <img alt="Zen UV Pie Menu" src="../img/icons/zen-uv%402x.png" /> &mdash; <code>Alt + U</code></p>
+<div class="admonition shortcut">
+<p class="admonition-title">Shortcut</p>
+<p>If you don&rsquo;t like default Pie Menu Shortcut, it can be changed here <strong>Edit</strong> -&gt; <strong>Preferences</strong> -&gt; <strong>Add-ons</strong> -&gt; <strong>Zen UV</strong> -&gt; <strong>Keymap</strong>. Don&rsquo;t forget to change Shortcut for both contexts Mesh and UV Editor.</p>
+</div>
               
             </div>
           </div>
@@ -231,7 +254,7 @@
         <a href="../adv_uv-maps/" class="btn btn-neutral float-right" title="Advanced UV Maps">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../installation/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../installation/" class="btn btn-neutral" title="Installation and Update"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
