@@ -1,4 +1,4 @@
-# Troubleshooting
+# FAQs
 ----
 ### Can I unwrap organic models using Zen UV?
 — Yes, among other tools Zen UV has [**Relax**](https://zen-masters.github.io/Zen-UV/transform/#relax) operator that is well suited for relaxing UV Islands of organic 3D models.
