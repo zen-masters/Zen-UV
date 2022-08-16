@@ -1,79 +1,71 @@
-# Our Add-ons.
+# Our Add-ons
 
-## Zen Bundle:
+## Zen Bundle
+
+All Zen add-ons in one place. Together is cheaper!
 
 ![](img/banners/bmarket-zen-bundle.jpg)
 
-[Gumroad](https://sergeytyapkin.gumroad.com/l/ZenBundle)
-
-[Blender Market](https://www.blendermarket.com/products/zen-bundle)
-
-[Zen Bundle Documentation](https://www.blendermarket.com/products/zen-bundle/docs)
+![blendermarket icon](img/icons/blendermarket.png)  [**Blender Market**](https://www.blendermarket.com/products/zen-bundle)    ![gumroad icon](img/icons/gumroad.png)  [**Gumroad**](https://sergeytyapkin.gumroad.com/l/ZenBundle)
 
 ---
 
-## Zen Sets:
+## Zen UV
 
-Create and manage Groups of mesh Elements (Verts, Edges, Faces)
-
-![](img/banners/bmarket-zen-sets.jpg)
-
-[Gumroad](https://gumroad.com/l/ZenSets)
-
-[Blender Market](https://www.blendermarket.com/products/zen-sets)
-
-[Zen Sets Documentation](https://zen-masters.github.io/Zen-Sets/)
-
----
-
-## Zen UV:
-
-Optimize the UV mapping workflow
+Zen UV is not just a set of tools, it is ready to use pipeline for fast creating UV’s in Blender.
+It represents an intuitive system created by professionals and refined in real projects. Enjoy this experience with us!
 
 ![](img/banners/bmarket-zen-uv.jpg)
 
-[Gumroad](https://gumroad.com/l/ZenUV)
+![blendermarket icon](img/icons/blendermarket.png)  [**Blender Market**](https://www.blendermarket.com/products/zen-uv)    ![gumroad icon](img/icons/gumroad.png)  [**Gumroad**](https://gumroad.com/l/ZenUV)
 
-[Blender Market](https://www.blendermarket.com/products/zen-uv)
-
-[Zen UV Documentation](https://zen-masters.github.io/Zen-UV/)
+[**Zen UV Documentation**](https://zen-masters.github.io/Zen-UV/)
 
 ---
 
-## Zen BBQ: 
+## Zen Sets
 
-Build Bevels Quickly!
+Zen Sets is an add-on for creating, managing, and visualizing Collections and Mesh Element Groups. Save the selection of Verts / Edges / Faces / Objects to bring it back whenever you want, modify it, and display it by color in Viewport and UV Editor in a couple of clicks. Meet true Selection Sets for Blender!
+
+![](img/banners/bmarket-zen-sets.jpg)
+
+![blendermarket icon](img/icons/blendermarket.png)  [**Blender Market**](https://www.blendermarket.com/products/zen-sets)    ![gumroad icon](img/icons/gumroad.png)  [**Gumroad**](https://gumroad.com/l/ZenSets)
+
+[**Zen Sets Documentation**](https://zen-masters.github.io/Zen-Sets/)
+
+---
+
+## Zen BBQ
+
+Zen BBQ is an add-on for creating, adjusting, and visualizing Bevels in a couple of clicks! Are you tired of preparing geometry for the Subd or Bevel modifiers? Look no further! 
 
 ![](img/banners/bmarket-zen-bbq.jpg)
 
-[Gumroad](https://gumroad.com/l/ZenBBQ)
+![blendermarket icon](img/icons/blendermarket.png)  [**Blender Market**](https://www.blendermarket.com/products/zen-bbq)    ![gumroad icon](img/icons/gumroad.png)  [**Gumroad**](https://gumroad.com/l/ZenBBQ)
 
-[Blender Market](https://www.blendermarket.com/products/zen-bbq)
-
-[Zen BBQ Documentation](https://zen-masters.github.io/Zen-BBQ/)
+[**Zen BBQ Documentation**](https://zen-masters.github.io/Zen-BBQ/)
 
 ---
 
-## Checker:
+## Checker
 
-Check the state of UVs (FREE)
+Check the state of UVs (FREE).
 
 ![](img/banners/bmarket-checker.jpg)
 
-[Gumroad](https://gumroad.com/l/zenuv_checker)
+![blendermarket icon](img/icons/blendermarket.png)  [**Blender Market**](https://www.blendermarket.com/products/checker)    ![gumroad icon](img/icons/gumroad.png)  [**Gumroad**](https://gumroad.com/l/zenuv_checker)
 
-[Blender Market](https://www.blendermarket.com/products/checker)
-
-[Zen Sets Documentation](https://zen-masters.github.io/Zen-UV/checker/ )
+[**Checker Documentation**](https://zen-masters.github.io/Zen-UV/checker/ )
 
 ---
 
-## Console Top Most:
+## Console Top Most
 
-Make the System Console to the TOPMOST window
+Are you tired of switching back to the System Console window in Blender? There is a way out!
+Console Top Most add-on makes the System Console to the TOPMOST window!
 
 ![](img/banners/bmarket-console-topmost.jpg)
 
-[Gumroad](https://gumroad.com/l/ZenConsoleTopMost)
+![blendermarket icon](img/icons/blendermarket.png)  [**Blender Market**](https://www.blendermarket.com/products/zen-console-top-most-for-blender)    ![gumroad icon](img/icons/gumroad.png)  [**Gumroad**](https://gumroad.com/l/ZenConsoleTopMost)
 
-[Blender Market](https://www.blendermarket.com/products/zen-console-top-most-for-blender)
+
