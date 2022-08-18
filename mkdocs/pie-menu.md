@@ -20,7 +20,7 @@
 - `ALT` — [**Display Stretch Map**](https://zen-masters.github.io/Zen-UV/checker/#display-stretch-map). Display an angle-based stretching map.
 - `CTRL` — [**Display Finished**](https://zen-masters.github.io/Zen-UV/unwrap/#display-finished-toggle). Display Finished Islands (Toggle).
 
-### Unmark | Tag Finished ![Unmark Seams](img/icons/unmark-seams@2x.png)
+### Unmark | Tag Unfinished ![Unmark Seams](img/icons/unmark-seams@2x.png)
 
 - `Default` — [**Unmark**](https://zen-masters.github.io/Zen-UV/unwrap/#unmark). Unmark selected edges or face borders as Seams and/or Sharp edges.
 - `ALT` — [**Unmark All**](https://zen-masters.github.io/Zen-UV/unwrap/#unmark-all). Remove all Seams and/or Sharp edges from the mesh.

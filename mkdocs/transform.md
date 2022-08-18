@@ -37,23 +37,30 @@
 
 Straighten rectangular-shaped Islands.
 
-![](img/screen/transform/quadrify_op_props.png)
+![Quadrify_Example](img/gifs/trasnform_operators/Quadrify_Example.gif)
 
 !!! Preferences
-
+     ![quadrify_op_props](img/screen/transform/quadrify_op_props.png)
+    
     - **By selected Edges** - Selected Edges will be used and marked as Seams during Quadrify Islands operation. Works only in edge selection mode.
+    ![Quadrify_SelectedEdge](img/gifs/trasnform_operators/Quadrify_SelectedEdge.gif) 
     - **Mark Borders** - Mark borders as seams/sharp after Quadrify Island operation.
     - **Mark Seams** - Mark seam in case **Mark Borders** is on.
     - **Mark Sharp** - Mark sharp in case **Mark Borders** is on.
     - **Orient to: ** - How to orient Quadrified Islands.
-      - **Initial** - Leave orientation as is.
-      - **Vertical** - Set orientation vertical.
-      - **Horizontal** - Set orientation horizontal.
+      ![Quadrify_Orient](img/gifs/trasnform_operators/Quadrify_Orient.gif) 
+          - **Initial** - Leave orientation as is.
+          - **Vertical** - Set orientation vertical.
+          - **Horizontal** - Set orientation horizontal.
 
     - **Average Texel Density** - Averaging the size for the processed islands.
-
-    - **Pack Quadrified** - Pac Islands after Quadrify Islands operation.
+    - **Pack Quadrified** - Pack Islands after Quadrify Islands operation.
     - **Pin Quadrified** - Pin Islands after Quadrify Islands operation.
+     ![Quadrify_Pack_Pin](img/gifs/trasnform_operators/Quadrify_Pack_Pin.gif)
+
+!!! tip
+    Tag Quadrified Islands as [**Finished**](https://zen-masters.github.io/Zen-UV/unwrap/#finishing-system) to preserve them from unwrapping. It's recommended to [**Tag as Finished**](https://zen-masters.github.io/Zen-UV/unwrap/#tag-finished) all manually changed Islands.
+    ![](img/gifs/trasnform_operators/Quadrify_Tag_Finished.gif)
 
 ---
 
