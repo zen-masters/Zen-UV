@@ -83,6 +83,22 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#uv-coverage">UV Coverage</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pack-engine">Pack Engine</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#supported-pack-engines">Supported Pack Engines</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pack-engine-preferences">Pack Engine Preferences</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#texture-size">Texture Size</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#average-islands-scale">Average Islands Scale</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#rotate-islands">Rotate Islands</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -177,50 +193,69 @@
 <p><img alt="Pack" src="../img/screen/pack/pack_main_panel.png" /></p>
 </div>
 <h3 id="pack-islands">Pack Islands<a class="headerlink" href="#pack-islands" title="Permanent link"></a></h3>
-<ul>
-<li>Pack all Islands.</li>
-</ul>
-<!-- !!! Preferences
-    ![Pack Options](img/screen/pack/pack_options.png)
-
-    #### Average Islands Scale
-
-    Average Islands scale before Pack Islands operation.
-
-    #### Rotate Islands
-
-    Allow the packer to rotate Islands.
-
-    #### Margin in px
-    Display margin in pixels for Pack Islands operation
-
-    #### Pack Engine
-
-    Select Pack Engine for Pack Islands operation.
-
-    - Blender Pack
-    - UVPackmaster 2 -->
-
+<p>Pack all Islands using selected <a href="https://zen-masters.github.io/Zen-UV/pack/#pack-engine"><strong>Pack Engine</strong></a>.</p>
 <h3 id="margin">Margin<a class="headerlink" href="#margin" title="Permanent link"></a></h3>
+<p>Set space between Islands for Pack Islands operation. </p>
+<p><img alt="Pack_Margin" src="../img/gifs/pack_operators/Pack_Margin.gif" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>It&rsquo;s important to have enough space (Margin) between UV Islands to avoid visual artefacts  connected with texture filtering in game engine renders.</p>
+<p>Here are suggested Margin values to use for different size textures:</p>
 <ul>
-<li>Set space between Islands for Pack Islands operation.</li>
+<li>256 - 2px</li>
+<li>512 - 4px</li>
+<li>1024 - 8px</li>
+<li>2048 - 16px</li>
+<li>4096 - 32px</li>
+<li>8192 - 64px</li>
 </ul>
+</div>
 <h3 id="uv-coverage">UV Coverage<a class="headerlink" href="#uv-coverage" title="Permanent link"></a></h3>
+<p>Calculate Islands UV Coverage for active UV map. Increasing UV Coverage value leads to the increasing <a href="https://zen-masters.github.io/Zen-UV/texel_density/">Texel Density</a> value, this in turn leads to the more efficient UV space usage and you can see more pixels on your model using the same texture.</p>
+<p><img alt="" src="../img/gifs/pack_operators/Pack_UV_Coverage.gif" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To increase UV Coverage value and achieve efficient UV space usage (80-90% of UV Coverage):</p>
 <ul>
-<li>Calculate UV Coverage of selected objects for active UV map.</li>
+<li>Cut big Islands into smaller pieces if you have too much empty space. </li>
+<li>Upscale small objects on UV map to fill empty space.</li>
+<li>Downscale UV Islands that are barely visible on the model (e.g. bottom, back parts, etc.).</li>
+<li>Use UVPackmaster Pack Engine with enabled Heuristic option.</li>
 </ul>
-<h1 id="pack-engine">Pack Engine<a class="headerlink" href="#pack-engine" title="Permanent link"></a></h1>
+</div>
+<h2 id="pack-engine">Pack Engine<a class="headerlink" href="#pack-engine" title="Permanent link"></a></h2>
 <div class="admonition panel">
 <p class="admonition-title">Panel</p>
 <p><img alt="" src="../img/screen/pack/pack_engine.png" /></p>
 </div>
-<p>Three Pack engines are supported.</p>
+<h3 id="supported-pack-engines">Supported Pack Engines<a class="headerlink" href="#supported-pack-engines" title="Permanent link"></a></h3>
+<p>Zen UV supports three Pack engines:</p>
 <ul>
-<li>Blender Pack</li>
-<li><a href="https://uvpackmaster.com">UV Pack Master</a> (v2, v3)</li>
-<li><a href="https://www.uv-packer.com/">UV Packer</a></li>
+<li><strong>Blender Pack</strong></li>
+<li><a href="https://uvpackmaster.com"><strong>UV Packmaster 2, 3</strong></a></li>
+<li><a href="https://www.uv-packer.com/"><strong>UV Packer</strong></a></li>
 </ul>
-<p>Each Pack engine has its own set of options. To obtain information, please refer to the documentation of the corresponding engine.</p>
+<h3 id="pack-engine-preferences">Pack Engine Preferences<a class="headerlink" href="#pack-engine-preferences" title="Permanent link"></a></h3>
+<p>The main preferences of each Pack Engine are placed in Zen UV interface. To use all the preferences please go to the main interface of the engine (UV Packer, UV Packmaster). </p>
+<p>Below we described General preferences for all Pack Engines. If you want to obtain information about Specific preferences for some engine, please refer to the documentation of the corresponding engine.</p>
+<h4 id="texture-size">Texture Size<a class="headerlink" href="#texture-size" title="Permanent link"></a></h4>
+<p>Texture Size preset, works in pair with <a href="https://zen-masters.github.io/Zen-UV/pack/#margin"><strong>Margin</strong></a>.</p>
+<h4 id="average-islands-scale">Average Islands Scale<a class="headerlink" href="#average-islands-scale" title="Permanent link"></a></h4>
+<p>Average Islands Scale before Pack Islands operation.</p>
+<p><img alt="Pack_Average_Scale" src="../img/gifs/pack_operators/Pack_Average_Scale.gif" /></p>
+<h4 id="rotate-islands">Rotate Islands<a class="headerlink" href="#rotate-islands" title="Permanent link"></a></h4>
+<p>Allow Pack Engine rotate Islands.</p>
+<p><img alt="Pack_Rotate_Islands" src="../img/gifs/pack_operators/Pack_Rotate_Islands.gif" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>UV Packmaster Pack Engine</strong> has super useful option <strong>Lock Overlapping.</strong> It&rsquo;s recommended to be used to Pack Stacked and Overlapping Islands. If you don&rsquo;t have UV Packmaster installed, but still want to Pack Stacked and Overlapping Islands <a href="https://youtu.be/krsVbEi32DM"><strong>watch this video</strong></a>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you want to use specific <strong>UV Packmaster Pack Engine</strong> features that are not present in Zen UV interface do not forget to transfer existing settings using this <strong>Transfer settings</strong> button.</p>
+<p><img alt="" src="../img/screen/pack/pack_sync.png" /></p>
+<p>Then you can open <strong>UV Packmaster</strong> interface and complete the setup.</p>
+</div>
               
             </div>
           </div>
