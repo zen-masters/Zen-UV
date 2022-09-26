@@ -37,6 +37,7 @@ Mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges
 
 !!! Preferences
     ![](img/screen/unwrap/mark_by_angle_prefs.png)
+    
     - **Use Global Mark Settings** - In this mode, all the operators from the Mark System use the settings below. If off, every operator uses its own settings.
     - **Mark Seams** - Automatically assign Seams
     - **Mark Sharp Edges** - Automatically assign Sharp edges
