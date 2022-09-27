@@ -27,6 +27,8 @@ Set space between Islands for Pack Islands operation.
 ### UV Coverage
 
 Calculate Islands UV Coverage for active UV map. Increasing UV Coverage value leads to the increasing [Texel Density](https://zen-masters.github.io/Zen-UV/texel_density/) value, this in turn leads to the more efficient UV space usage and you can see more pixels on your model using the same texture.
+ 
+The algotythm calculates total UV Islands area and shows the percentage in relation to the UV space. It can lead to the values more than 100% if you have Stacked Islands.
 
 ![](img/gifs/pack_operators/Pack_UV_Coverage.gif)
 
