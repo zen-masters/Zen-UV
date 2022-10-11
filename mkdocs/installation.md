@@ -30,6 +30,33 @@
 ![](img/screen/installation/installation_zen_core.png)
 ![](img/screen/installation/installation_zen_core_done.png)
 
+---
+
+### Zen UV Core Library installation for Mac M1-M2 (Silicon App)
+
+!!! Library
+    The new macOS M1-M2 has increased security checks that necessitates users to perform a security override for Zen UV Core to work. Specifically, Zen UV uses dynamic "zen_uv_core* .dylib" libraries that need to have its security allowed. Therefore, their installation will require additional steps described below.
+
+!!! Certificate
+    You can make sure that the library is legal and has a valid certificate using this command.
+    ```codesign -d --verbose=2 --extract-certificates <path/to/zen_uv_lib_mac_silicon_64_v1_0_0.dylib>```
+    
+1. Go to **Preferences** -> **Add-ons**.
+2. Find installed and enabled Zen UV add-on.
+3. Go to **Modules**.
+4. Press [**Download Zen UV Core Library (FREE)**](https://gumroad.com/l/ZenUVCore) if you don't have it.
+5. Open **zen_uv_lib_mac_silicon_64_v1_0_0.dylib** library file folowing [instruction from Apple](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac) or images below.
+![](img/screen/installation/InstallationSilicon_1.png)
+![](img/screen/installation/InstallationSilicon_2.png.png)
+1. Go to Blender and Select **zen_uv_lib_mac_silicon_64_v1_0_0.dylib**. 
+2. Press **Install Zen UV Core Library**.
+![](img/screen/installation/InstallationSilicon_3.png.png)
+8. Press **Open** in a popup window.
+![](img/screen/installation/InstallationSilicon_5.jpg)
+9. Done! Now the add-on is fully installed and you can use all the features!
+
+---
+
 ## Update
 
 1. Go to **Preferences** -> **Add-ons**.
