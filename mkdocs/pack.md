@@ -83,3 +83,46 @@ Allow Pack Engine rotate Islands.
     ![](img/screen/pack/pack_sync.png)
 
     Then you can open **UV Packmaster** interface and complete the setup.
+
+
+## Excluded System
+
+- Excluded system for the Pack operator. Mark Islands to exclude them from packing. This works for Blender Pack and UV Packmater Engine.
+
+!!! Panel
+    ![](img/screen/pack/excluded_system.png)
+
+### Offset Excluded
+
+- Move Islands tagged as Excluded from Packing out of UV Area.
+
+
+!!! Preferences
+    ![Unwrap](img/screen/pack/excluded_prefs.png)
+
+    - **Excluded Color** - Excluded Islands viewport display color.
+
+### Tag Excluded
+
+- Tag Islands as Excluded from Packing.
+
+
+### Untag Excluded
+
+- Untag Islands tagged as Excluded from Packing.
+
+### Hide
+
+- Hide Islands tagged as Excluded from Packing.
+
+### Unhide
+
+- Unhide Islands tagged as Excluded from Packing.
+
+### Select Excluded
+
+- Select Islands tagged as Excluded from Packing.
+
+### Display Excluded
+
+- Display Islands tagged as Excluded from Packing.
