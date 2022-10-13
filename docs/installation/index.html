@@ -56,6 +56,10 @@
     <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#zen-uv-core-library-installation">Zen UV Core Library Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#zen-uv-core-library-installation-for-mac-m1-m2-silicon-app">Zen UV Core Library installation for Mac M1-M2 (Silicon App)</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#update">Update</a>
         <ul>
@@ -207,6 +211,33 @@
 </ol>
 <p><img alt="" src="../img/screen/installation/installation_zen_core.png" />
 <img alt="" src="../img/screen/installation/installation_zen_core_done.png" /></p>
+<hr />
+<h3 id="zen-uv-core-library-installation-for-mac-m1-m2-silicon-app">Zen UV Core Library installation for Mac M1-M2 (Silicon App)<a class="headerlink" href="#zen-uv-core-library-installation-for-mac-m1-m2-silicon-app" title="Permanent link"></a></h3>
+<div class="admonition library">
+<p class="admonition-title">Library</p>
+<p>The new macOS M1-M2 has increased security checks that necessitates users to perform a security override for Zen UV Core to work. Specifically, Zen UV uses dynamic &ldquo;zen_uv_core* .dylib&rdquo; libraries that need to have its security allowed. Therefore, their installation will require additional steps described below.</p>
+</div>
+<div class="admonition certificate">
+<p class="admonition-title">Certificate</p>
+<p>You can make sure that the library is legal and has a valid certificate using this command.
+<code>codesign -d --verbose=2 --extract-certificates &lt;path/to/zen_uv_lib_mac_silicon_64_v1_0_0.dylib&gt;</code></p>
+</div>
+<ol>
+<li>Go to <strong>Preferences</strong> -&gt; <strong>Add-ons</strong>.</li>
+<li>Find installed and enabled Zen UV add-on.</li>
+<li>Go to <strong>Modules</strong>.</li>
+<li>Press <a href="https://gumroad.com/l/ZenUVCore"><strong>Download Zen UV Core Library (FREE)</strong></a> if you don&rsquo;t have it.</li>
+<li>Open <strong>zen_uv_lib_mac_silicon_64_v1_0_0.dylib</strong> library file folowing <a href="https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac">instruction from Apple</a> or images below.
+<img alt="" src="../img/screen/installation/InstallationSilicon_1.png" />
+<img alt="" src="../img/screen/installation/InstallationSilicon_2.png.png" /></li>
+<li>Go to Blender and Select <strong>zen_uv_lib_mac_silicon_64_v1_0_0.dylib</strong>. </li>
+<li>Press <strong>Install Zen UV Core Library</strong>.
+<img alt="" src="../img/screen/installation/InstallationSilicon_3.png.png" /></li>
+<li>Press <strong>Open</strong> in a popup window.
+<img alt="" src="../img/screen/installation/InstallationSilicon_5.jpg" /></li>
+<li>Done! Now the add-on is fully installed and you can use all the features!</li>
+</ol>
+<hr />
 <h2 id="update">Update<a class="headerlink" href="#update" title="Permanent link"></a></h2>
 <ol>
 <li>Go to <strong>Preferences</strong> -&gt; <strong>Add-ons</strong>.</li>
