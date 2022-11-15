@@ -1,75 +1,91 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Unwrap - Zen UV 3.0 for Blender</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
-
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Unwrap";
-    var mkdocs_page_input_path = "unwrap.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Unwrap - Zen UV 3.0 for Blender</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Unwrap";
+        var mkdocs_page_input_path = "unwrap.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Zen UV 3.0 for Blender</a>
-        <div role="search">
+          <a href=".." class="icon icon-home"> Zen UV 3.0 for Blender
+        </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation and Update</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../pie-menu/">Pie Menu</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">Advanced UV Maps</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../seam_groups/">Seam Groups</a>
-                    </li>
-                </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Unwrap</a>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation and Update</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pie-menu/">Pie Menu</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">Advanced UV Maps</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../seam_groups/">Seam Groups</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Unwrap</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#zen-unwrap">Zen Unwrap</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#basic-rules">Basic rules:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#processing-mode">Processing Mode:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#the-behavior-of-the-operator-if-nothing-is-selected">The behavior of the operator if nothing is selected:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#the-behavior-of-the-operator-if-something-is-selected">The behavior of the operator if something is selected:</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#face-selection-mode">Face selection mode.</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#edge-selection-mode">Edge Selection Mode.</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#vertex-selection-mode">Vertex selection mode.</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#settings">Settings:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#additional-options">Additional Options:</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#mark-system">Mark System</a>
         <ul>
@@ -116,100 +132,90 @@
         </ul>
     </li>
     </ul>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../select/">Select</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../pack/">Pack</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../checker/">Checker Map</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../texel_density/">Texel Density</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../transform/">Transform</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../stack/">Stack</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../sticky_uv_editor/">Sticky UV Editor</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../addon_prefs/">Addon Preferences</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">FAQs</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../changelg/">Changelog</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../credits/">Credits</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../our_addons/">Our Add-ons</a>
-                    </li>
-                </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../select/">Select</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pack/">Pack</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../checker/">Checker Map</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../texel_density/">Texel Density</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../transform/">Transform</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../stack/">Stack</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../sticky_uv_editor/">Sticky UV Editor</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../addon_prefs/">Addon Preferences</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">FAQs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../changelg/">Changelog</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../credits/">Credits</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../our_addons/">Our Add-ons</a>
+                </li>
+              </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Zen UV 3.0 for Blender</a>
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Zen UV 3.0 for Blender</a>
+        
       </nav>
-
-      
       <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>Unwrap</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Unwrap</li>
     <li class="wy-breadcrumbs-aside">
-      
     </li>
   </ul>
-  
   <hr/>
 </div>
-
-          <div role="main">
-            <div class="section">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
               
                 <h1 id="unwrap">Unwrap<a class="headerlink" href="#unwrap" title="Permanent link"></a></h1>
 <div class="admonition panel">
@@ -217,38 +223,91 @@
 <p><img alt="Unwrap" src="../img/screen/unwrap/unwrapMainPanel.png" /></p>
 </div>
 <h2 id="zen-unwrap">Zen Unwrap <img alt="Zen Unwrap" src="../img/icons/zen-unwrap%402x.png" /><a class="headerlink" href="#zen-unwrap" title="Permanent link"></a></h2>
-<p>Mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after.</p>
-<div class="admonition preferences">
-<p class="admonition-title">Preferences</p>
-<p><img alt="Unwrap" src="../img/screen/unwrap/zen_unwrap_prefs.png" /></p>
+<p>Zen Unwrap is a context-dependent operator. The result of its operation depends on what was selected at the time it was run.</p>
+<hr />
+<h3 id="basic-rules">Basic rules:<a class="headerlink" href="#basic-rules" title="Permanent link"></a></h3>
 <ul>
-<li>
-<p><strong>Mark Unwrapped</strong> - Mark edges or face borders as Seams and/or Sharp edges after the Zen Unwrap operation.</p>
-</li>
-<li>
-<p><strong>Unwrap Selected Only</strong> - Separate workflow where only Selected Faces will be Unwrapped. It includes warnings and Unwrapping options if nothing is selected.</p>
-</li>
-<li>
-<p><strong>Tag Unwrapped</strong> - Tag Unwrapped Islands as Finished after Zen Unwrap operation.</p>
-</li>
-<li>
-<p><strong>Sort Unwrapped</strong> - Sort Islands by Tags after Zen Unwrap operation. Finished Islands move to the right side from Main UV Tile, Unfinished — to the left.</p>
-</li>
-<li>
-<p><strong>Auto UV Sync</strong> - Automatically Activate UV Sync Selection Mode in UV Editor for Zen Unwrap operation.</p>
-</li>
-<li>
-<p><strong>Pack Unwrapped</strong> - Execute Pack after Zen Unwrap operation.</p>
-</li>
-<li>
-<p><strong>Unwrap Method</strong></p>
-<ul>
-<li>Conformal</li>
-<li>Angle Based</li>
+<li>The operator does not work in the <strong>UV Sync Selection Off</strong> mode of the <strong>UV Editor</strong>.</li>
+<li>The properties of the operator show the current selection mode. It matches Blender&rsquo;s selection mode.</li>
+<li>Use only a single mesh selection Mode (Vert, Edge or Face). Multiple Selection Modes will not work (Vert + Edge, etc.).</li>
+<li>The operator works the same way in the <strong>UV Editor</strong> and in the <strong>3D Viewport</strong>.</li>
+<li>Zen Unwrap always operates on islands in the active UV Map.</li>
+<li>If the marking is disabled in the operator, the division into islands will still occur. Seams will remain and lead to desync of what is happening in <strong>UV Editor</strong> and <strong>3D Viewport</strong>.</li>
 </ul>
-</li>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Zen Unwrup will ignore existing UV Borders if they are not marked as Seams.</p>
+<ul>
+<li>To mark them use <a href="#seams-by-uv-borders"><strong>Seams by UV Borders</strong></a> operator.</li>
+<li>To save not only UV Borders but Islands <a href="#tag-finished"><strong>Tag Finished</strong></a> operator. </li>
 </ul>
 </div>
+<hr />
+<h3 id="processing-mode">Processing Mode:<a class="headerlink" href="#processing-mode" title="Permanent link"></a></h3>
+<p>The main operating mode switch.</p>
+<div class="admonition panel">
+<p class="admonition-title">Panel</p>
+<p><img alt="Processing Mode" src="../img/screen/unwrap/zwrp_processing_mode.png" /></p>
+<ul>
+<li><strong>Whole Mesh</strong> - The processing will be done for the whole mesh. All already unwrapped islands will be re-unwrapped.</li>
+<li><strong>Selected Only</strong> - Processing will only be performed on the mesh selection.</li>
+<li><strong>Seam Switch</strong> - This mode will switch seams with subsequent unwrapping. Only selected edges with seams will be included in the switching process. The seams that are in the selection will be deleted (Unmarked). New seams will be assigned according to the selection mode (Face, Edge).</li>
+<li><strong>Unfold Vertices</strong> - In this case, regardless of the Select Mode, any selection will be treated as vertices. Selected vertices will be relaxed.</li>
+</ul>
+</div>
+<hr />
+<h3 id="the-behavior-of-the-operator-if-nothing-is-selected">The behavior of the operator if nothing is selected:<a class="headerlink" href="#the-behavior-of-the-operator-if-nothing-is-selected" title="Permanent link"></a></h3>
+<p>For using this just make sure you have no selection and press the Zen Unwrap button.</p>
+<ul>
+<li>If nothing is selected, the operator assumes that you want to unwrap the whole mesh. This mode can be used if you have already marked seams in some way and just want to unfold islands.</li>
+<li>When you start the operator, it may already be in <strong>Processing Mode - Selected Only</strong>. In this case, you will get a warning that the entire meshes will be unwrapped. If this suits you - confirm your action by pressing Ok.</li>
+</ul>
+<p><img alt="Zen Unwrap Nothing Selected" src="../img/screen/unwrap/zwrp_no_selection_popup.png" /></p>
+<ul>
+<li>In case you have no marked seams and nothing selected, the operator will offer options for creating seams. Select the one you want.</li>
+</ul>
+<p><img alt="Zen Unwrap Nothing Selected" src="../img/screen/unwrap/zwrp_if_no_seams_popup.png" /></p>
+<p><img alt="Zen Unwrap Nothing Selected Mode" src="../img/gifs/zuwrp_operator/zwrp_no_sel_mode.gif" /></p>
+<hr />
+<h3 id="the-behavior-of-the-operator-if-something-is-selected">The behavior of the operator if something is selected:<a class="headerlink" href="#the-behavior-of-the-operator-if-something-is-selected" title="Permanent link"></a></h3>
+<p>The main modes of operation are <strong>Face</strong> and <strong>Edge</strong>. Vertex mode is used as an auxiliary mode.</p>
+<h4 id="face-selection-mode">Face selection mode.<a class="headerlink" href="#face-selection-mode" title="Permanent link"></a></h4>
+<p><img alt="Zen Unwrap Face Mode" src="../img/gifs/zuwrp_operator/zwrp_faces_mode.gif" /></p>
+<p>This mode will create seams around the selected polygons. The entire mesh will be unwrapped based on the existing (and newly added) seams, depending on the <strong>Processing Mode</strong>. In fact, you will create a new island from the selected polygons.</p>
+<h4 id="edge-selection-mode">Edge Selection Mode.<a class="headerlink" href="#edge-selection-mode" title="Permanent link"></a></h4>
+<p>In this mode, all selected edges will be marked as seams and then the mesh will be unwrapped.</p>
+<p><img alt="Zen Unwrap Edge Mode" src="../img/gifs/zuwrp_operator/zwrp_edges_mode.gif" /></p>
+<h4 id="vertex-selection-mode">Vertex selection mode.<a class="headerlink" href="#vertex-selection-mode" title="Permanent link"></a></h4>
+<p>Working in <strong>Face</strong> or <strong>Edge</strong> mode makes changes to the selected islands anyway. If you need to unwrap an island without adding seams or splittings it, use <strong>Vertex</strong> selection mode. You can select only one vertex or several. This will tell the operator which island you want to work with. It is most convenient to use this mode together with the <strong>Processing Mode - Selected Only</strong>.</p>
+<p><img alt="Zen Unwrap Vertex Mode" src="../img/gifs/zuwrp_operator/zwrp_vertex_mode.gif" /></p>
+<hr />
+<h3 id="settings">Settings:<a class="headerlink" href="#settings" title="Permanent link"></a></h3>
+<div class="admonition panel">
+<p class="admonition-title">Panel</p>
+<p><img alt="Zen Unwrap Settings" src="../img/screen/unwrap/zwrp_op_prop.png" /></p>
+<ul>
+<li>
+<p><strong>Unwrap Method</strong> - Unwrapping method.</p>
+<ul>
+<li><strong>Conformal</strong> - Fast algorithm that gives good results.</li>
+<li><strong>Angle-Based</strong> - More accurate algorithm, but a bit slower.</li>
+</ul>
+</li>
+<li>
+<p><strong>Mark Settings</strong> - Operator settings to enable automatic seam marking. See <a href="#mark-by-angle">Mark Settings (Global Mode)</a> for details.</p>
+</li>
+<li><strong>Fill Holes</strong> - Virtual fill holes in mesh before unwrapping, to avoid overlaps and preserve symmetry.</li>
+<li><strong>Averaged Texel Density</strong> - Sets the averaged Texel Density for newly created islands. This keeps all islands about the same size as you work.</li>
+<li><strong>Pack Unwrapped</strong> - After the islands have been created, this option will start the <strong>Packing</strong> process of the islands. The <a href="pack.md/#pack-engine"><strong>Pack Engine</strong></a> specified in the <strong>Pack System</strong> will be used.</li>
+<li><strong>Sort Unwrapped</strong> - After the islands have been created, this option will start the process of <strong>Sorting</strong> the islands by <a href="#finishing-system"><strong>Finished</strong></a> tag.</li>
+</ul>
+</div>
+<h3 id="additional-options">Additional Options:<a class="headerlink" href="#additional-options" title="Permanent link"></a></h3>
+<p>The operator has one additional option. It has nothing to do with the unfolding process, so it has been put in a separate menu. </p>
+<p><img alt="Auto UV Sync" src="../img/screen/unwrap/zwrp_auto_uv_sync.png" /></p>
+<ul>
+<li><strong>Auto UV Sync</strong> - Automatically enables the <strong>UV Sync Selection</strong> mode every time the operator starts.</li>
+</ul>
 <hr />
 <h2 id="mark-system">Mark System<a class="headerlink" href="#mark-system" title="Permanent link"></a></h2>
 <div class="admonition panel">
@@ -354,29 +413,21 @@
 </ul>
               
             </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../seam_groups/" class="btn btn-neutral float-left" title="Seam Groups"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../select/" class="btn btn-neutral float-right" title="Select">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../seam_groups/" class="btn btn-neutral" title="Seam Groups"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-    
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+          
         </div>
       </div>
 
@@ -384,7 +435,7 @@
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
+  <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     

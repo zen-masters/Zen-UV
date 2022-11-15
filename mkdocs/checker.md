@@ -5,6 +5,13 @@
 !!! Panel
     ![Main Panel](img/screen/tex_checker/checker_main_panel.png)
 
+    - The panel in 3D Viewport has a full set of features.
+
+!!! Panel
+    ![Main Panel](img/screen/tex_checker/checker_uv_panel.png)
+
+    - The panel in the UV Editor has a minimal set of functions. And serves only to change the checker texture. This panel is disabled by default. You can turn it on in the addon settings.
+
 ### Checker Texture (Toggle) ![Checker Texture](img/icons/checker_32.png)
 
 Add Checker Texture to the mesh (Toggle).

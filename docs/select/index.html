@@ -1,77 +1,71 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Select - Zen UV 3.0 for Blender</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
-
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Select";
-    var mkdocs_page_input_path = "select.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Select - Zen UV 3.0 for Blender</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Select";
+        var mkdocs_page_input_path = "select.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Zen UV 3.0 for Blender</a>
-        <div role="search">
+          <a href=".." class="icon icon-home"> Zen UV 3.0 for Blender
+        </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation and Update</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../pie-menu/">Pie Menu</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">Advanced UV Maps</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../seam_groups/">Seam Groups</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../unwrap/">Unwrap</a>
-                    </li>
-                </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Select</a>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation and Update</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pie-menu/">Pie Menu</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">Advanced UV Maps</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../seam_groups/">Seam Groups</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../unwrap/">Unwrap</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Select</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#islands">Islands</a>
     </li>
@@ -91,150 +85,192 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#select-edges-by-direction">Select Edges By Direction</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-by-uv-area">Select by UV Area</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#operator-select-by-uv-area">Operator Select by UV Area:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#operator-get-selected-area">Operator Get Selected Area:</a>
+    </li>
+        </ul>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#isolate-islands-toggle">Isolate Islands (Toggle)</a>
     </li>
     </ul>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../pack/">Pack</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../checker/">Checker Map</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../texel_density/">Texel Density</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../transform/">Transform</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../stack/">Stack</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../sticky_uv_editor/">Sticky UV Editor</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../addon_prefs/">Addon Preferences</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">FAQs</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../changelg/">Changelog</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../credits/">Credits</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../our_addons/">Our Add-ons</a>
-                    </li>
-                </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pack/">Pack</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../checker/">Checker Map</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../texel_density/">Texel Density</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../transform/">Transform</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../stack/">Stack</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../sticky_uv_editor/">Sticky UV Editor</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../addon_prefs/">Addon Preferences</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">FAQs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../changelg/">Changelog</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../credits/">Credits</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../our_addons/">Our Add-ons</a>
+                </li>
+              </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Zen UV 3.0 for Blender</a>
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Zen UV 3.0 for Blender</a>
+        
       </nav>
-
-      
       <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>Select</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Select</li>
     <li class="wy-breadcrumbs-aside">
-      
     </li>
   </ul>
-  
   <hr/>
 </div>
-
-          <div role="main">
-            <div class="section">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
               
                 <h1 id="select">Select<a class="headerlink" href="#select" title="Permanent link"></a></h1>
 <div class="admonition panel">
 <p class="admonition-title">Panel</p>
 <p><img alt="Select" src="../img/screen/select/select_main_panel.png" /></p>
 </div>
+<hr />
 <h3 id="islands">Islands <img alt="" src="../img/icons/select.png" /><a class="headerlink" href="#islands" title="Permanent link"></a></h3>
 <ul>
 <li>Select Islands by selected edge/face of the Islands.</li>
 </ul>
 <p><img alt="Select_Islands" src="../img/gifs/select_operators/Select_Islands.gif" /></p>
+<hr />
 <h3 id="int-loop">Int. Loop<a class="headerlink" href="#int-loop" title="Permanent link"></a></h3>
 <ul>
 <li>Inter seam loop. Select Edge Loop with respect to Seams. </li>
 </ul>
 <p><img alt="Select_Int_Loop" src="../img/gifs/select_operators/Select_Int_Loop.gif" /></p>
+<hr />
 <h3 id="overlapped">Overlapped<a class="headerlink" href="#overlapped" title="Permanent link"></a></h3>
 <ul>
 <li>Select Overlapped Islands.</li>
 </ul>
 <p><img alt="Select_Overlapped" src="../img/gifs/select_operators/Select_Overlapped.gif" /></p>
+<hr />
 <h3 id="flipped">Flipped<a class="headerlink" href="#flipped" title="Permanent link"></a></h3>
 <ul>
 <li>Select Flipped Islands.</li>
 </ul>
 <p><img alt="Select_Flipped" src="../img/gifs/select_operators/Select_Flipped.gif" /></p>
+<hr />
 <h3 id="seam">Seam<a class="headerlink" href="#seam" title="Permanent link"></a></h3>
 <ul>
 <li>Select Edges Marked as Seams.</li>
 </ul>
 <p><img alt="Select_Seam" src="../img/gifs/select_operators/Select_Seam.gif" /></p>
+<hr />
 <h3 id="sharp">Sharp<a class="headerlink" href="#sharp" title="Permanent link"></a></h3>
 <ul>
 <li>Select Edges Marked as Sharp.</li>
 </ul>
 <p><img alt="Select_Sharp" src="../img/gifs/select_operators/Select_Sharp.gif" /></p>
+<hr />
 <h3 id="select-uv-borders">Select UV Borders<a class="headerlink" href="#select-uv-borders" title="Permanent link"></a></h3>
 <ul>
 <li>Select existing UV Borders.</li>
 </ul>
 <p><img alt="Select_UV_Borders" src="../img/gifs/select_operators/Select_UV_Borders.gif" /></p>
+<hr />
 <h3 id="similar">Similar<a class="headerlink" href="#similar" title="Permanent link"></a></h3>
 <ul>
 <li>Select Islands similar to those selected.</li>
 </ul>
 <p><img alt="Select_Similar" src="../img/gifs/select_operators/Select_Similar.gif" /></p>
+<hr />
 <h3 id="select-edges-by-direction">Select Edges By Direction<a class="headerlink" href="#select-edges-by-direction" title="Permanent link"></a></h3>
 <ul>
 <li>Select edges by direction along U or V axis.</li>
 </ul>
 <p><img alt="Select_Edges_by_Direction" src="../img/gifs/select_operators/Select_Edges_by_Direction.gif" /></p>
+<hr />
+<h3 id="select-by-uv-area">Select by UV Area<a class="headerlink" href="#select-by-uv-area" title="Permanent link"></a></h3>
+<p><img alt="Select_By_UV_Area" src="../img/screen/select/sel_by_uv_area_buttons.png" /></p>
+<ul>
+<li>The operator consists of two buttons. Where the first is the main operator and the second is an auxiliary operator. You can use it to get the area of the selection.</li>
+</ul>
+<hr />
+<h4 id="operator-select-by-uv-area">Operator Select by UV Area:<a class="headerlink" href="#operator-select-by-uv-area" title="Permanent link"></a></h4>
+<p><img alt="" src="../img/screen/select/select_by_uv_area_op_prop.png" /></p>
+<ul>
+<li><strong>Mode</strong> - What should be selected? Islands or faces.</li>
+<li><strong>Clear selection</strong> - Clear the previous selection.</li>
+<li><strong>Condition</strong> - The conditions under which the selection will be made.<ul>
+<li><strong>Zero Area</strong> - Elements with zero area value.</li>
+<li><strong>Within range</strong> - Elements, the area of which is within a specified range.</li>
+<li><strong>More than</strong> - Elements with an area greater than the specified value.</li>
+<li><strong>Equal to</strong> - Elements, the area of which is equal to a specified value.</li>
+<li><strong>Less than</strong> - Elements with an area smaller than the specified value.</li>
+</ul>
+</li>
+<li><strong>With Threshold</strong> - Calculation threshold.</li>
+</ul>
+<h4 id="operator-get-selected-area">Operator Get Selected Area:<a class="headerlink" href="#operator-get-selected-area" title="Permanent link"></a></h4>
+<ul>
+<li>After you run this operator, the Multiplied Area value goes into the Select by UV Area operator.</li>
+</ul>
+<p><img alt="" src="../img/screen/select/get_selected_area_op_prop.png" /></p>
+<ul>
+<li><strong>Mode</strong> - The area of what should be obtained? Islands or faces.</li>
+<li><strong>Average</strong> - Averaging.</li>
+<li><strong>Real Area</strong> - The area within the UV Editor is very small. This value shows the real area.</li>
+<li><strong>Real UV Area</strong> - Same value as Real Area, but in full size.</li>
+<li><strong>Multiplied Area</strong> - The same value as the Real Area, but multiplied for easier use.</li>
+</ul>
+<hr />
 <h3 id="isolate-islands-toggle">Isolate Islands (Toggle)<a class="headerlink" href="#isolate-islands-toggle" title="Permanent link"></a></h3>
 <ul>
 <li>Isolate Islands (Toggle).</li>
@@ -242,29 +278,21 @@
 <p><img alt="Isolate_Islands" src="../img/gifs/select_operators/Isolate_Islands.gif" /></p>
               
             </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../unwrap/" class="btn btn-neutral float-left" title="Unwrap"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../pack/" class="btn btn-neutral float-right" title="Pack">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../unwrap/" class="btn btn-neutral" title="Unwrap"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-    
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+          
         </div>
       </div>
 
@@ -272,7 +300,7 @@
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
+  <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     

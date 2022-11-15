@@ -1,6 +1,7 @@
 # Changelog
 ---
-- [Version 3.1.0](changelg/release_note_3.1.0.2.md)
+- [Version 3.1.0.4](changelg/release_note_3.1.0.4.md)
+- [Version 3.1.0.2](changelg/release_note_3.1.0.2.md)
 - [Version 3.0.1](changelg/release_note_3.0.1.md)
 - [Version 3.0](changelg/release_note_3.0.md)
 - [Version 2.2.3](changelg/release_note_2.2.3.md)

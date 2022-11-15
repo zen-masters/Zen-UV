@@ -57,6 +57,7 @@ Straighten rectangular-shaped Islands.
     - **Pack Quadrified** - Pack Islands after Quadrify Islands operation.
     - **Pin Quadrified** - Pin Islands after Quadrify Islands operation.
      ![Quadrify_Pack_Pin](img/gifs/trasnform_operators/Quadrify_Pack_Pin.gif)
+    - **Tag as Finished** - Tag Quadrified islands as finished.
 
 !!! tip
     Tag Quadrified Islands as [**Finished**](https://zen-masters.github.io/Zen-UV/unwrap/#finishing-system) to preserve them from unwrapping. It's recommended to [**Tag as Finished**](https://zen-masters.github.io/Zen-UV/unwrap/#tag-finished) all manually changed Islands.
