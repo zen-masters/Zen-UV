@@ -19,7 +19,13 @@ Remove inactive UV Map.
 ---
 ## Rename UV Maps
 Rename UV Map using pattern. The pattern can be defined in the operator popup.
+
 ![](img/screen/adv_uv_map/rename_uv_maps_popup.png)
+
+   - **Name** - The pattern.
+   - **Use Default Name** - Use the native name defined in Blender.
+   - **Use Numbering** - Add numbers to the end of the name.
+   - **Active Only** - Rename Active UV Maps only.
 
 !!! tip
     Hold [Zen Modifier Key](addon_prefs.md/#zen-modifier-key) (default 'Alt') to apply on all selected objects.
