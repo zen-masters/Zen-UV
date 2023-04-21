@@ -4,8 +4,8 @@
 
 ### Bridge 1
 
-[//]: # (a reference style link.)
+[//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/Hotspot_Bridge1.zip)
 
 ### Bridge 2
 
-[//]: # (a reference style link.)
+[//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/Hotspot_Bridge2.zip)
