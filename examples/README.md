@@ -17,7 +17,7 @@ Advanced unwrap algorithm for organic meshes.
 [//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/Hotspot_Bridge2.zip)
 
 
-## Zen Masters Team Addons
+## Addons
 
 ### Zen Bundle for Blender
 All Zen add-ons in one place. Together is cheaper!
