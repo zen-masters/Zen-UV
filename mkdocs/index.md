@@ -1,4 +1,4 @@
-# Zen UV v3.1.0.4 for Blender.
+# Zen UV v4.0 for Blender.
 <!-- [![Zen UV Introduction](img/cover--eng.png)](https://www.youtube.com/watch?v=ook2eFfH724) -->
 ![stand_with_Ukraine](img/I_stand_with_Ukraine_banner.svg)
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
