@@ -22,4 +22,7 @@ Advanced unwrap algorithm for organic meshes.
 ### Zen Bundle for Blender
 All Zen add-ons in one place. Together is cheaper!
 
+#### Details
+![bundle_image](../mkdocs/img/banners/bmarket-zen-bundle.jpg)
+
 [comment]: # (https://www.blendermarket.com/products/zen-bundle)
