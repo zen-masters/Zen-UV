@@ -22,8 +22,8 @@ https://user-images.githubusercontent.com/18611095/234896734-5ffa78a8-3ee6-4c9a-
 ## Stack
 
 ### Amulet
-Scene to test World Orient operator. 
-Rotate Islands the way they are oriented on the Models.
+Scene to test Stack operators.
+Collect Similar Islands on Stacks.
 
 #### Details
 https://user-images.githubusercontent.com/18611095/234893736-e7622288-b18e-4bf2-bccf-1829ecf86533.mp4
