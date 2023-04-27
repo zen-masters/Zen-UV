@@ -6,21 +6,35 @@
 Scene to test Hotspot Mapping operator. 
 Map Islands by matching Islands to predefined Trims from Trimsheet.
 
-[//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/Hotspot_Bridge1.zip)
+[//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/ZenUV_Hotspot_Bridge1.zip)
 
-## Relax
+## World Orient
 
-### Dinosaur
-Scene to text Relax operator.
-Advanced unwrap algorithm for organic meshes.
+### Fence
+Scene to test World Orient operator. 
+Rotate Islands the way they are oriented on the Models.
 
-[//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/Hotspot_Bridge2.zip)
+#### Details
+../images/ZenUV_WorldOrient.mp4
 
+[//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/ZenUV_WorldOrient_Example_01.zip)
+
+## Stack
+
+### Amulet
+Scene to test World Orient operator. 
+Rotate Islands the way they are oriented on the Models.
+
+#### Details
+../images/ZenUV_UnwrapStack.mp4
+
+[//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/ZenUV_Stack_Example_01.zip)
 
 ## Addons
 
 ### Zen Bundle for Blender
-All Zen add-ons in one place. Together is cheaper!
+All Zen add-ons in one place.
+Together is cheaper!
 
 #### Details
 ![bundle_image](../mkdocs/img/banners/bmarket-zen-bundle.jpg)
