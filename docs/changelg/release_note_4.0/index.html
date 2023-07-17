@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Reshape Island - Zen UV 3 (Legacy) for Blender</title>
+    <title>Version 4.0 - Zen UV 3 (Legacy) for Blender</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Reshape Island";
-        var mkdocs_page_input_path = "operators\\reshape_island.md";
+        var mkdocs_page_name = "Version 4.0";
+        var mkdocs_page_input_path = "changelg\\release_note_4.0.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -117,7 +117,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../changelg/">Changelog</a>
+                <li class="toctree-l1"><a class="reference internal" href="../">Changelog</a>
                 </li>
               </ul>
               <ul>
@@ -142,7 +142,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-      <li>Reshape Island</li>
+      <li>Version 4.0</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -151,110 +151,82 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="reshape-island">Reshape Island<a class="headerlink" href="#reshape-island" title="Permanent link"></a></h1>
-<p>Changes the island’s shape depending on the preset.</p>
-<h2 id="preset-selected">Preset Selected:<a class="headerlink" href="#preset-selected" title="Permanent link"></a></h2>
-<ul>
-<li>Straighten the selected Edge Loops and relax not selected vertices.</li>
-</ul>
-<p><img alt="" src="../../img/screen/transform/reshape_preset_selected.png" /></p>
-<div class="admonition properties">
-<p class="admonition-title">Properties</p>
-<ul>
-<li><strong>Orient loop along</strong> - How to orient the selected loops.<ul>
-<li><strong>Auto</strong> - Automatic finding loop orientation.</li>
-<li><strong>U Axis</strong> - Along the U axis.</li>
-<li><strong>V Axis</strong> - Along the V axis.</li>
-<li><strong>In Place</strong> - The beginning and end of the loop will remain such as before the operator runs.</li>
-</ul>
-</li>
-<li><strong>Reverse Direction</strong> - Change the direction of the loop to the opposite.</li>
-<li><strong>Spacing</strong> - How to set the distances between the points of the loop.<ul>
-<li><strong>UV</strong> - As in the UV Map.</li>
-<li><strong>Geometry</strong> - As in the mesh.</li>
-<li><strong>Evenly</strong> - Distribute at an equal distance.</li>
-</ul>
-</li>
-</ul>
+                <h1 id="version-40">Version 4.0<a class="headerlink" href="#version-40" title="Permanent link"></a></h1>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<iframe src="https://www.youtube.com/embed/A33NDMoRChM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
 </div>
-<h3 id="orient-along-sample">Orient Along Sample:<a class="headerlink" href="#orient-along-sample" title="Permanent link"></a></h3>
-<p><img alt="" src="../../img/gifs/reshape_island/orient_along_sample.gif" /></p>
-<h3 id="spacing-sample">Spacing Sample:<a class="headerlink" href="#spacing-sample" title="Permanent link"></a></h3>
-<p><img alt="" src="../../img/gifs/reshape_island/spacing_sample.gif" /></p>
-<h2 id="advanced-properties">Advanced Properties:<a class="headerlink" href="#advanced-properties" title="Permanent link"></a></h2>
+<p><br></p>
+<h2 id="general">General<a class="headerlink" href="#general" title="Permanent link"></a></h2>
+<h3 id="new-systems">New Systems<a class="headerlink" href="#new-systems" title="Permanent link"></a></h3>
 <ul>
-<li>The properties of the operator for aligning the loops relative to each other.</li>
+<li>Added <strong>Compact UI system</strong>. One panel to rule them all! </li>
+<li>Added <strong>Trimsheet system</strong>. Create Trimsheets and Move, Rotate, Scale, Fit, Align and Flip Islands inside Trims.</li>
+<li>Added <strong>Zen UV Transform tool</strong>. Move, Rotate, Scale, Fit, Align and Flip Islands in 3D View and UV Editor using <strong>Zen UV Gizmo</strong>.</li>
 </ul>
-<div class="admonition properties">
-<p class="admonition-title">Properties</p>
+<h3 id="new-operators">New Operators<a class="headerlink" href="#new-operators" title="Permanent link"></a></h3>
 <ul>
-<li><strong>Start Position:</strong> - How to set the beginning of the loop.<ul>
-<li><strong>As is</strong> - Leave in place.</li>
-<li><strong>Max</strong> - Set to the maximal position of the loops.</li>
-<li><strong>Averaged</strong> - Set to the averaged position of the loops.</li>
-<li><strong>Min</strong> - Set to the minimal position of the loops.</li>
+<li>Added <strong>Display Flipped</strong> operator to display Flipped Islands in UV Editor.</li>
+<li>Added <strong>Unwrap Constraint</strong> operator to unwrap Islands along a certain axis.</li>
+<li>Added <strong>Match and Stitch</strong> operator to match Islands position, rotation, scale and stitch vertices if it’s possible.</li>
 </ul>
-</li>
-<li><strong>Lock</strong> - Lock Start Position and the End Position.</li>
-<li><strong>End Position:</strong> - How to set the ending of the loop.<ul>
-<li><strong>As is</strong> - Leave in place.</li>
-<li><strong>Max</strong> - Set to the maximal position of the loops.</li>
-<li><strong>Averaged</strong> - Set to the averaged position of the loops.</li>
-<li><strong>Min</strong> - Set to the minimal position of the loops.</li>
-</ul>
-</li>
-<li><strong>Offset</strong> - Indicates the offset of each next loop relative to the previous. Sorting begins on the left bottom. The red color indicates that the value is not zero.</li>
-</ul>
-</div>
-<h3 id="start-end-position-sample">Start / End Position Sample:<a class="headerlink" href="#start-end-position-sample" title="Permanent link"></a></h3>
-<p><img alt="" src="../../img/gifs/reshape_island/start_positions_sample.gif" /></p>
-<h3 id="offset-sample">Offset Sample:<a class="headerlink" href="#offset-sample" title="Permanent link"></a></h3>
-<p><img alt="" src="../../img/gifs/reshape_island/offset_sample.gif" /></p>
-<hr />
-<h2 id="preset-uv-direction">Preset U/V Direction:<a class="headerlink" href="#preset-uv-direction" title="Permanent link"></a></h2>
-<div class="admonition properties">
-<p class="admonition-title">Properties</p>
+<h2 id="operators">Operators<a class="headerlink" href="#operators" title="Permanent link"></a></h2>
+<h3 id="unwrap">Unwrap<a class="headerlink" href="#unwrap" title="Permanent link"></a></h3>
 <ul>
-<li><strong>Angle</strong> - If the slope of the edge is less or equal to this value, then the edge will be selected.</li>
-<li><strong>Spacing</strong> - How to set the distances between the points of the loop.</li>
+<li>Added <strong>Unwrap Constraint</strong> operator to unwrap Islands along a certain axis. </li>
+<li>Added the ability to save existing Seams for <strong>Unwrap by Angle</strong> operator.</li>
+<li>Added the ability to create Seams only for selected edges for <strong>Unwrap by Angle</strong> operator.</li>
+<li>Fixed a bug with incorrect separation of Marked edges.</li>
+<li>Fixed a bug with edge marking if it is disabled in Global mode for Zen Unwrap operator.</li>
 </ul>
-</div>
-<p><img alt="" src="../../img/gifs/reshape_island/preset_u_v_dir_sample.gif" /></p>
-<p>Please refer to the <a href="#advanced-properties">Advanced Properties</a> to learn more.</p>
-<p>How to work Angle value:</p>
-<p><img alt="" src="../../img/screen/transform/sample_angle.png" /></p>
+<h3 id="select">Select<a class="headerlink" href="#select" title="Permanent link"></a></h3>
 <ul>
-<li>If <strong>angle 01</strong> is less than <strong>angle 02</strong> means the edge is aligned along the U axis. If opposite, then the edge is aligned along the V axis.</li>
-<li>If the value ​​of the <strong>Angle:</strong> operator’s properties are less than <strong>angle 01</strong>, then the edge will not be selected.</li>
+<li>Added the ability to work in UV Editor in Sync UV Off mode for <strong>Select Interseam</strong> operator.</li>
+<li>Fixed a bug with incorrect selection with Sync UV Off mode for <strong>Select Flipped</strong> operator.</li>
 </ul>
-<h2 id="preset-borders">Preset Borders:<a class="headerlink" href="#preset-borders" title="Permanent link"></a></h2>
-<div class="admonition properties">
-<p class="admonition-title">Properties</p>
-</div>
+<h3 id="transform">Transform<a class="headerlink" href="#transform" title="Permanent link"></a></h3>
 <ul>
-<li><strong>Corners By:</strong> - How to detect corners of the Island.<ul>
-<li><strong>Corner</strong> - By corner vertices.</li>
-<li><strong>Pinned</strong> - By pinned vertices.</li>
-<li><strong>Pinned &amp; Corners</strong> - By pinned and corner vertices.</li>
+<li>Added <strong>Match and Stitch</strong> operator to match Islands position, rotation, scale and stitch vertices if it’s possible.</li>
+<li>Added <strong>Advanced Transform</strong> operators to make it easier to assign Transform operators to hotkeys.</li>
+<li>Added the ability to Distribute Islands based on their location in UV space (UV Position) for <strong>Distribute and Sort</strong> operator.</li>
+<li>Added <strong>Move to UV Area</strong> operator to move Islands to the main UV Area preserving UVs.</li>
+<li>Added the ability to stick Islands position and size after Relaxing.</li>
+<li>Fixed a bug where selected edge did not split Island for <strong>Quadrify Island</strong> operator.</li>
+<li>Fixed a bug with transformation for non-square textures.</li>
+<li>Fixed a bug with Multi object selection in <strong>World Orient</strong> operator.</li>
 </ul>
-</li>
-<li><strong>Length</strong> - How to calculate the length for each straightened border segment.<ul>
-<li><strong>UV</strong> - As a sum of UV edges length.</li>
-<li><strong>Geometry</strong> - As a sum of mesh edge length.</li>
-<li><strong>Short</strong> - As a distance from the first point to the last point of the edge loop.</li>
-</ul>
-</li>
-<li><strong>Border Offset</strong> - Offset all the vertices use the first point as a pivot. This leads to island scaling.</li>
-</ul>
-<h3 id="corner-sample">Corner Sample:<a class="headerlink" href="#corner-sample" title="Permanent link"></a></h3>
-<p><img alt="" src="../../img/screen/transform/corner_pinned_sample.png" /></p>
+<h3 id="texel-density">Texel Density<a class="headerlink" href="#texel-density" title="Permanent link"></a></h3>
 <ul>
-<li>A Corner Point - it&rsquo;s a point that has 2 connected edges.</li>
-<li>Pinned Point - it&rsquo;s a point that is pinned by Blender&rsquo;s native Pin operator.</li>
+<li>Improved Texel Density preset system, now it works with Blender&rsquo;s native preset system.</li>
+<li>Fixed a bug with getting TD from very small Islands.</li>
 </ul>
-<h3 id="length-sample">Length Sample:<a class="headerlink" href="#length-sample" title="Permanent link"></a></h3>
-<p><img alt="" src="../../img/screen/transform/preset_border_length_prop.png" /></p>
-<p><img alt="" src="../../img/gifs/reshape_island/preset_borders_length_sample.gif" /></p>
+<h3 id="checker-map">Checker Map<a class="headerlink" href="#checker-map" title="Permanent link"></a></h3>
+<ul>
+<li>Added <strong>Display Flipped</strong> operator to display Flipped Islands in UV Editor.</li>
+<li>Added Select operators to detect mesh errors.</li>
+<li>Added previews to the list of checker textures.</li>
+<li>Added some elements to the panel in the UV Editor context.</li>
+<li>Fixed a bug of z-fight system for Blender 3.0 and above.</li>
+<li>Fixed a bug if there is an empty group in the nodes.</li>
+</ul>
+<h3 id="pack">Pack<a class="headerlink" href="#pack" title="Permanent link"></a></h3>
+<ul>
+<li>Added the ability to <strong>Pack Islands into active Trim</strong> (UVP only).</li>
+<li>Added the ability to <strong>Pack selected Islands</strong>. Allows you to pack only selected Islands (except UV Packer).</li>
+<li>Fixed a bug with UVP Engine. Overlay output conflict if HOps UV Display is On.</li>
+</ul>
+<h3 id="preferences">Preferences<a class="headerlink" href="#preferences" title="Permanent link"></a></h3>
+<ul>
+<li>Added the ability to disable Progress Bar.</li>
+</ul>
+<h3 id="sticky-uv-widget">Sticky UV Widget<a class="headerlink" href="#sticky-uv-widget" title="Permanent link"></a></h3>
+<ul>
+<li>Fixed a bug with closing the last UV Editor if there are no other editors in the layout.</li>
+</ul>
+<h3 id="other">Other<a class="headerlink" href="#other" title="Permanent link"></a></h3>
+<ul>
+<li>Added <strong>Darken Image</strong> operator in Overlay to darken texture in UV Editor.</li>
+<li>Stopped support for Blender versions lower than 2.93</li>
+</ul>
               
             </div>
           </div><footer>

@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Zen UV for Blender Documentation" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Zen UV 3 (Legacy) for Blender Documentation" />
       <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>Zen UV 3.0 for Blender</title>
+    <title>Zen UV 3 (Legacy) for Blender</title>
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
@@ -31,10 +31,10 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href="." class="icon icon-home"> Zen UV 3.0 for Blender
+          <a href="." class="icon icon-home"> Zen UV 3 (Legacy) for Blender
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -48,6 +48,10 @@
     <li class="toctree-l2"><a class="reference internal" href="#default-shortcuts">Default Shortcuts</a>
     </li>
     </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="zenuv3_to_zenuv4/">Upgrade Zen UV 3 to Zen UV 4 FAQ</a>
                 </li>
               </ul>
               <ul>
@@ -137,13 +141,13 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href=".">Zen UV 3.0 for Blender</a>
+          <a href=".">Zen UV 3 (Legacy) for Blender</a>
         
       </nav>
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
       <li>Introduction</li>
     <li class="wy-breadcrumbs-aside">
     </li>
@@ -153,8 +157,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="zen-uv-v3104-for-blender">Zen UV v3.1.0.4 for Blender.<a class="headerlink" href="#zen-uv-v3104-for-blender" title="Permanent link"></a></h1>
-<!-- [![Zen UV Introduction](img/cover--eng.png)](https://www.youtube.com/watch?v=ook2eFfH724) -->
+                <h1 id="zen-uv-3-legacy-for-blender">Zen UV 3 (Legacy) for Blender<a class="headerlink" href="#zen-uv-3-legacy-for-blender" title="Permanent link"></a></h1>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>We would like to inform you that the documentation available on this web page pertains exclusively to Zen UV 3. However, we would like to emphasize that <a href="https://zenmastersteam.github.io/Zen-UV/latest/"><strong>Zen UV 4 is now available and offers a significantly improved user experience</strong></a>.</p>
+<p>We also remind that Zen UV 3 users can <a href="https://zenmastersteam.github.io/Zen-UV/latest/zenuv3_to_zenuv4/#upgrade-zen-uv-3-to-zen-uv-4-faq"><strong>Upgrade Zen UV 3 to Zen UV 4 with a discount!</strong></a></p>
+</div>
 <p><img alt="stand_with_Ukraine" src="img/I_stand_with_Ukraine_banner.svg" /></p>
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
 <iframe src="https://www.youtube.com/embed/A33NDMoRChM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
@@ -168,24 +176,24 @@
 <!-- blank line -->
 <h2 id="main-features">Main Features<a class="headerlink" href="#main-features" title="Permanent link"></a></h2>
 <ul>
-<li><a href="https://zen-masters.github.io/Zen-UV/transform/#world-orient"><strong>World Orient</strong></a> operator that rotates UV Islands the way they are oriented in the model.</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/stack/"><strong>Stack System.</strong></a> Stack and Unstack UV Islands automatically and manually. Extremely useful for increasing Texel Density and baking.</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/transform/#relax"><strong>Relax Operator</strong>.</a> This is a new unwrapping method that is well suited for working with organic models.</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/stack/#copy-paste-system"><strong>Copy/Paste Operators.</strong></a> Copy/Paste parameters (Structure,TD, Position, Size) between Islands/Faces/Maps.</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/transform/#quadrify-islands"><strong>Quadrify Islands Operator</strong></a> to straighten rectangular-shaped UV Islands. </li>
-<li><a href="https://zen-masters.github.io/Zen-UV/transform/"><strong>Full set of Transform tools</strong>.</a> Move, Rotate, Scale, Flip, Fit, Orient, Sort and Align Islands and Elements (vertices, edges, polygons).</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/unwrap/#finishing-system"><strong>Finished System.</strong></a> It helps to control and manage the state of unwrapping UV Islands (Finished/Unfinished) by tags and visually.</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/operators/#pack-engine"><strong>Different Pack Engines</strong>.</a> Yes, you can use UVPackmaster 2, 3 and UV-Packer with Zen UV.</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/unwrap/#zen-unwrap"><strong>Zen Unwrap Operator</strong></a> to mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after.</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/unwrap/#mark-system"><strong>Marking System</strong></a> that helps you to mark Seams and/or Sharp automatically by angle, by existing UV Borders/Sharp Edges, and manually.</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/seam_groups/"><strong>Seam Groups.</strong></a> Work with more than one Seam set!</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/select/#isolate-islands-toggle"><strong>Isolate Island Mode</strong></a> for comfortable step-by-step work with separate geometry parts.</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/checker/"><strong>Checker Map System</strong></a> is a node-based system that contains Checker Textures designed specifically for Zen UV. Square and rectangular formats. Check UV&rsquo;s state on the model without ruining existing materials!</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/texel_density/"><strong>Texel Density.</strong></a> Get, Set, and Check Texel Density of UV Islands.</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/sticky_uv_editor/"><strong>Sticky UV Editor</strong></a> for quick access to UV Editor.</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/adv_uv-maps/"><strong>Advanced UV Maps</strong>.</a> Duplicate, remove, clean, and rename UV Maps of the selected objects in sync.  </li>
-<li><a href="https://zen-masters.github.io/Zen-UV/preferences/#display-subpanel"><strong>Hard Ops add-on integration</strong>.</a> It allows displaying UV manipulations in 3D View!</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/unwrap/#smooth-by-sharp-toggle"><strong>Smooth by Sharp (Toggle).</strong></a> Set smoothing for perfect normal map bakes in one click!</li>
+<li><a href="transform/#world-orient"><strong>World Orient</strong></a> operator that rotates UV Islands the way they are oriented in the model.</li>
+<li><a href="stack/"><strong>Stack System.</strong></a> Stack and Unstack UV Islands automatically and manually. Extremely useful for increasing Texel Density and baking.</li>
+<li><a href="transform/#relax"><strong>Relax Operator</strong>.</a> This is a new unwrapping method that is well suited for working with organic models.</li>
+<li><a href="stack/#copy-paste-system"><strong>Copy/Paste Operators.</strong></a> Copy/Paste parameters (Structure,TD, Position, Size) between Islands/Faces/Maps.</li>
+<li><a href="transform/#quadrify-islands"><strong>Quadrify Islands Operator</strong></a> to straighten rectangular-shaped UV Islands. </li>
+<li><a href="transform/"><strong>Full set of Transform tools</strong>.</a> Move, Rotate, Scale, Flip, Fit, Orient, Sort and Align Islands and Elements (vertices, edges, polygons).</li>
+<li><a href="unwrap/#finishing-system"><strong>Finished System.</strong></a> It helps to control and manage the state of unwrapping UV Islands (Finished/Unfinished) by tags and visually.</li>
+<li><a href="operators/#pack-engine"><strong>Different Pack Engines</strong>.</a> Yes, you can use UVPackmaster 2, 3 and UV-Packer with Zen UV.</li>
+<li><a href="unwrap/#zen-unwrap"><strong>Zen Unwrap Operator</strong></a> to mark selected edges/faces as Seams and/or Sharp edges and Unwrap by Marked edges after.</li>
+<li><a href="unwrap/#mark-system"><strong>Marking System</strong></a> that helps you to mark Seams and/or Sharp automatically by angle, by existing UV Borders/Sharp Edges, and manually.</li>
+<li><a href="seam_groups/"><strong>Seam Groups.</strong></a> Work with more than one Seam set!</li>
+<li><a href="select/#isolate-islands-toggle"><strong>Isolate Island Mode</strong></a> for comfortable step-by-step work with separate geometry parts.</li>
+<li><a href="checker/"><strong>Checker Map System</strong></a> is a node-based system that contains Checker Textures designed specifically for Zen UV. Square and rectangular formats. Check UV&rsquo;s state on the model without ruining existing materials!</li>
+<li><a href="texel_density/"><strong>Texel Density.</strong></a> Get, Set, and Check Texel Density of UV Islands.</li>
+<li><a href="sticky_uv_editor/"><strong>Sticky UV Editor</strong></a> for quick access to UV Editor.</li>
+<li><a href="adv_uv-maps/"><strong>Advanced UV Maps</strong></a> Duplicate, remove, clean, and rename UV Maps of the selected objects in sync.  </li>
+<li><a href="preferences/#display-subpanel"><strong>Hard Ops add-on integration</strong></a> It allows displaying UV manipulations in 3D View!</li>
+<li><a href="unwrap/#smooth-by-sharp-toggle"><strong>Smooth by Sharp (Toggle).</strong></a> Set smoothing for perfect normal map bakes in one click!</li>
 <li>Quick support on the <a href="https://discord.gg/wGpFeME"><strong>Discord channel</strong></a>.</li>
 </ul>
 <h2 id="default-shortcuts">Default Shortcuts<a class="headerlink" href="#default-shortcuts" title="Permanent link"></a></h2>
@@ -199,7 +207,7 @@
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="installation/" class="btn btn-neutral float-right" title="Installation and Update">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="zenuv3_to_zenuv4/" class="btn btn-neutral float-right" title="Upgrade Zen UV 3 to Zen UV 4 FAQ">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -223,7 +231,7 @@
     
     
     
-      <span><a href="installation/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="zenuv3_to_zenuv4/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
@@ -241,6 +249,6 @@
 </html>
 
 <!--
-MkDocs version : 1.4.2
-Build Date UTC : 2022-11-15 09:21:51.741553+00:00
+MkDocs version : 1.4.3
+Build Date UTC : 2023-07-17 15:51:11.599868+00:00
 -->

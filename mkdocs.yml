@@ -1,5 +1,5 @@
-site_name: Zen UV 4.0 for Blender
-site_description: Zen UV for Blender Documentation
+site_name: Zen UV 3 (Legacy) for Blender
+site_description: Zen UV 3 (Legacy) for Blender Documentation
 nav:
     - Introduction: index.md
     - Upgrade Zen UV 3 to Zen UV 4 FAQ: zenuv3_to_zenuv4.md
