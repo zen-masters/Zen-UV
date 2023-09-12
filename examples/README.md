@@ -41,6 +41,16 @@ https://user-images.githubusercontent.com/18611095/234893736-e7622288-b18e-4bf2-
 
 [//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/ZenUV_Stack_Example_01.zip)
 
+## Trim Sheet
+
+### Modular Sci-Fi
+Modular Sci-Fi Environment Kit are made using Trim Sheet operators
+
+#### Details
+![](../examples/images/preview.jpg)
+
+[//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/ZenUV_SciFi_TrimSheet_01.zip)
+
 ## Addons
 
 ### Zen Bundle for Blender
