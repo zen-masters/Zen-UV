@@ -10,5 +10,5 @@
 **Enjoy this experience with us!**
 
 
-| [![Gumroad](mkdocs/img/icons/services/gumroad-16.png)](https://gumroad.com/l/ZenUV) [**Gumroad**](https://gumroad.com/l/ZenUV) | [![BlenderMarket](mkdocs/img/icons/services/blendermarket-16.png)](https://www.blendermarket.com/products/zen-uv) [**BlenderMarket**](https://www.blendermarket.com/products/zen-uv) | [![Discord](mkdocs/img/icons/services/discord-16.png)](https://discord.gg/wGpFeME) [**Discord**](https://discord.gg/wGpFeME)
+| [![Gumroad](mkdocs/img/icons/services/gumroad-16.png)](https://gumroad.com/l/ZenUV4) [**Gumroad**](https://gumroad.com/l/ZenUV4) | [![BlenderMarket](mkdocs/img/icons/services/blendermarket-16.png)](https://www.blendermarket.com/products/zen-uv) [**BlenderMarket**](https://www.blendermarket.com/products/zen-uv) | [![Discord](mkdocs/img/icons/services/discord-16.png)](https://discord.gg/wGpFeME) [**Discord**](https://discord.gg/wGpFeME)
 |---|---|---|
