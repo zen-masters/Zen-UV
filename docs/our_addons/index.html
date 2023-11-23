@@ -8,7 +8,7 @@
     <title>Our Add-ons - Zen UV 3 (Legacy) for Blender</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
@@ -17,12 +17,11 @@
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -155,8 +154,8 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-      <li>Our Add-ons</li>
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Our Add-ons</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -180,7 +179,7 @@
 <p>Zen UV is not just a set of tools, it is ready to use pipeline for fast creating UV’s in Blender.
 It represents an intuitive system created by professionals and refined in real projects. Enjoy this experience with us!</p>
 <p><img alt="" src="../img/banners/bmarket-zen-uv.jpg" /></p>
-<p><img alt="blendermarket icon" src="../img/icons/blendermarket.png" />  <a href="https://www.blendermarket.com/products/zen-uv"><strong>Blender Market</strong></a>    <img alt="gumroad icon" src="../img/icons/gumroad.png" />  <a href="https://gumroad.com/l/ZenUV"><strong>Gumroad</strong></a></p>
+<p><img alt="blendermarket icon" src="../img/icons/blendermarket.png" />  <a href="https://www.blendermarket.com/products/zen-uv"><strong>Blender Market</strong></a>    <img alt="gumroad icon" src="../img/icons/gumroad.png" />  <a href="https://gumroad.com/l/ZenUV4"><strong>Gumroad</strong></a></p>
 <p><a href="https://zen-masters.github.io/Zen-UV/"><strong>Zen UV Documentation</strong></a></p>
 <hr />
 <h2 id="zen-sets">Zen Sets<a class="headerlink" href="#zen-sets" title="Permanent link"></a></h2>
@@ -238,14 +237,15 @@ Console Top Most add-on makes the System Console to the TOPMOST window!</p>
     
   </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme_extra.js" defer></script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

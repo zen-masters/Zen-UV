@@ -41,7 +41,7 @@ Keep in mind that discounts will work, only if you are making the purchase using
 
 **Gumroad** 
 
-1. Go to the [**Gumroad**](https://gumroad.com/l/ZenUV) and login.
+1. Go to the [**Gumroad**](https://gumroad.com/l/ZenUV4) and login.
 2. Choose new version **Zen UV 4**
 3. Pay the difference.
 4.  Enjoy the new version!

@@ -22,7 +22,7 @@ It represents an intuitive system created by professionals and refined in real p
 
 ![](img/banners/bmarket-zen-uv.jpg)
 
-![blendermarket icon](img/icons/blendermarket.png)  [**Blender Market**](https://www.blendermarket.com/products/zen-uv)    ![gumroad icon](img/icons/gumroad.png)  [**Gumroad**](https://gumroad.com/l/ZenUV)
+![blendermarket icon](img/icons/blendermarket.png)  [**Blender Market**](https://www.blendermarket.com/products/zen-uv)    ![gumroad icon](img/icons/gumroad.png)  [**Gumroad**](https://gumroad.com/l/ZenUV4)
 
 [**Zen UV Documentation**](https://zen-masters.github.io/Zen-UV/)
 
