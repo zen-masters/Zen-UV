@@ -1,5 +1,15 @@
 # Examples
 
+## Tutorial
+
+### Flashlight
+Scene from Zen UV Beginner Tutorial video.
+
+#### Details
+![flashlight](../examples/images/flashlight.png)
+
+[//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/ZenUV_Light_02.zip)
+
 ## Hotspot
 
 ### Bridge 1
