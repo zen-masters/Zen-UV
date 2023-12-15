@@ -2,7 +2,7 @@
 
 ## Tutorial
 
-### Flashlight
+### Emergency Light
 Scene from Zen UV Beginner Tutorial video.
 
 #### Details
