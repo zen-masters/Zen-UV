@@ -6,7 +6,7 @@
 Scene from Zen UV Beginner Tutorial video.
 
 #### Details
-![flashlight](../examples/images/flashlight.png)
+![flashlight](../examples/images/flashlight_04.png)
 
 [//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/ZenUV_Light_04.zip)
 
