@@ -8,7 +8,7 @@ Scene from Zen UV Beginner Tutorial video.
 #### Details
 ![flashlight](../examples/images/flashlight.png)
 
-[//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/ZenUV_Light_03.zip)
+[//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/ZenUV_Light_04.zip)
 
 ## Hotspot
 
