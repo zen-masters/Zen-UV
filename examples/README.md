@@ -63,7 +63,7 @@ Modular Sci-Fi Environment Kit are made using Trim Sheet operators
 
 ## UV World Size
 
-### Setting UV World Size by Active Trim
+### Set Size by Trim
 Demonstration how to set UV world size by active trim size
 
 #### Details
