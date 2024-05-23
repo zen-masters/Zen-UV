@@ -61,6 +61,16 @@ Modular Sci-Fi Environment Kit are made using Trim Sheet operators
 
 [//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/ZenUV_SciFi_TrimSheet_01.zip)
 
+## UV World Size
+
+### Setting UV World Size by Active Trim
+Demonstration how to set UV world size by active trim size
+
+#### Details
+![](../examples/images/uv_world_size_preview.png)
+
+[//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/ZenUV_House_UVWorld_Size_01.zip)
+
 ## Addons
 
 ### Zen Bundle for Blender
