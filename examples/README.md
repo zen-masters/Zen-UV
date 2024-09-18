@@ -10,6 +10,8 @@ Scene from Zen UV Beginner Tutorial video.
 
 [//]: # (https://github.com/zen-masters/Zen-UV/raw/master/examples/ZenUV_Light_04.zip)
 
+[more_info]: # (https://zenmastersteam.github.io/Zen-UV/latest/tutorial/emergency_light/emergency_light_eng/)
+
 ## Hotspot
 
 ### Bridge 1
